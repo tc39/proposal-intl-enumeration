@@ -1,5 +1,6 @@
-// Polyfill Intl.getSupportedCalendars
 // © 2020 Google, Ecma International
+
+// Polyfill Intl.getSupportedCalendars
 if (Intl.getSupportedCalendars == undefined) {
   Intl.getSupportedCalendars = function() {
     const CALENDARS_IN_CLDR = [ 

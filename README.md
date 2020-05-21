@@ -20,6 +20,43 @@ Intl.getSupportedUnits()
 https://github.com/tc39/ecma402/issues/435
 
 ## Usage example
+```
+// Find out the supported calendars
+Intl.getSupportedCalendars()
+// ['buddhist', 'chinese', 'coptic', 'dangi', 'ethioaa', 'ethiopic', 
+//  'gregory', 'hebrew', 'indian', 'islamic', 'islamic-umalqura',
+//  'islamic-tbla', 'islamic-civil', 'islamic-rgsa', 'japanese', 
+//  'persian', 'roc', 'islamicc'];
+
+// Find out the supported currencies
+Intl.getSupportedCurrencies()
+// ['AED', 'AFN', 'ALL', 'AMD', 'ANG', 'AOA', 'ARS', 'AUD', 'AWG', 
+//  'AZN', 'BAM', 'BBD', 'BDT', 'BGN', 'BHD', 'BIF', 'BMD', 'BND',
+//  ...
+//  'YER', 'ZAR', 'ZMW', 'SVC', 'XDR', 'XSU', 'ZWL'];
+
+// Find out the supported numbering systems
+Intl.getSupportedNumberingSystems()
+// ['adlm', 'ahom', 'arab', 'arabext', 'bali', 'beng', 'bhks', 
+//  'brah', 'cakm', 'cham', 'deva', 'fullwide', 'gong', 'gonm',
+//  ...
+// 'thai', 'tibt', 'tirh', 'vaii', 'wara', 'wcho'];
+
+// Find out the supported time zones
+Intl.getSupportedTimeZones()
+// ['Africa/Abidjan', 'Africa/Accra', 'Africa/Addis_Ababa', 'Africa/Algiers',
+//  'Africa/Asmera', 'Africa/Bamako', 'Africa/Bangui', 'Africa/Banjul',
+//  ...
+//   'Pacific/Truk', 'Pacific/Wake', 'Pacific/Wallis'];
+
+// Find out the supported units
+// ['acre', 'bit', 'byte', 'celsius', 'centimeter', 'day',
+//  'degree', 'fahrenheit', 'fluid-ounce', 'foot', 'gallon',
+//  ...
+//  'terabit', 'terabyte', 'week', 'yard', 'year'];
+```
+
+
 
 ## Authors
 * Frank Tang (@FrankYFTang)

@@ -9,12 +9,11 @@
 ```
 Intl.getSupportedCalendars()
 Intl.getSupportedCurrencies()
-Intl.getSupportedRegions()
 Intl.getSupportedNumberingSystems()
-Intl.getSupportedScripts()
 Intl.getSupportedTimeZones()
 Intl.getSupportedUnits()
 ```
+
 
 ## Background
 

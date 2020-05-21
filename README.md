@@ -1,8 +1,11 @@
 # Intl Enumeration API Specification
+List supported values of options in pre-existing ECMA 402 API.
 
-## Stage 0
+## Stage 0 
+Propose to move to Stage 1 in TC June 2020 meeting.
 
 ## Motivation
+
 
 ## Overview
 
@@ -50,6 +53,7 @@ Intl.getSupportedTimeZones()
 //   'Pacific/Truk', 'Pacific/Wake', 'Pacific/Wallis'];
 
 // Find out the supported units
+Intl.getSupportedUnits()
 // ['acre', 'bit', 'byte', 'celsius', 'centimeter', 'day',
 //  'degree', 'fahrenheit', 'fluid-ounce', 'foot', 'gallon',
 //  ...

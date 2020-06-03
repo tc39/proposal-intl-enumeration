@@ -77,8 +77,6 @@ Intl.getSupportedUnits()
 
 Implementation Status
 
-
-
 This repo is setup by following instruction on [TC39 template-for-proposals](https://github.com/tc39/template-for-proposals)
 
 

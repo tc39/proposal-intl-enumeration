@@ -1,8 +1,8 @@
 # Intl Enumeration API Specification
 List supported values of options in pre-existing ECMA 402 API.
 
-## Stage 0 
-Propose to move to Stage 1 in TC June 2020 meeting.
+## Stage 1 
+Propose to [move to Stage 1 in TC June 2020 meeting](https://docs.google.com/presentation/d/17bkiVWuYxhMc24If72d6oENK3G6G-irO2EB4EEQCgxU/edit#slide=id.g881894be7c_0_156). Agreed by TC39 meeting 2020-06-03 to advanced to Stage 1
 
 ## Motivation
 

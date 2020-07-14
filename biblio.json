@@ -1,0 +1,44 @@
+{
+  "https://tc39.es/ecma402/": [
+    {
+      "type": "clause",
+      "number": "10",
+      "id": "locale-objects"
+    },
+    {
+      "type": "clause",
+      "number": "11",
+      "id": "collator-objects"
+    },
+    {
+      "type": "clause",
+      "number": "12",
+      "id": "numberformat-objects"
+    },
+    {
+      "type": "clause",
+      "number": "13",
+      "id": "datetimeformat-objects"
+    },
+    {
+      "type": "clause",
+      "number": "14",
+      "id": "relativetimeformat-objects"
+    },
+    {
+      "type": "clause",
+      "number": "15",
+      "id": "pluralrules-objects"
+    },
+    {
+      "type": "table",
+      "number": "2",
+      "id": "table-sanctioned-simple-unit-identifiers"
+    },
+    {
+      "type": "table",
+      "number": "4",
+      "id": "table-numbering-system-digits"
+    }
+  ]
+}

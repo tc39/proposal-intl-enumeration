@@ -83,9 +83,10 @@ Intl.getSupportedUnits()
 ## Proposal
 
 ### Spec
+* https://tc39.es/proposal-intl-enumeration/
 
 ## References
-
+* [v8 prototype patch](https://chromium-review.googlesource.com/c/v8/v8/+/2301115)
 
 Implementation Status
 

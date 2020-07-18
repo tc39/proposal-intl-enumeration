@@ -13,7 +13,7 @@ List supported values of options in pre-existing ECMA 402 API.
 Intl.getSupportedCalendars()
 Intl.getSupportedCurrencies()
 Intl.getSupportedNumberingSystems()
-Intl.getSupportedTimeZones()
+Intl.getSupportedTimeZones([options])
 Intl.getSupportedUnits()
 ```
 
@@ -51,6 +51,18 @@ Intl.getSupportedTimeZones()
 //  'Africa/Asmera', 'Africa/Bamako', 'Africa/Bangui', 'Africa/Banjul',
 //  ...
 //   'Pacific/Truk', 'Pacific/Wake', 'Pacific/Wallis'];
+
+// Find out the supported time zones of region "US"
+Intl.getSupportedTimeZones({region: "US"})
+// ["America/Adak", "America/Anchorage", "America/Boise", "America/Chicago", 
+// "America/Denver", "America/Detroit", "America/Indiana/Knox", "America/Indiana/Marengo", 
+// "America/Indiana/Petersburg", "America/Indiana/Tell_City", "America/Indiana/Vevay", 
+// "America/Indiana/Vincennes", "America/Indiana/Winamac", "America/Indianapolis",
+// "America/Juneau", "America/Kentucky/Monticello", "America/Los_Angeles", "America/Louisville",
+// "America/Menominee", "America/Metlakatla", "America/New_York", "America/Nome",
+// "America/North_Dakota/Beulah", "America/North_Dakota/Center", 
+// "America/North_Dakota/New_Salem", "America/Phoenix", "America/Sitka", 
+// "America/Yakutat", "Pacific/Honolulu"]
 
 // Find out the supported units
 Intl.getSupportedUnits()

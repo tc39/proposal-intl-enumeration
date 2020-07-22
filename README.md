@@ -6,22 +6,16 @@ List supported values of options in pre-existing ECMA 402 API.
 * Plan to propose to Stage 2 in TC39 Sept 2020 meeting.
 
 ### Entrance Criteria for Stage 1
-* Identified “champion” who will advance the addition
-  * Frank Yung-Fong Tang
-* Prose outlining the problem or need and the general shape of a solution
-  * See this document
-* Illustrative examples of usage
-  * See this document
-* High-level API
-  * See this document
+* Identified “champion” who will advance the addition: **Frank Yung-Fong Tang**
+* Prose outlining the problem or need and the general shape of a solution: **See this document**
+* Illustrative examples of usage: **See this document**
+* High-level API: **See this document**
 * Discussion of key algorithms, abstractions and semantics
 * Identification of potential “cross-cutting” concerns and implementation challenges/complexity
-* A publicly available repository for the proposal that captures the above requirements 
-  * https://github.com/tc39/proposal-intl-enumeration
+* A publicly available repository for the proposal that captures the above requirements: **see https://github.com/tc39/proposal-intl-enumeration **
 ### Entrance Criteria for Stage 2
 * Above
-* Initial spec text
-  * https://tc39.es/proposal-intl-enumeration/
+* Initial spec text: **see https://tc39.es/proposal-intl-enumeration **
 
 ## Motivation
 

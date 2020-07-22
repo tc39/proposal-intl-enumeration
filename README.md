@@ -105,17 +105,14 @@ Intl.getSupportedUnits()
 * https://tc39.es/proposal-intl-enumeration/
 
 ## References
-* [v8 prototype patch](https://chromium-review.googlesource.com/c/v8/v8/+/2301115)
+*
 
 ## Implementation Status
-
-
-
-
-
-
-
-
+* [v8 prototype patch](https://chromium-review.googlesource.com/c/v8/v8/+/2301115)
+* [v8 tracking bug](https://bugs.chromium.org/p/v8/issues/detail?id=10743)
+* Mozilla
+* JSC
+* Test262
 
 
 

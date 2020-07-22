@@ -12,10 +12,10 @@ List supported values of options in pre-existing ECMA 402 API.
 * High-level API: **See this document**
 * Discussion of key algorithms, abstractions and semantics
 * Identification of potential “cross-cutting” concerns and implementation challenges/complexity
-* A publicly available repository for the proposal that captures the above requirements: **see https://github.com/tc39/proposal-intl-enumeration **
+* A publicly available repository for the proposal that captures the above requirements: [**https://github.com/tc39/proposal-intl-enumeration**](https://github.com/tc39/proposal-intl-enumeration)
 ### Entrance Criteria for Stage 2
 * Above
-* Initial spec text: **see https://tc39.es/proposal-intl-enumeration **
+* Initial spec text: [**https://tc39.es/proposal-intl-enumeration**](https://tc39.es/proposal-intl-enumeration)
 
 ## Motivation
 

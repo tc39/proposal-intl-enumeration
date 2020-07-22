@@ -2,7 +2,26 @@
 List supported values of options in pre-existing ECMA 402 API.
 
 ## Stage 1 
-[Moved to Stage 1 after reaching consensus in TC June 2020 meeting](https://docs.google.com/presentation/d/17bkiVWuYxhMc24If72d6oENK3G6G-irO2EB4EEQCgxU/edit#slide=id.g881894be7c_0_156). 
+* [Moved to Stage 1 after reaching consensus in TC39 June 2020 meeting](https://docs.google.com/presentation/d/17bkiVWuYxhMc24If72d6oENK3G6G-irO2EB4EEQCgxU/edit#slide=id.g881894be7c_0_156). 
+* Plan to propose to Stage 2 in TC39 Sept 2020 meeting.
+
+### Entrance Criteria for Stage 1
+* Identified “champion” who will advance the addition
+  * Frank Yung-Fong Tang
+* Prose outlining the problem or need and the general shape of a solution
+  * See this document
+* Illustrative examples of usage
+  * See this document
+* High-level API
+  * See this document
+* Discussion of key algorithms, abstractions and semantics
+* Identification of potential “cross-cutting” concerns and implementation challenges/complexity
+* A publicly available repository for the proposal that captures the above requirements 
+  * https://github.com/tc39/proposal-intl-enumeration
+### Entrance Criteria for Stage 2
+* Above
+* Initial spec text
+  * https://tc39.es/proposal-intl-enumeration/
 
 ## Motivation
 
@@ -88,12 +107,25 @@ Intl.getSupportedUnits()
 ## References
 * [v8 prototype patch](https://chromium-review.googlesource.com/c/v8/v8/+/2301115)
 
-Implementation Status
+## Implementation Status
+
+
+
+
+
+
+
+
+
+
+
+
+============================ Ignore Text Below ============================
+
+
+#### The following are from the template, will be deleted later 
 
 This repo is setup by following instruction on [TC39 template-for-proposals](https://github.com/tc39/template-for-proposals)
-
-
-=================== from the template , will be deleted later ==========
 
   1.  Avoid merge conflicts with build process output files by running:
       ```sh

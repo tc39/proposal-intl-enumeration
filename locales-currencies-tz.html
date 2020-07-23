@@ -1,8 +1,8 @@
 <emu-clause id="locales-currencies-tz">
-  <h1>Identification of Locales, Currencies, Time Zones, and Measurement Units</h1>
+  <h1>Identification of Locales, Currencies, Time Zones, <del>and</del> Measurement Units<ins>, Numbering Systems, and Calendars</ins></h1>
 
   <p>
-    This clause describes the String values used in the ECMAScript 2021 Internationalization API Specification to identify locales, currencies, time zones, and measurement units.
+    This clause describes the String values used in the ECMAScript 2021 Internationalization API Specification to identify locales, currencies, time zones, <del>and</del> measurement units<ins>, numbering systems, and calendars </ins>.
   </p>
 
   <emu-clause id="sec-case-sensitivity-and-case-mapping">
@@ -130,6 +130,14 @@
       </emu-alg>
     </emu-clause>
 
+    <emu-clause id="sec-availablecurrencycodes" aoid="AvailableCurrencyCodes">
+      <h1><ins>AvailableCurrencyCodes ( )</ins></h1>
+
+      <p>
+        <ins>The AvailableCurrencyCodes abstract operation return a List that contains well-formed 3-letter ISO 4217 currency codes identifying the currency for which the implementation provides the functionality of the constructed objects.</ins>
+      </p>
+    </emu-clause>
+
   </emu-clause>
 
   <emu-clause id="sec-time-zone-names">
@@ -178,6 +186,22 @@
 
       <p>
         The DefaultTimeZone abstract operation returns a String value representing the valid (<emu-xref href="#sec-isvalidtimezonename"></emu-xref>) and canonicalized (<emu-xref href="#sec-canonicalizetimezonename"></emu-xref>) time zone name for the host environment's current time zone.
+      </p>
+    </emu-clause>
+
+    <emu-clause id="sec-availabletimezones" aoid="AvailableTimeZones">
+      <h1><ins>AvailableTimeZones ( )</ins></h1>
+
+      <p>
+        <ins>The AvailableTimeZones abstract operation return a List that contains the canonical and case-regularized form of all registered Zone and Link names in the IANA Time Zone Database.</ins>
+      </p>
+    </emu-clause>
+
+    <emu-clause id="sec-istimezoneinregion" aoid="IsTimeZoneInRegion">
+      <h1><ins>IsTimeZoneInRegion ( _timeZone_, _region_ )</ins></h1>
+
+      <p>
+        <ins>The IsTimeZoneInRegion abstract operation is called with arguments _timeZone_ (which must be a canonical and case-regularized form of registered Zone or Link names in the IANA Time Zone Database) , and _region_ (which must be a string match the `unicode_region_subtag` production). It returns *true* if the _timeZone_ is currently used the _region_ , otherwise, return *false*.</ins>
       </p>
     </emu-clause>
 
@@ -282,6 +306,40 @@
         </table>
       </emu-table>
     </emu-clause>
+  </emu-clause>
+
+  <emu-clause id="sec-numberingsystem-identifiers">
+    <h1><ins>Numbering System Identifiers</ins></h1>
+
+    <p>
+      <ins>The ECMAScript 2021 Internationalization API Specification identifies numbering system using a <em>numbering system identifier</em> as defined by Unicode Technical Standard #35, Part 3, Section 1. Their canonical form is a string containing all lowercase letters.</ins>
+    </p>
+
+    <emu-clause id="sec-availablenumberingsystems" aoid="AvailableNumberingSystems">
+      <h1><ins>AvailableNumberingSystems ( )</ins></h1>
+
+      <p>
+        <ins>The AvailableNumberingSystems abstract operation return a List that contains numbering system identifiers identifying the numbering system for which the implementation provides the functionality of the constructed objects. The list must includes the Numbering System value of every rows of <emu-xref href="#table-numbering-system-digits"></emu-xref>, except the header row.</ins>
+      </p>
+    </emu-clause>
+
+  </emu-clause>
+
+  <emu-clause id="sec-calendar-types">
+    <h1><ins>Calendar types</ins></h1>
+
+    <p>
+      <ins>The ECMAScript 2021 Internationalization API Specification identifies calendar using a <em>calendar type</em> as defined by Unicode Technical Standard #35, Part 4, Section 2. Their canonical form is a string containing all lowercase letters with zero or more hyphens.</ins>
+    </p>
+
+    <emu-clause id="sec-availablecalendars" aoid="AvailableCalendars">
+      <h1><ins>AvailableCalendars ( )</ins></h1>
+
+      <p>
+        <ins>The AvailableCalendars abstract operation return a List that contains calendar types identifying the calendar for which the implementation provides the functionality of the constructed objects. The list must includes *"gregory"*.</ins>
+      </p>
+    </emu-clause>
+
   </emu-clause>
 
 </emu-clause>

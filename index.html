@@ -3,25 +3,20 @@
 <link rel="stylesheet" href="./spec.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
 <script src="./spec.js"></script>
-<title>Intl Enumeration API Specification</title><script type="application/json" id="menu-search-biblio">[{"type":"clause","id":"sec-intro","aoid":null,"title":"Introduction","titleHTML":"Introduction","number":"","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":[],"key":"Introduction"},{"type":"term","term":"%Intl%","refId":"intl-object","referencingIds":[],"namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","key":"%Intl%"},{"type":"clause","id":"sec-intl.locale-intro","aoid":null,"title":"Intl.Locale (...)","titleHTML":"Intl.Locale (...)","number":"1.1.1","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":[],"key":"Intl.Locale (...)"},{"type":"clause","id":"sec-intl.collator-intro","aoid":null,"title":"Intl.Collator (...)","titleHTML":"Intl.Collator (...)","number":"1.1.2","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":[],"key":"Intl.Collator (...)"},{"type":"clause","id":"sec-intl.numberformat-intro","aoid":null,"title":"Intl.NumberFormat (...)","titleHTML":"Intl.NumberFormat (...)","number":"1.1.3","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":[],"key":"Intl.NumberFormat (...)"},{"type":"clause","id":"sec-intl.datetimeformat-intro","aoid":null,"title":"Intl.DateTimeFormat (...)","titleHTML":"Intl.DateTimeFormat (...)","number":"1.1.4","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":[],"key":"Intl.DateTimeFormat (...)"},{"type":"clause","id":"sec-intl.relativetimeformat-intro","aoid":null,"title":"Intl.RelativeTimeFormat (...)","titleHTML":"Intl.RelativeTimeFormat (...)","number":"1.1.5","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":[],"key":"Intl.RelativeTimeFormat (...)"},{"type":"clause","id":"sec-intl.pluralrules-intro","aoid":null,"title":"Intl.PluralRules (...)","titleHTML":"Intl.PluralRules (...)","number":"1.1.6","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":[],"key":"Intl.PluralRules (...)"},{"type":"note","id":"legacy-constructor","number":1,"clauseId":"sec-constructor-properties-of-the-intl-object","referencingIds":[],"namespace":"https://tc39.github.io/proposal-intl-enumeration","location":""},{"type":"clause","id":"sec-constructor-properties-of-the-intl-object","aoid":null,"title":"Constructor Properties of the Intl Object","titleHTML":"Constructor Properties of the Intl Object","number":"1.1","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":[],"key":"Constructor Properties of the Intl Object"},{"type":"clause","id":"sec-intl.getcanonicallocales","aoid":null,"title":"Intl.getCanonicalLocales ( locales )","titleHTML":"Intl.getCanonicalLocales ( <var>locales</var> )","number":"1.2.1","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":[],"key":"Intl.getCanonicalLocales ( locales )"},{"type":"clause","id":"sec-intl.getsupportedcalendars","aoid":null,"title":"Intl.getSupportedCalendars ( )","titleHTML":"<ins>Intl.getSupportedCalendars ( )</ins>","number":"1.2.2","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":[],"key":"Intl.getSupportedCalendars ( )"},{"type":"clause","id":"sec-intl.getsupportedcurrencies","aoid":null,"title":"Intl.getSupportedCurrencies ( )","titleHTML":"<ins>Intl.getSupportedCurrencies ( )</ins>","number":"1.2.3","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":[],"key":"Intl.getSupportedCurrencies ( )"},{"type":"clause","id":"sec-intl.getsupportednumberingsystems","aoid":null,"title":"Intl.getSupportedNumberingSystems ( )","titleHTML":"<ins>Intl.getSupportedNumberingSystems ( )</ins>","number":"1.2.4","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":[],"key":"Intl.getSupportedNumberingSystems ( )"},{"type":"clause","id":"sec-intl.getsupportedtimezones","aoid":null,"title":"Intl.getSupportedTimeZones ( )","titleHTML":"<ins>Intl.getSupportedTimeZones ( )</ins>","number":"1.2.5","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":[],"key":"Intl.getSupportedTimeZones ( )"},{"type":"clause","id":"sec-intl.getsupportedunits","aoid":null,"title":"Intl.getSupportedUnits ( )","titleHTML":"<ins>Intl.getSupportedUnits ( )</ins>","number":"1.2.6","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":[],"key":"Intl.getSupportedUnits ( )"},{"type":"clause","id":"sec-function-properties-of-the-intl-object","aoid":null,"title":"Function Properties of the Intl Object","titleHTML":"Function Properties of the Intl Object","number":"1.2","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":[],"key":"Function Properties of the Intl Object"},{"type":"clause","id":"intl-object","aoid":null,"title":"The Intl Object","titleHTML":"The Intl Object","number":"1","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":[],"key":"The Intl Object"},{"type":"clause","id":"sec-copyright-and-software-license","aoid":null,"title":"Copyright & Software License","titleHTML":"Copyright &amp; Software License","number":"A","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":[],"key":"Copyright & Software License"}]</script><script>"use strict";
+<title>Intl Enumeration API Specification</title><script type="application/json" id="menu-search-biblio">[{"type":"clause","id":"sec-intro","aoid":null,"title":"Introduction","titleHTML":"Introduction","number":"","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":[],"key":"Introduction"},{"type":"clause","id":"sec-case-sensitivity-and-case-mapping","aoid":null,"title":"Case Sensitivity and Case Mapping","titleHTML":"Case Sensitivity and Case Mapping","number":"1.1","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":["_ref_2","_ref_3","_ref_4","_ref_5","_ref_6"],"key":"Case Sensitivity and Case Mapping"},{"type":"term","term":"Unicode locale extension sequence","refId":"sec-unicode-locale-extension-sequences","referencingIds":[],"namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","key":"Unicode locale extension sequence"},{"type":"clause","id":"sec-unicode-locale-extension-sequences","aoid":null,"title":"Unicode Locale Extension Sequences","titleHTML":"Unicode Locale Extension Sequences","number":"1.2.1","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":["_ref_12","_ref_13"],"key":"Unicode Locale Extension Sequences"},{"type":"op","aoid":"IsStructurallyValidLanguageTag","refId":"sec-isstructurallyvalidlanguagetag","location":"","referencingIds":[],"key":"IsStructurallyValidLanguageTag"},{"type":"clause","id":"sec-isstructurallyvalidlanguagetag","aoid":"IsStructurallyValidLanguageTag","title":"IsStructurallyValidLanguageTag ( locale )","titleHTML":"IsStructurallyValidLanguageTag ( <var>locale</var> )","number":"1.2.2","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":["_ref_0","_ref_11"],"key":"IsStructurallyValidLanguageTag ( locale )"},{"type":"op","aoid":"CanonicalizeUnicodeLocaleId","refId":"sec-canonicalizeunicodelocaleid","location":"","referencingIds":[],"key":"CanonicalizeUnicodeLocaleId"},{"type":"clause","id":"sec-canonicalizeunicodelocaleid","aoid":"CanonicalizeUnicodeLocaleId","title":"CanonicalizeUnicodeLocaleId ( locale )","titleHTML":"CanonicalizeUnicodeLocaleId ( <var>locale</var> )","number":"1.2.3","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":["_ref_1"],"key":"CanonicalizeUnicodeLocaleId ( locale )"},{"type":"op","aoid":"DefaultLocale","refId":"sec-defaultlocale","location":"","referencingIds":[],"key":"DefaultLocale"},{"type":"clause","id":"sec-defaultlocale","aoid":"DefaultLocale","title":"DefaultLocale ()","titleHTML":"DefaultLocale ()","number":"1.2.4","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":[],"key":"DefaultLocale ()"},{"type":"clause","id":"sec-language-tags","aoid":null,"title":"Language Tags","titleHTML":"Language Tags","number":"1.2","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":[],"key":"Language Tags"},{"type":"op","aoid":"IsWellFormedCurrencyCode","refId":"sec-iswellformedcurrencycode","location":"","referencingIds":[],"key":"IsWellFormedCurrencyCode"},{"type":"clause","id":"sec-iswellformedcurrencycode","aoid":"IsWellFormedCurrencyCode","title":"IsWellFormedCurrencyCode ( currency )","titleHTML":"IsWellFormedCurrencyCode ( <var>currency</var> )","number":"1.3.1","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":[],"key":"IsWellFormedCurrencyCode ( currency )"},{"type":"clause","id":"sec-currency-codes","aoid":null,"title":"Currency Codes","titleHTML":"Currency Codes","number":"1.3","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":[],"key":"Currency Codes"},{"type":"op","aoid":"IsValidTimeZoneName","refId":"sec-isvalidtimezonename","location":"","referencingIds":[],"key":"IsValidTimeZoneName"},{"type":"clause","id":"sec-isvalidtimezonename","aoid":"IsValidTimeZoneName","title":"IsValidTimeZoneName ( timeZone )","titleHTML":"IsValidTimeZoneName ( <var>timeZone</var> )","number":"1.4.1","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":["_ref_7","_ref_14"],"key":"IsValidTimeZoneName ( timeZone )"},{"type":"op","aoid":"CanonicalizeTimeZoneName","refId":"sec-canonicalizetimezonename","location":"","referencingIds":[],"key":"CanonicalizeTimeZoneName"},{"type":"clause","id":"sec-canonicalizetimezonename","aoid":"CanonicalizeTimeZoneName","title":"CanonicalizeTimeZoneName","titleHTML":"CanonicalizeTimeZoneName","number":"1.4.2","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":["_ref_8"],"key":"CanonicalizeTimeZoneName"},{"type":"op","aoid":"DefaultTimeZone","refId":"sec-defaulttimezone","location":"","referencingIds":[],"key":"DefaultTimeZone"},{"type":"clause","id":"sec-defaulttimezone","aoid":"DefaultTimeZone","title":"DefaultTimeZone ()","titleHTML":"DefaultTimeZone ()","number":"1.4.3","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":[],"key":"DefaultTimeZone ()"},{"type":"clause","id":"sec-time-zone-names","aoid":null,"title":"Time Zone Names","titleHTML":"Time Zone Names","number":"1.4","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":[],"key":"Time Zone Names"},{"type":"op","aoid":"IsWellFormedUnitIdentifier","refId":"sec-iswellformedunitidentifier","location":"","referencingIds":[],"key":"IsWellFormedUnitIdentifier"},{"type":"clause","id":"sec-iswellformedunitidentifier","aoid":"IsWellFormedUnitIdentifier","title":"IsWellFormedUnitIdentifier ( unitIdentifier )","titleHTML":"IsWellFormedUnitIdentifier ( <var>unitIdentifier</var> )","number":"1.5.1","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":[],"key":"IsWellFormedUnitIdentifier ( unitIdentifier )"},{"type":"table","id":"table-sanctioned-simple-unit-identifiers","number":1,"caption":"Table 1: Simple units sanctioned for use in ECMAScript","referencingIds":["_ref_9","_ref_10"],"namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","key":"Table 1: Simple units sanctioned for use in ECMAScript"},{"type":"op","aoid":"IsSanctionedSimpleUnitIdentifier","refId":"sec-issanctionedsimpleunitidentifier","location":"","referencingIds":[],"key":"IsSanctionedSimpleUnitIdentifier"},{"type":"clause","id":"sec-issanctionedsimpleunitidentifier","aoid":"IsSanctionedSimpleUnitIdentifier","title":"IsSanctionedSimpleUnitIdentifier ( unitIdentifier )","titleHTML":"IsSanctionedSimpleUnitIdentifier ( <var>unitIdentifier</var> )","number":"1.5.2","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":["_ref_15","_ref_16","_ref_17"],"key":"IsSanctionedSimpleUnitIdentifier ( unitIdentifier )"},{"type":"clause","id":"sec-measurement-unit-identifiers","aoid":null,"title":"Measurement Unit Identifiers","titleHTML":"Measurement Unit Identifiers","number":"1.5","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":[],"key":"Measurement Unit Identifiers"},{"type":"clause","id":"locales-currencies-tz","aoid":null,"title":"Identification of Locales, Currencies, Time Zones, and Measurement Units","titleHTML":"Identification of Locales, Currencies, Time Zones, and Measurement Units","number":"1","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":[],"key":"Identification of Locales, Currencies, Time Zones, and Measurement Units"},{"type":"term","term":"%Intl%","refId":"intl-object","referencingIds":[],"namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","key":"%Intl%"},{"type":"clause","id":"sec-intl.locale-intro","aoid":null,"title":"Intl.Locale (...)","titleHTML":"Intl.Locale (...)","number":"2.1.1","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":[],"key":"Intl.Locale (...)"},{"type":"clause","id":"sec-intl.collator-intro","aoid":null,"title":"Intl.Collator (...)","titleHTML":"Intl.Collator (...)","number":"2.1.2","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":[],"key":"Intl.Collator (...)"},{"type":"clause","id":"sec-intl.numberformat-intro","aoid":null,"title":"Intl.NumberFormat (...)","titleHTML":"Intl.NumberFormat (...)","number":"2.1.3","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":[],"key":"Intl.NumberFormat (...)"},{"type":"clause","id":"sec-intl.datetimeformat-intro","aoid":null,"title":"Intl.DateTimeFormat (...)","titleHTML":"Intl.DateTimeFormat (...)","number":"2.1.4","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":[],"key":"Intl.DateTimeFormat (...)"},{"type":"clause","id":"sec-intl.relativetimeformat-intro","aoid":null,"title":"Intl.RelativeTimeFormat (...)","titleHTML":"Intl.RelativeTimeFormat (...)","number":"2.1.5","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":[],"key":"Intl.RelativeTimeFormat (...)"},{"type":"clause","id":"sec-intl.pluralrules-intro","aoid":null,"title":"Intl.PluralRules (...)","titleHTML":"Intl.PluralRules (...)","number":"2.1.6","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":[],"key":"Intl.PluralRules (...)"},{"type":"note","id":"legacy-constructor","number":1,"clauseId":"sec-constructor-properties-of-the-intl-object","referencingIds":[],"namespace":"https://tc39.github.io/proposal-intl-enumeration","location":""},{"type":"clause","id":"sec-constructor-properties-of-the-intl-object","aoid":null,"title":"Constructor Properties of the Intl Object","titleHTML":"Constructor Properties of the Intl Object","number":"2.1","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":[],"key":"Constructor Properties of the Intl Object"},{"type":"clause","id":"sec-intl.getcanonicallocales","aoid":null,"title":"Intl.getCanonicalLocales ( locales )","titleHTML":"Intl.getCanonicalLocales ( <var>locales</var> )","number":"2.2.1","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":[],"key":"Intl.getCanonicalLocales ( locales )"},{"type":"clause","id":"sec-intl.getsupportedcalendars","aoid":null,"title":"Intl.getSupportedCalendars ( )","titleHTML":"<ins>Intl.getSupportedCalendars ( )</ins>","number":"2.2.2","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":[],"key":"Intl.getSupportedCalendars ( )"},{"type":"clause","id":"sec-intl.getsupportedcurrencies","aoid":null,"title":"Intl.getSupportedCurrencies ( )","titleHTML":"<ins>Intl.getSupportedCurrencies ( )</ins>","number":"2.2.3","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":[],"key":"Intl.getSupportedCurrencies ( )"},{"type":"clause","id":"sec-intl.getsupportednumberingsystems","aoid":null,"title":"Intl.getSupportedNumberingSystems ( )","titleHTML":"<ins>Intl.getSupportedNumberingSystems ( )</ins>","number":"2.2.4","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":[],"key":"Intl.getSupportedNumberingSystems ( )"},{"type":"clause","id":"sec-intl.getsupportedtimezones","aoid":null,"title":"Intl.getSupportedTimeZones ( )","titleHTML":"<ins>Intl.getSupportedTimeZones ( )</ins>","number":"2.2.5","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":[],"key":"Intl.getSupportedTimeZones ( )"},{"type":"clause","id":"sec-intl.getsupportedunits","aoid":null,"title":"Intl.getSupportedUnits ( )","titleHTML":"<ins>Intl.getSupportedUnits ( )</ins>","number":"2.2.6","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":[],"key":"Intl.getSupportedUnits ( )"},{"type":"clause","id":"sec-function-properties-of-the-intl-object","aoid":null,"title":"Function Properties of the Intl Object","titleHTML":"Function Properties of the Intl Object","number":"2.2","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":[],"key":"Function Properties of the Intl Object"},{"type":"clause","id":"intl-object","aoid":null,"title":"The Intl Object","titleHTML":"The Intl Object","number":"2","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":[],"key":"The Intl Object"},{"type":"clause","id":"sec-copyright-and-software-license","aoid":null,"title":"Copyright & Software License","titleHTML":"Copyright &amp; Software License","number":"A","namespace":"https://tc39.github.io/proposal-intl-enumeration","location":"","referencingIds":[],"key":"Copyright & Software License"}]</script><script>"use strict";
 
 function Search(menu) {
   this.menu = menu;
   this.$search = document.getElementById('menu-search');
   this.$searchBox = document.getElementById('menu-search-box');
   this.$searchResults = document.getElementById('menu-search-results');
-
+  
   this.loadBiblio();
-
+  
   document.addEventListener('keydown', this.documentKeydown.bind(this));
-
+  
   this.$searchBox.addEventListener('keydown', debounce(this.searchBoxKeydown.bind(this), { stopPropagation: true }));
   this.$searchBox.addEventListener('keyup', debounce(this.searchBoxKeyup.bind(this), { stopPropagation: true }));
-
-  // Perform an initial search if the box is not empty.
-  if (this.$searchBox.value) {
-    this.search(this.$searchBox.value);
-  }
 }
 
 Search.prototype.loadBiblio = function () {
@@ -61,7 +56,7 @@ Search.prototype.searchBoxKeyup = function (e) {
   if (e.keyCode === 13 || e.keyCode === 9) {
     return;
   }
-
+  
   this.search(e.target.value);
 }
 
@@ -84,23 +79,25 @@ Search.prototype.triggerSearch = function (e) {
 // prefer shorter matches.
 function relevance(result, searchString) {
   var relevance = 0;
-
+  
   relevance = Math.max(0, 8 - result.match.chunks) << 7;
-
+  
   if (result.match.caseMatch) {
     relevance *= 2;
   }
-
+  
   if (result.match.prefix) {
     relevance += 2048
   }
-
+  
   relevance += Math.max(0, 255 - result.entry.key.length);
-
+  
   return relevance;
 }
 
 Search.prototype.search = function (searchString) {
+  var s = Date.now();
+
   if (searchString === '') {
     this.displayResults([]);
     this.hideSearch();
@@ -108,12 +105,12 @@ Search.prototype.search = function (searchString) {
   } else {
     this.showSearch();
   }
-
+  
   if (searchString.length === 1) {
     this.displayResults([]);
     return;
   }
-
+    
   var results;
 
   if (/^[\d\.]*$/.test(searchString)) {
@@ -124,7 +121,7 @@ Search.prototype.search = function (searchString) {
     });
   } else {
     results = [];
-
+    
     for (var i = 0; i < this.biblio.length; i++) {
       var entry = this.biblio[i];
       if (!entry.key) {
@@ -137,11 +134,11 @@ Search.prototype.search = function (searchString) {
         results.push({ entry: entry, match: match });
       }
     }
-
+  
     results.forEach(function (result) {
       result.relevance = relevance(result, searchString);
     });
-
+    
     results = results.sort(function (a, b) { return b.relevance - a.relevance });
 
   }
@@ -149,7 +146,7 @@ Search.prototype.search = function (searchString) {
   if (results.length > 50) {
     results = results.slice(0, 50);
   }
-
+  
   this.displayResults(results);
 }
 Search.prototype.hideSearch = function () {
@@ -166,7 +163,7 @@ Search.prototype.selectResult = function () {
   if ($first) {
     document.location = $first.getAttribute('href');
   }
-
+  
   this.$searchBox.value = '';
   this.$searchBox.blur();
   this.displayResults([]);
@@ -180,7 +177,7 @@ Search.prototype.selectResult = function () {
 Search.prototype.displayResults = function (results) {
   if (results.length > 0) {
     this.$searchResults.classList.remove('no-results');
-
+    
     var html = '<ul>';
 
     results.forEach(function (result) {
@@ -197,7 +194,7 @@ Search.prototype.displayResults = function (results) {
       } else if (entry.type === 'production') {
         text = entry.key;
         cssClass = 'prod';
-        id = entry.id;
+        id = entry.id;  
       } else if (entry.type === 'op') {
         text = entry.key;
         cssClass = 'op';
@@ -209,7 +206,7 @@ Search.prototype.displayResults = function (results) {
       }
 
       if (text) {
-        html += '<li class=menu-search-result-' + cssClass + '><a href="#' + id + '">' + text + '</a></li>';
+        html += '<li class=menu-search-result-' + cssClass + '><a href="#' + id + '">' + text + '</a></li>'
       }
     });
 
@@ -232,7 +229,7 @@ function Menu() {
   this.$toc = document.querySelector('#menu-toc > ol');
   this.$specContainer = document.getElementById('spec-container');
   this.search = new Search(this);
-
+  
   this._pinnedIds = {}; 
   this.loadPinEntries();
 
@@ -277,9 +274,9 @@ function Menu() {
                     && target.offsetHeight + target.scrollTop >= target.scrollHeight;
 
     if (offBottom) {
-      e.preventDefault();
-    }
-  });
+		  e.preventDefault();
+	  }
+  })
 }
 
 Menu.prototype.documentKeydown = function (e) {
@@ -306,7 +303,7 @@ Menu.prototype.revealInToc = function (path) {
     current[i].classList.remove('revealed');
     current[i].classList.remove('revealed-leaf');
   }
-
+  
   var current = this.$toc;
   var index = 0;
   while (index < path.length) {
@@ -317,7 +314,7 @@ Menu.prototype.revealInToc = function (path) {
         if (index === path.length - 1) {
           children[i].classList.add('revealed-leaf');
           var rect = children[i].getBoundingClientRect();
-          // this.$toc.getBoundingClientRect().top;
+          this.$toc.getBoundingClientRect().top
           var tocRect = this.$toc.getBoundingClientRect();
           if (rect.top + 10 > tocRect.bottom) {
             this.$toc.scrollTop = this.$toc.scrollTop + (rect.top - tocRect.bottom) + (rect.bottom - rect.top);
@@ -328,27 +325,29 @@ Menu.prototype.revealInToc = function (path) {
         current = children[i].querySelector('ol');
         index++;
         break;
-      }
+      }      
     }
-
+    
   }
 }
 
 function findActiveClause(root, path) {
   var clauses = new ClauseWalker(root);
   var $clause;
+  var found = false;
   var path = path || [];
-
+  
   while ($clause = clauses.nextNode()) {
     var rect = $clause.getBoundingClientRect();
-    var $header = $clause.querySelector("h1");
+    var $header = $clause.children[0];
     var marginTop = parseInt(getComputedStyle($header)["margin-top"]);
-
+    
     if ((rect.top - marginTop) <= 0 && rect.bottom > 0) {
+      found = true;
       return findActiveClause($clause, path.concat($clause)) || path;
     }
   }
-
+  
   return path;
 }
 
@@ -373,7 +372,7 @@ function ClauseWalker(root) {
     },
     false
     );
-
+  
   return treeWalker;
 }
 
@@ -456,7 +455,7 @@ Menu.prototype.loadPinEntries = function () {
   } catch (e) {
     return;
   }
-
+  
   var pinsString = window.localStorage.pinEntries;
   if (!pinsString) return;
   var pins = JSON.parse(pinsString);
@@ -487,11 +486,6 @@ function init() {
   var $container = document.getElementById('spec-container');
   $container.addEventListener('mouseover', debounce(function (e) {
     Toolbox.activateIfMouseOver(e);
-  }));
-  document.addEventListener('keydown', debounce(function (e) {
-    if (e.code === "Escape" && Toolbox.active) {
-      Toolbox.deactivate();
-    }
   }));
 }
 
@@ -591,11 +585,12 @@ function fuzzysearch (searchString, haystack, caseInsensitive) {
   var qlen = searchString.length;
   var chunks = 1;
   var finding = false;
-
+  var prefix = true;
+  
   if (qlen > tlen) {
     return false;
   }
-
+  
   if (qlen === tlen) {
     if (searchString === haystack) {
       return { caseMatch: true, chunks: 1, prefix: true };
@@ -605,7 +600,7 @@ function fuzzysearch (searchString, haystack, caseInsensitive) {
       return false;
     }
   }
-
+  
   outer: for (var i = 0, j = 0; i < qlen; i++) {
     var nch = searchString[i];
     while (j < tlen) {
@@ -619,12 +614,12 @@ function fuzzysearch (searchString, haystack, caseInsensitive) {
         finding = false;
       }
     }
-
-    if (caseInsensitive) { return false; }
-
+    
+    if (caseInsensitive) { return false }
+    
     return fuzzysearch(searchString.toLowerCase(), haystack.toLowerCase(), true);
   }
-
+  
   return { caseMatch: !caseInsensitive, chunks: chunks, prefix: j <= qlen };
 }
 
@@ -781,6 +776,7 @@ var referencePane = {
       var target = document.getElementById(id);
       var cid = findParentClauseId(target);
       var clause = menu.search.biblio.byId[cid];
+      var dupCount = 0;
       return { id: id, clause: clause }
     }).sort(function (a, b) {
       return sortByClauseNumber(a.clause, b.clause);
@@ -820,7 +816,7 @@ function sortByClauseNumber(c1, c2) {
     if (i >= c2c.length) {
       return 1;
     }
-
+    
     var c1 = c1c[i];
     var c2 = c2c[i];
     var c1cn = Number(c1);
@@ -980,43 +976,16 @@ emu-const {
 emu-val {
   font-weight: bold;
 }
-
-/* depth 1 */
-emu-alg ol,
-/* depth 4 */
-emu-alg ol ol ol ol,
-emu-alg ol.nested-thrice,
-emu-alg ol.nested-twice ol,
-emu-alg ol.nested-once ol ol {
-  list-style-type: decimal;
+emu-alg ol, emu-alg ol ol ol ol {
+    list-style-type: decimal;
 }
 
-/* depth 2 */
-emu-alg ol ol,
-emu-alg ol.nested-once,
-/* depth 5 */
-emu-alg ol ol ol ol ol,
-emu-alg ol.nested-four-times,
-emu-alg ol.nested-thrice ol,
-emu-alg ol.nested-twice ol ol,
-emu-alg ol.nested-once ol ol ol {
-  list-style-type: lower-alpha;
+emu-alg ol ol, emu-alg ol ol ol ol ol {
+    list-style-type: lower-alpha;
 }
 
-/* depth 3 */
-emu-alg ol ol ol,
-emu-alg ol.nested-twice,
-emu-alg ol.nested-once ol,
-/* depth 6 */
-emu-alg ol ol ol ol ol ol,
-emu-alg ol.nested-lots,
-emu-alg ol.nested-four-times ol,
-emu-alg ol.nested-thrice ol ol,
-emu-alg ol.nested-twice ol ol ol,
-emu-alg ol.nested-once ol ol ol ol,
-/* depth 7+ */
-emu-alg ol.nested-lots ol {
-  list-style-type: lower-roman;
+emu-alg ol ol ol, ol ol ol ol ol ol {
+    list-style-type: lower-roman;
 }
 
 emu-eqn {
@@ -1067,10 +1036,6 @@ emu-note > div.note-contents > p:last-of-type {
   margin-bottom: 0;
 }
 
-emu-table td code {
-  white-space: normal;
-} 
-
 emu-figure {
   display: block;
 }
@@ -1095,10 +1060,6 @@ emu-table figure {
 
 emu-production {
     display: block;
-}
-
-emu-grammar[type="example"] emu-production,
-emu-grammar[type="definition"] emu-production {
     margin-top: 1em;
     margin-bottom: 1em;
     margin-left: 5ex;
@@ -1126,7 +1087,6 @@ emu-gann {
 }
 
 emu-gann emu-t:last-child,
-emu-gann emu-gprose:last-child,
 emu-gann emu-nt:last-child {
     margin-right: 0;
 }
@@ -1181,6 +1141,10 @@ emu-mods {
     font-weight: normal;
 }
 
+emu-production[collapsed] emu-mods {
+  display: none;
+}
+
 emu-params, emu-opt {
   margin-right: 1ex;
   font-family: monospace;
@@ -1197,10 +1161,6 @@ emu-opt {
 emu-gprose {
     font-size: 0.9em;
     font-family: Helvetica, Arial, sans-serif;
-}
-
-emu-production emu-gprose {
-    margin-right: 1ex;
 }
 
 h1.shortname {
@@ -1230,7 +1190,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 .secnum {
   text-decoration: none;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 h1 span.title {
@@ -1845,160 +1805,455 @@ li.menu-search-result-term:before {
     display: none; 
   }
 }
-</style></head><body><div id="menu-toggle">☰</div><div id="menu-spacer"></div><div id="menu"><div id="menu-search"><input type="text" id="menu-search-box" placeholder="Search..."><div id="menu-search-results" class="inactive"></div></div><div id="menu-pins"><div class="menu-pane-header">Pins</div><ul id="menu-pins-list"></ul></div><div class="menu-pane-header">Table of Contents</div><div id="menu-toc"><ol class="toc"><li><span class="item-toggle-none"></span><a href="#sec-intro" title="Introduction">Introduction</a></li><li><span class="item-toggle">◢</span><a href="#intl-object" title="The Intl Object"><span class="secnum">1</span> The Intl Object</a><ol class="toc"><li><span class="item-toggle">◢</span><a href="#sec-constructor-properties-of-the-intl-object" title="Constructor Properties of the Intl Object"><span class="secnum">1.1</span> Constructor Properties of the Intl Object</a><ol class="toc"><li><span class="item-toggle-none"></span><a href="#sec-intl.locale-intro" title="Intl.Locale (...)"><span class="secnum">1.1.1</span> Intl.Locale (...)</a></li><li><span class="item-toggle-none"></span><a href="#sec-intl.collator-intro" title="Intl.Collator (...)"><span class="secnum">1.1.2</span> Intl.Collator (...)</a></li><li><span class="item-toggle-none"></span><a href="#sec-intl.numberformat-intro" title="Intl.NumberFormat (...)"><span class="secnum">1.1.3</span> Intl.NumberFormat (...)</a></li><li><span class="item-toggle-none"></span><a href="#sec-intl.datetimeformat-intro" title="Intl.DateTimeFormat (...)"><span class="secnum">1.1.4</span> Intl.DateTimeFormat (...)</a></li><li><span class="item-toggle-none"></span><a href="#sec-intl.relativetimeformat-intro" title="Intl.RelativeTimeFormat (...)"><span class="secnum">1.1.5</span> Intl.RelativeTimeFormat (...)</a></li><li><span class="item-toggle-none"></span><a href="#sec-intl.pluralrules-intro" title="Intl.PluralRules (...)"><span class="secnum">1.1.6</span> Intl.PluralRules (...)</a></li></ol></li><li><span class="item-toggle">◢</span><a href="#sec-function-properties-of-the-intl-object" title="Function Properties of the Intl Object"><span class="secnum">1.2</span> Function Properties of the Intl Object</a><ol class="toc"><li><span class="item-toggle-none"></span><a href="#sec-intl.getcanonicallocales" title="Intl.getCanonicalLocales ( locales )"><span class="secnum">1.2.1</span> Intl.getCanonicalLocales ( <var>locales</var> )</a></li><li><span class="item-toggle-none"></span><a href="#sec-intl.getsupportedcalendars" title="Intl.getSupportedCalendars ( )"><span class="secnum">1.2.2</span> <ins>Intl.getSupportedCalendars ( )</ins></a></li><li><span class="item-toggle-none"></span><a href="#sec-intl.getsupportedcurrencies" title="Intl.getSupportedCurrencies ( )"><span class="secnum">1.2.3</span> <ins>Intl.getSupportedCurrencies ( )</ins></a></li><li><span class="item-toggle-none"></span><a href="#sec-intl.getsupportednumberingsystems" title="Intl.getSupportedNumberingSystems ( )"><span class="secnum">1.2.4</span> <ins>Intl.getSupportedNumberingSystems ( )</ins></a></li><li><span class="item-toggle-none"></span><a href="#sec-intl.getsupportedtimezones" title="Intl.getSupportedTimeZones ( )"><span class="secnum">1.2.5</span> <ins>Intl.getSupportedTimeZones ( )</ins></a></li><li><span class="item-toggle-none"></span><a href="#sec-intl.getsupportedunits" title="Intl.getSupportedUnits ( )"><span class="secnum">1.2.6</span> <ins>Intl.getSupportedUnits ( )</ins></a></li></ol></li></ol></li><li><span class="item-toggle-none"></span><a href="#sec-copyright-and-software-license" title="Copyright &amp; Software License"><span class="secnum">A</span> Copyright &amp; Software License</a></li></ol></div></div><div id="spec-container"><h1 class="version first">Stage 1 Draft / July 22, 2020</h1><h1 class="title">Intl Enumeration API Specification</h1>
+</style></head><body><div id="menu-toggle">☰</div><div id="menu-spacer"></div><div id="menu"><div id="menu-search"><input type="text" id="menu-search-box" placeholder="Search..."><div id="menu-search-results" class="inactive"></div></div><div id="menu-pins"><div class="menu-pane-header">Pins</div><ul id="menu-pins-list"></ul></div><div class="menu-pane-header">Table of Contents</div><div id="menu-toc"><ol class="toc"><li><span class="item-toggle-none"></span><a href="#sec-intro" title="Introduction">Introduction</a></li><li><span class="item-toggle">◢</span><a href="#locales-currencies-tz" title="Identification of Locales, Currencies, Time Zones, and Measurement Units"><span class="secnum">1</span> Identification of Locales, Currencies, Time Zones, and Measurement Units</a><ol class="toc"><li><span class="item-toggle-none"></span><a href="#sec-case-sensitivity-and-case-mapping" title="Case Sensitivity and Case Mapping"><span class="secnum">1.1</span> Case Sensitivity and Case Mapping</a></li><li><span class="item-toggle">◢</span><a href="#sec-language-tags" title="Language Tags"><span class="secnum">1.2</span> Language Tags</a><ol class="toc"><li><span class="item-toggle-none"></span><a href="#sec-unicode-locale-extension-sequences" title="Unicode Locale Extension Sequences"><span class="secnum">1.2.1</span> Unicode Locale Extension Sequences</a></li><li><span class="item-toggle-none"></span><a href="#sec-isstructurallyvalidlanguagetag" title="IsStructurallyValidLanguageTag ( locale )"><span class="secnum">1.2.2</span> IsStructurallyValidLanguageTag ( <var>locale</var> )</a></li><li><span class="item-toggle-none"></span><a href="#sec-canonicalizeunicodelocaleid" title="CanonicalizeUnicodeLocaleId ( locale )"><span class="secnum">1.2.3</span> CanonicalizeUnicodeLocaleId ( <var>locale</var> )</a></li><li><span class="item-toggle-none"></span><a href="#sec-defaultlocale" title="DefaultLocale ()"><span class="secnum">1.2.4</span> DefaultLocale ()</a></li></ol></li><li><span class="item-toggle">◢</span><a href="#sec-currency-codes" title="Currency Codes"><span class="secnum">1.3</span> Currency Codes</a><ol class="toc"><li><span class="item-toggle-none"></span><a href="#sec-iswellformedcurrencycode" title="IsWellFormedCurrencyCode ( currency )"><span class="secnum">1.3.1</span> IsWellFormedCurrencyCode ( <var>currency</var> )</a></li></ol></li><li><span class="item-toggle">◢</span><a href="#sec-time-zone-names" title="Time Zone Names"><span class="secnum">1.4</span> Time Zone Names</a><ol class="toc"><li><span class="item-toggle-none"></span><a href="#sec-isvalidtimezonename" title="IsValidTimeZoneName ( timeZone )"><span class="secnum">1.4.1</span> IsValidTimeZoneName ( <var>timeZone</var> )</a></li><li><span class="item-toggle-none"></span><a href="#sec-canonicalizetimezonename" title="CanonicalizeTimeZoneName"><span class="secnum">1.4.2</span> CanonicalizeTimeZoneName</a></li><li><span class="item-toggle-none"></span><a href="#sec-defaulttimezone" title="DefaultTimeZone ()"><span class="secnum">1.4.3</span> DefaultTimeZone ()</a></li></ol></li><li><span class="item-toggle">◢</span><a href="#sec-measurement-unit-identifiers" title="Measurement Unit Identifiers"><span class="secnum">1.5</span> Measurement Unit Identifiers</a><ol class="toc"><li><span class="item-toggle-none"></span><a href="#sec-iswellformedunitidentifier" title="IsWellFormedUnitIdentifier ( unitIdentifier )"><span class="secnum">1.5.1</span> IsWellFormedUnitIdentifier ( <var>unitIdentifier</var> )</a></li><li><span class="item-toggle-none"></span><a href="#sec-issanctionedsimpleunitidentifier" title="IsSanctionedSimpleUnitIdentifier ( unitIdentifier )"><span class="secnum">1.5.2</span> IsSanctionedSimpleUnitIdentifier ( <var>unitIdentifier</var> )</a></li></ol></li></ol></li><li><span class="item-toggle">◢</span><a href="#intl-object" title="The Intl Object"><span class="secnum">2</span> The Intl Object</a><ol class="toc"><li><span class="item-toggle">◢</span><a href="#sec-constructor-properties-of-the-intl-object" title="Constructor Properties of the Intl Object"><span class="secnum">2.1</span> Constructor Properties of the Intl Object</a><ol class="toc"><li><span class="item-toggle-none"></span><a href="#sec-intl.locale-intro" title="Intl.Locale (...)"><span class="secnum">2.1.1</span> Intl.Locale (...)</a></li><li><span class="item-toggle-none"></span><a href="#sec-intl.collator-intro" title="Intl.Collator (...)"><span class="secnum">2.1.2</span> Intl.Collator (...)</a></li><li><span class="item-toggle-none"></span><a href="#sec-intl.numberformat-intro" title="Intl.NumberFormat (...)"><span class="secnum">2.1.3</span> Intl.NumberFormat (...)</a></li><li><span class="item-toggle-none"></span><a href="#sec-intl.datetimeformat-intro" title="Intl.DateTimeFormat (...)"><span class="secnum">2.1.4</span> Intl.DateTimeFormat (...)</a></li><li><span class="item-toggle-none"></span><a href="#sec-intl.relativetimeformat-intro" title="Intl.RelativeTimeFormat (...)"><span class="secnum">2.1.5</span> Intl.RelativeTimeFormat (...)</a></li><li><span class="item-toggle-none"></span><a href="#sec-intl.pluralrules-intro" title="Intl.PluralRules (...)"><span class="secnum">2.1.6</span> Intl.PluralRules (...)</a></li></ol></li><li><span class="item-toggle">◢</span><a href="#sec-function-properties-of-the-intl-object" title="Function Properties of the Intl Object"><span class="secnum">2.2</span> Function Properties of the Intl Object</a><ol class="toc"><li><span class="item-toggle-none"></span><a href="#sec-intl.getcanonicallocales" title="Intl.getCanonicalLocales ( locales )"><span class="secnum">2.2.1</span> Intl.getCanonicalLocales ( <var>locales</var> )</a></li><li><span class="item-toggle-none"></span><a href="#sec-intl.getsupportedcalendars" title="Intl.getSupportedCalendars ( )"><span class="secnum">2.2.2</span> <ins>Intl.getSupportedCalendars ( )</ins></a></li><li><span class="item-toggle-none"></span><a href="#sec-intl.getsupportedcurrencies" title="Intl.getSupportedCurrencies ( )"><span class="secnum">2.2.3</span> <ins>Intl.getSupportedCurrencies ( )</ins></a></li><li><span class="item-toggle-none"></span><a href="#sec-intl.getsupportednumberingsystems" title="Intl.getSupportedNumberingSystems ( )"><span class="secnum">2.2.4</span> <ins>Intl.getSupportedNumberingSystems ( )</ins></a></li><li><span class="item-toggle-none"></span><a href="#sec-intl.getsupportedtimezones" title="Intl.getSupportedTimeZones ( )"><span class="secnum">2.2.5</span> <ins>Intl.getSupportedTimeZones ( )</ins></a></li><li><span class="item-toggle-none"></span><a href="#sec-intl.getsupportedunits" title="Intl.getSupportedUnits ( )"><span class="secnum">2.2.6</span> <ins>Intl.getSupportedUnits ( )</ins></a></li></ol></li></ol></li><li><span class="item-toggle-none"></span><a href="#sec-copyright-and-software-license" title="Copyright &amp; Software License"><span class="secnum">A</span> Copyright &amp; Software License</a></li></ol></div></div><div id="spec-container"><h1 class="version first">Stage 1 Draft / July 23, 2020</h1><h1 class="title">Intl Enumeration API Specification</h1>
 <emu-biblio href="./biblio.json"></emu-biblio>
 
 <emu-intro id="sec-intro">
   <h1>Introduction</h1>
 
-  <p>This proposal adds several function properties to the <code>Intl Object</code> to list supported values of options. See <a href="https://github.com/tc39/proposal-intl-enumeration/blob/master/README.md">the README</a> for more context.</p>
+  <p>This proposal adds several function properties to the <code>Intl Object</code> to list supported values of options. See  <a href="https://github.com/tc39/proposal-intl-enumeration/blob/master/README.md">the README</a> for more context.</p>
 </emu-intro>
+<emu-import href="./locales-currencies-tz.html"><emu-clause id="locales-currencies-tz">
+  <h1><span class="secnum">1</span>Identification of Locales, Currencies, Time Zones, and Measurement Units</h1>
+
+  <p>
+    This clause describes the String values used in the ECMAScript 2021 Internationalization API Specification to identify locales, currencies, time zones, and measurement units.
+  
+  </p>
+
+  <emu-clause id="sec-case-sensitivity-and-case-mapping">
+    <h1><span class="secnum">1.1</span>Case Sensitivity and Case Mapping</h1>
+
+    <p>
+      The String values used to identify locales, currencies, and time zones are interpreted in a case-insensitive manner, treating the Unicode Basic Latin characters <emu-val>"A"</emu-val> to <emu-val>"Z"</emu-val> (U+0041 to U+005A) as equivalent to the corresponding Basic Latin characters <emu-val>"a"</emu-val> to <emu-val>"z"</emu-val> (U+0061 to U+007A). No other case folding equivalences are applied. When mapping to upper case, a mapping shall be used that maps characters in the range <emu-val>"a"</emu-val> to <emu-val>"z"</emu-val> (U+0061 to U+007A) to the corresponding characters in the range <emu-val>"A"</emu-val> to <emu-val>"Z"</emu-val> (U+0041 to U+005A) and maps no other characters to the latter range.
+    
+    </p>
+
+    <p>
+      EXAMPLES <emu-val>"ß"</emu-val> (U+00DF) must not match or be mapped to <emu-val>"SS"</emu-val> (U+0053, U+0053). <emu-val>"ı"</emu-val> (U+0131) must not match or be mapped to <emu-val>"I"</emu-val> (U+0049).
+    
+    </p>
+  </emu-clause>
+
+  <emu-clause id="sec-language-tags">
+    <h1><span class="secnum">1.2</span>Language Tags</h1>
+
+    <p>
+      The ECMAScript 2021 Internationalization API Specification identifies locales using Unicode BCP 47 locale identifiers as defined by  <a href="https://unicode.org/reports/tr35/#Identifiers">Unicode Technical Standard #35 LDML § 3 Unicode Language and Locale Identifiers</a>, which may include extensions such as the  <a href="https://unicode.org/reports/tr35/#Locale_Extension_Key_and_Type_Data">Unicode BCP 47 U Extension</a>. Their canonical form is specified in  <a href="https://unicode.org/reports/tr35/#Canonical_Unicode_Locale_Identifiers">Unicode Technical Standard #35 LDML § 3.2.1 Canonical Unicode Locale Identifiers</a>.
+    
+    </p>
+
+    <p>
+      Unicode BCP 47 locale identifiers are structurally valid when they match those syntactical formatting criteria of Unicode Technical Standard 35, section 3.2, but it is not required to validate them according to the Unicode validation data. All structurally valid language tags are valid for use with the APIs defined by this standard. However, the set of locales and thus language tags that an implementation supports with adequate localizations is implementation dependent. The constructors Collator, NumberFormat, DateTimeFormat, and PluralRules map the language tags used in requests to locales supported by their respective implementations.
+    
+    </p>
+
+    <emu-clause id="sec-unicode-locale-extension-sequences">
+      <h1><span class="secnum">1.2.1</span>Unicode Locale Extension Sequences</h1>
+
+      <p>
+        This standard uses the term "<dfn>Unicode locale extension sequence</dfn>" - as described in  <a href="https://unicode.org/reports/tr35/#unicode_locale_extensions"><code>unicode_locale_extensions</code></a> in UTS 35 Unicode Locale Identifier, section 3.2 - for any substring of a language tag that is not part of a private use subtag sequence, starts with a separator <emu-val>"-"</emu-val> and the singleton <emu-val>"u"</emu-val>, and includes the maximum sequence of following non-singleton subtags and their preceding <emu-val>"-"</emu-val> separators.
+      
+      </p>
+    </emu-clause>
+
+    <emu-clause id="sec-isstructurallyvalidlanguagetag" aoid="IsStructurallyValidLanguageTag">
+      <h1><span class="secnum">1.2.2</span>IsStructurallyValidLanguageTag ( <var>locale</var> )</h1>
+
+      <p>
+        The IsStructurallyValidLanguageTag abstract operation verifies that the <var>locale</var> argument (which must be a String value)
+      
+      </p>
+
+      <ul>
+        <li>represents a well-formed "Unicode BCP 47 locale identifier" as specified in  <a href="https://unicode.org/reports/tr35/#Unicode_locale_identifier">Unicode Technical Standard 35 section 3.2</a>,</li>
+        <li>does not include duplicate variant subtags, and</li>
+        <li>does not include duplicate singleton subtags.</li>
+      </ul>
+
+      <p>
+        The abstract operation returns true if <var>locale</var> can be generated from the EBNF grammar in section 3.2 of the Unicode Technical Standard 35, starting with <code>unicode_locale_id</code>, and does not contain duplicate variant or singleton subtags (other than as a private use subtag). It returns false otherwise. Terminal value characters in the grammar are interpreted as the Unicode equivalents of the ASCII octet values given.
+      
+      </p>
+    </emu-clause>
+
+    <emu-clause id="sec-canonicalizeunicodelocaleid" aoid="CanonicalizeUnicodeLocaleId">
+      <h1><span class="secnum">1.2.3</span>CanonicalizeUnicodeLocaleId ( <var>locale</var> )</h1>
+
+      <p>
+        The CanonicalizeUnicodeLocaleId abstract operation returns the canonical and case-regularized form of the <var>locale</var> argument (which must be a String value that is a structurally valid Unicode BCP 47 locale identifier as verified by the <emu-xref aoid="IsStructurallyValidLanguageTag" id="_ref_11"><a href="#sec-isstructurallyvalidlanguagetag">IsStructurallyValidLanguageTag</a></emu-xref> abstract operation).
+        The following steps are taken:
+      
+      </p>
+
+      <emu-alg><ol><li>Let <var>localeId</var> be the string <var>locale</var> after performing the algorithm to transform it to canonical syntax per <a href="https://unicode.org/reports/tr35/#Canonical_Unicode_Locale_Identifiers">Unicode Technical Standard #35 LDML § 3.2.1 Canonical Unicode Locale Identifiers</a>.  (The result is a Unicode BCP 47 locale identifier, in canonical syntax but not necessarily in canonical form.)</li><li>Let <var>localeId</var> be the string <var>localeId</var> after performing the algorithm to <a href="https://unicode.org/reports/tr35/#Canonical_Unicode_Locale_Identifiers">transform it to canonical form</a>.  (The result is a Unicode BCP 47 locale identifier, in both canonical syntax and canonical form.)</li><li>If <var>localeId</var> contains a substring <var>extension</var> that is a <emu-xref href="#sec-unicode-locale-extension-sequences" id="_ref_12"><a href="#sec-unicode-locale-extension-sequences">Unicode locale extension sequence</a></emu-xref>, then<ol><li>Let <var>components</var> be !&nbsp;UnicodeExtensionComponents(<var>extension</var>).</li><li>Let <var>attributes</var> be <var>components</var>.[[Attributes]].</li><li>Let <var>keywords</var> be <var>components</var>.[[Keywords]].</li><li>Let <var>newExtension</var> be <emu-val>"u"</emu-val>.</li><li>For each element <var>attr</var> of <var>attributes</var> in <emu-xref href="#sec-list-and-record-specification-type"><a href="https://tc39.github.io/ecma262/#sec-list-and-record-specification-type">List</a></emu-xref> order, do<ol><li>Append <emu-val>"-"</emu-val> to <var>newExtension</var>.</li><li>Append <var>attr</var> to <var>newExtension</var>.</li></ol></li><li>For each element <var>keyword</var> of <var>keywords</var> in <emu-xref href="#sec-list-and-record-specification-type"><a href="https://tc39.github.io/ecma262/#sec-list-and-record-specification-type">List</a></emu-xref> order, do<ol><li>Append <emu-val>"-"</emu-val> to <var>newExtension</var>.</li><li>Append <var>keyword</var>.[[Key]] to <var>newExtension</var>.</li><li>If <var>keyword</var>.[[Value]] is not the empty String, then<ol><li>Append <emu-val>"-"</emu-val> to <var>newExtension</var>.</li><li>Append <var>keyword</var>.[[Value]] to <var>newExtension</var>.</li></ol></li></ol></li><li>Assert: <var>newExtension</var> is not equal to <emu-val>"u"</emu-val>.</li><li>Let <var>localeId</var> be <var>localeId</var> with the substring corresponding to <var>extension</var> replaced by the string <var>newExtension</var>.</li></ol></li><li>Return <var>localeId</var>.
+      </li></ol></emu-alg>
+
+      <emu-note><span class="note">Note</span><div class="note-contents">
+        The third step of this algorithm ensures that a <emu-xref href="#sec-unicode-locale-extension-sequences" id="_ref_13"><a href="#sec-unicode-locale-extension-sequences">Unicode locale extension sequence</a></emu-xref> in the returned language tag contains: 
+
+        <ul>
+          <li>only the first instance of any attribute duplicated in the input, and</li>
+          <li>only the first keyword for a given key in the input.</li>
+        </ul>
+      </div></emu-note>
+    </emu-clause>
+
+    <emu-clause id="sec-defaultlocale" aoid="DefaultLocale">
+      <h1><span class="secnum">1.2.4</span>DefaultLocale ()</h1>
+
+      <p>
+        The DefaultLocale abstract operation returns a String value representing the structurally valid (<emu-xref href="#sec-isstructurallyvalidlanguagetag" id="_ref_0"><a href="#sec-isstructurallyvalidlanguagetag">1.2.2</a></emu-xref>) and canonicalized (<emu-xref href="#sec-canonicalizeunicodelocaleid" id="_ref_1"><a href="#sec-canonicalizeunicodelocaleid">1.2.3</a></emu-xref>) Unicode BCP 47 locale identifier for the host environment's current locale.
+      
+      </p>
+    </emu-clause>
+
+  </emu-clause>
+
+  <emu-clause id="sec-currency-codes">
+    <h1><span class="secnum">1.3</span>Currency Codes</h1>
+
+    <p>
+      The ECMAScript 2021 Internationalization API Specification identifies currencies using 3-letter currency codes as defined by ISO 4217. Their canonical form is upper case.
+    
+    </p>
+
+    <p>
+      All well-formed 3-letter ISO 4217 currency codes are allowed. However, the set of combinations of currency code and language tag for which localized currency symbols are available is implementation dependent. Where a localized currency symbol is not available, the ISO 4217 currency code is used for formatting.
+    
+    </p>
+
+    <emu-clause id="sec-iswellformedcurrencycode" aoid="IsWellFormedCurrencyCode">
+      <h1><span class="secnum">1.3.1</span>IsWellFormedCurrencyCode ( <var>currency</var> )</h1>
+
+      <p>
+        The IsWellFormedCurrencyCode abstract operation verifies that the <var>currency</var> argument (which must be a String value) represents a well-formed 3-letter ISO currency code. The following steps are taken:
+      
+      </p>
+
+      <emu-alg><ol><li>Let <var>normalized</var> be the result of mapping <var>currency</var> to upper case as described in <emu-xref href="#sec-case-sensitivity-and-case-mapping" id="_ref_2"><a href="#sec-case-sensitivity-and-case-mapping">1.1</a></emu-xref>.</li><li>If the number of elements in <var>normalized</var> is not 3, return <emu-val>false</emu-val>.</li><li>If <var>normalized</var> contains any character that is not in the range <emu-val>"A"</emu-val> to <emu-val>"Z"</emu-val> (U+0041 to U+005A), return <emu-val>false</emu-val>.</li><li>Return <emu-val>true</emu-val>.
+      </li></ol></emu-alg>
+    </emu-clause>
+
+  </emu-clause>
+
+  <emu-clause id="sec-time-zone-names">
+    <h1><span class="secnum">1.4</span>Time Zone Names</h1>
+
+    <p>
+      The ECMAScript 2021 Internationalization API Specification identifies time zones using the Zone and Link names of the IANA Time Zone Database. Their canonical form is the corresponding Zone name in the casing used in the IANA Time Zone Database.
+    
+    </p>
+
+    <p>
+      All registered Zone and Link names are allowed. Implementations must recognize all such names, and use best available current and historical information about their offsets from UTC and their daylight saving time rules in calculations. However, the set of combinations of time zone name and language tag for which localized time zone names are available is implementation dependent.
+    
+    </p>
+
+    <emu-clause id="sec-isvalidtimezonename" aoid="IsValidTimeZoneName">
+      <h1><span class="secnum">1.4.1</span>IsValidTimeZoneName ( <var>timeZone</var> )</h1>
+
+      <p>
+        The IsValidTimeZoneName abstract operation verifies that the <var>timeZone</var> argument (which must be a String value) represents a valid Zone or Link name of the IANA Time Zone Database.
+      
+      </p>
+      <p>
+        The abstract operation returns true if <var>timeZone</var>, converted to upper case as described in  <emu-xref href="#sec-case-sensitivity-and-case-mapping" id="_ref_3"><a href="#sec-case-sensitivity-and-case-mapping">1.1</a></emu-xref>, is equal to one of the Zone or Link names of the IANA Time Zone Database, converted to upper case as described in  <emu-xref href="#sec-case-sensitivity-and-case-mapping" id="_ref_4"><a href="#sec-case-sensitivity-and-case-mapping">1.1</a></emu-xref>. It returns false otherwise.
+      
+      </p>
+    </emu-clause>
+
+    <emu-clause id="sec-canonicalizetimezonename" aoid="CanonicalizeTimeZoneName">
+      <h1><span class="secnum">1.4.2</span>CanonicalizeTimeZoneName</h1>
+
+      <p>
+        The CanonicalizeTimeZoneName abstract operation returns the canonical and case-regularized form of the <var>timeZone</var> argument (which must be a String value that is a valid time zone name as verified by the <emu-xref aoid="IsValidTimeZoneName" id="_ref_14"><a href="#sec-isvalidtimezonename">IsValidTimeZoneName</a></emu-xref> abstract operation). The following steps are taken:
+      
+      </p>
+
+      <emu-alg><ol><li>Let <var>ianaTimeZone</var> be the Zone or Link name of the IANA Time Zone Database such that <var>timeZone</var>, converted to  upper case as described in <emu-xref href="#sec-case-sensitivity-and-case-mapping" id="_ref_5"><a href="#sec-case-sensitivity-and-case-mapping">1.1</a></emu-xref>, is equal to <var>ianaTimeZone</var>, converted to upper case as described in <emu-xref href="#sec-case-sensitivity-and-case-mapping" id="_ref_6"><a href="#sec-case-sensitivity-and-case-mapping">1.1</a></emu-xref>.</li><li>If <var>ianaTimeZone</var> is a Link name, let <var>ianaTimeZone</var> be the corresponding Zone name as specified in the <emu-val>"backward"</emu-val> file of the IANA Time Zone Database.</li><li>If <var>ianaTimeZone</var> is <emu-val>"Etc/UTC"</emu-val> or <emu-val>"Etc/GMT"</emu-val>, return <emu-val>"UTC"</emu-val>.</li><li>Return <var>ianaTimeZone</var>.
+      </li></ol></emu-alg>
+
+      <p>
+        The Intl.DateTimeFormat constructor allows this time zone name; if the time zone is not specified, the host environment's current time zone is used. Implementations shall support UTC and the host environment's current time zone (if different from UTC) in formatting.
+      
+      </p>
+    </emu-clause>
+
+    <emu-clause id="sec-defaulttimezone" aoid="DefaultTimeZone">
+      <h1><span class="secnum">1.4.3</span>DefaultTimeZone ()</h1>
+
+      <p>
+        The DefaultTimeZone abstract operation returns a String value representing the valid (<emu-xref href="#sec-isvalidtimezonename" id="_ref_7"><a href="#sec-isvalidtimezonename">1.4.1</a></emu-xref>) and canonicalized (<emu-xref href="#sec-canonicalizetimezonename" id="_ref_8"><a href="#sec-canonicalizetimezonename">1.4.2</a></emu-xref>) time zone name for the host environment's current time zone.
+      
+      </p>
+    </emu-clause>
+
+  </emu-clause>
+
+  <emu-clause id="sec-measurement-unit-identifiers">
+    <h1><span class="secnum">1.5</span>Measurement Unit Identifiers</h1>
+
+    <p>
+      The ECMAScript 2021 Internationalization API Specification identifies measurement units using a  <em>core unit identifier</em> as defined by Unicode Technical Standard #35, Part 2, Section 6. Their canonical form is a string containing all lowercase letters with zero or more hyphens.
+    
+    </p>
+
+    <p>
+      Only a limited set of core unit identifiers are allowed.  An illegal core unit identifier results in a RangeError.
+    
+    </p>
+
+    <emu-clause id="sec-iswellformedunitidentifier" aoid="IsWellFormedUnitIdentifier">
+      <h1><span class="secnum">1.5.1</span>IsWellFormedUnitIdentifier ( <var>unitIdentifier</var> )</h1>
+
+      <p>
+        The IsWellFormedUnitIdentifier abstract operation verifies that the <var>unitIdentifier</var> argument (which must be a String value) represents a well-formed core unit identifier as defined in UTS #35, Part 2, Section 6. In addition to obeying the UTS #35 core unit identifier syntax, <var>unitIdentifier</var> must be one of the identifiers sanctioned by UTS #35 or be a compound unit composed of two sanctioned simple units. The following steps are taken:
+      
+      </p>
+
+      <emu-alg><ol><li>If the result of <emu-xref aoid="IsSanctionedSimpleUnitIdentifier" id="_ref_15"><a href="#sec-issanctionedsimpleunitidentifier">IsSanctionedSimpleUnitIdentifier</a></emu-xref>(<var>unitIdentifier</var>) is <emu-val>true</emu-val>, then<ol><li>Return <emu-val>true</emu-val>.</li></ol></li><li>If the substring <emu-val>"-per-"</emu-val> does not occur exactly once in <var>unitIdentifier</var>, then<ol><li>Return <emu-val>false</emu-val>.</li></ol></li><li>Let <var>numerator</var> be the substring of <var>unitIdentifier</var> from the beginning to just before <emu-val>"-per-"</emu-val>.</li><li>If the result of <emu-xref aoid="IsSanctionedSimpleUnitIdentifier" id="_ref_16"><a href="#sec-issanctionedsimpleunitidentifier">IsSanctionedSimpleUnitIdentifier</a></emu-xref>(<var>numerator</var>) is <emu-val>false</emu-val>, then<ol><li>Return <emu-val>false</emu-val>.</li></ol></li><li>Let <var>denominator</var> be the substring of <var>unitIdentifier</var> from just after <emu-val>"-per-"</emu-val> to the end.</li><li>If the result of <emu-xref aoid="IsSanctionedSimpleUnitIdentifier" id="_ref_17"><a href="#sec-issanctionedsimpleunitidentifier">IsSanctionedSimpleUnitIdentifier</a></emu-xref>(<var>denominator</var>) is <emu-val>false</emu-val>, then<ol><li>Return <emu-val>false</emu-val>.</li></ol></li><li>Return <emu-val>true</emu-val>.
+      </li></ol></emu-alg>
+    </emu-clause>
+
+    <emu-clause id="sec-issanctionedsimpleunitidentifier" aoid="IsSanctionedSimpleUnitIdentifier">
+      <h1><span class="secnum">1.5.2</span>IsSanctionedSimpleUnitIdentifier ( <var>unitIdentifier</var> )</h1>
+
+      <p>
+        The IsSanctionedSimpleUnitIdentifier abstract operation verifies that the given core unit identifier is among the simple units sanctioned in the current version of the ECMAScript Internationalization API Specification, a subset of the Validity Data as described in UTS #35, Part 1, Section 3.11; the list may grow over time. As discussed in UTS #35, a simple unit is one that does not have a numerator and denominator. The following steps are taken:
+      
+      </p>
+
+      <emu-alg><ol><li>If <var>unitIdentifier</var> is listed in <emu-xref href="#table-sanctioned-simple-unit-identifiers" id="_ref_9"><a href="#table-sanctioned-simple-unit-identifiers">Table 1</a></emu-xref> below, return <emu-val>true</emu-val>.</li><li>Else, Return <emu-val>false</emu-val>.
+      </li></ol></emu-alg>
+
+      <emu-table id="table-sanctioned-simple-unit-identifiers"><figure><figcaption>Table 1: Simple units sanctioned for use in ECMAScript</figcaption>
+        
+        <table class="real-table">
+          <thead>
+            <tr>
+              <th>Simple Unit</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>acre</td></tr>
+          <tr><td>bit</td></tr>
+          <tr><td>byte</td></tr>
+          <tr><td>celsius</td></tr>
+          <tr><td>centimeter</td></tr>
+          <tr><td>day</td></tr>
+          <tr><td>degree</td></tr>
+          <tr><td>fahrenheit</td></tr>
+          <tr><td>fluid-ounce</td></tr>
+          <tr><td>foot</td></tr>
+          <tr><td>gallon</td></tr>
+          <tr><td>gigabit</td></tr>
+          <tr><td>gigabyte</td></tr>
+          <tr><td>gram</td></tr>
+          <tr><td>hectare</td></tr>
+          <tr><td>hour</td></tr>
+          <tr><td>inch</td></tr>
+          <tr><td>kilobit</td></tr>
+          <tr><td>kilobyte</td></tr>
+          <tr><td>kilogram</td></tr>
+          <tr><td>kilometer</td></tr>
+          <tr><td>liter</td></tr>
+          <tr><td>megabit</td></tr>
+          <tr><td>megabyte</td></tr>
+          <tr><td>meter</td></tr>
+          <tr><td>mile</td></tr>
+          <tr><td>mile-scandinavian</td></tr>
+          <tr><td>milliliter</td></tr>
+          <tr><td>millimeter</td></tr>
+          <tr><td>millisecond</td></tr>
+          <tr><td>minute</td></tr>
+          <tr><td>month</td></tr>
+          <tr><td>ounce</td></tr>
+          <tr><td>percent</td></tr>
+          <tr><td>petabyte</td></tr>
+          <tr><td>pound</td></tr>
+          <tr><td>second</td></tr>
+          <tr><td>stone</td></tr>
+          <tr><td>terabit</td></tr>
+          <tr><td>terabyte</td></tr>
+          <tr><td>week</td></tr>
+          <tr><td>yard</td></tr>
+          <tr><td>year</td></tr>
+        </tbody></table>
+      </figure></emu-table>
+    </emu-clause>
+  </emu-clause>
+
+</emu-clause>
+</emu-import>
 <emu-import href="./intl.html"><emu-clause id="intl-object">
-  <h1><span class="secnum">1</span> The Intl Object</h1>
+  <h1><span class="secnum">2</span>The Intl Object</h1>
   <p>
-    The Intl object is the <dfn>%Intl%</dfn> intrinsic object and the initial value of the <emu-val>"Intl"</emu-val> property of the <emu-xref href="#sec-global-object"><a href="https://tc39.es/ecma262/#sec-global-object">global object</a></emu-xref>. The Intl object is a single ordinary object.
+    The Intl object is the  <dfn>%Intl%</dfn> intrinsic object and the initial value of the <emu-val>"Intl"</emu-val> property of the <emu-xref href="#global-object"><a href="https://tc39.github.io/ecma262/#global-object">global object</a></emu-xref>. The Intl object is a single ordinary object.
+  
   </p>
 
   <p>
-    The value of the [[Prototype]] internal slot of the Intl object is the intrinsic object <emu-xref href="#sec-properties-of-the-object-prototype-object"><a href="https://tc39.es/ecma262/#sec-properties-of-the-object-prototype-object">%ObjectPrototype%</a></emu-xref>.
+    The value of the [[Prototype]] internal slot of the Intl object is the intrinsic object <emu-xref href="#sec-properties-of-the-object-prototype-object"><a href="https://tc39.github.io/ecma262/#sec-properties-of-the-object-prototype-object">%ObjectPrototype%</a></emu-xref>.
+  
   </p>
 
   <p>
-    The Intl object is not a <emu-xref href="#function-object"><a href="https://tc39.es/ecma262/#function-object">function object</a></emu-xref>. It does not have a [[Construct]] internal method; it is not possible to use the Intl object as a <emu-xref href="#constructor"><a href="https://tc39.es/ecma262/#constructor">constructor</a></emu-xref> with the <emu-val>new</emu-val> operator. The Intl object does not have a [[Call]] internal method; it is not possible to invoke the Intl object as a function.
+    The Intl object is not a function object. It does not have a [[Construct]] internal method; it is not possible to use the Intl object as a constructor with the <emu-val>new</emu-val> operator. The Intl object does not have a [[Call]] internal method; it is not possible to invoke the Intl object as a function.
+  
   </p>
 
   <p>
-    The Intl object has an internal slot, [[FallbackSymbol]], which is a new <emu-xref href="#sec-symbol-constructor"><a href="https://tc39.es/ecma262/#sec-symbol-constructor">%Symbol%</a></emu-xref> in the current <emu-xref href="#realm"><a href="https://tc39.es/ecma262/#realm">realm</a></emu-xref> with the [[Description]] <emu-val>"IntlLegacyConstructedSymbol"</emu-val>.
+    The Intl object has an internal slot, [[FallbackSymbol]], which is a new <emu-xref href="#sec-symbol-constructor"><a href="https://tc39.github.io/ecma262/#sec-symbol-constructor">%Symbol%</a></emu-xref> in the current <emu-xref href="#realm"><a href="https://tc39.github.io/ecma262/#realm">realm</a></emu-xref> with the [[Description]] <emu-val>"IntlLegacyConstructedSymbol"</emu-val>.
+  
   </p>
 
   <emu-clause id="sec-constructor-properties-of-the-intl-object">
-    <h1><span class="secnum">1.1</span> Constructor Properties of the Intl Object</h1>
+    <h1><span class="secnum">2.1</span>Constructor Properties of the Intl Object</h1>
 
     <emu-clause id="sec-intl.locale-intro">
-      <h1><span class="secnum">1.1.1</span> Intl.Locale (...)</h1>
+      <h1><span class="secnum">2.1.1</span>Intl.Locale (...)</h1>
       <p>
-        See <emu-xref href="#locale-objects"><a href="https://tc39.es/ecma402/#locale-objects">10</a></emu-xref>.
+        See  <emu-xref href="#locale-objects"><a href="https://tc39.es/ecma402/#locale-objects">10</a></emu-xref>.
+      
       </p>
     </emu-clause>
 
     <emu-clause id="sec-intl.collator-intro">
-      <h1><span class="secnum">1.1.2</span> Intl.Collator (...)</h1>
+      <h1><span class="secnum">2.1.2</span>Intl.Collator (...)</h1>
       <p>
-        See <emu-xref href="#collator-objects"><a href="https://tc39.es/ecma402/#collator-objects">11</a></emu-xref>.
+        See  <emu-xref href="#collator-objects"><a href="https://tc39.es/ecma402/#collator-objects">11</a></emu-xref>.
+      
       </p>
     </emu-clause>
 
     <emu-clause id="sec-intl.numberformat-intro">
-      <h1><span class="secnum">1.1.3</span> Intl.NumberFormat (...)</h1>
+      <h1><span class="secnum">2.1.3</span>Intl.NumberFormat (...)</h1>
       <p>
-        See <emu-xref href="#numberformat-objects"><a href="https://tc39.es/ecma402/#numberformat-objects">12</a></emu-xref>.
+        See  <emu-xref href="#numberformat-objects"><a href="https://tc39.es/ecma402/#numberformat-objects">12</a></emu-xref>.
+      
       </p>
     </emu-clause>
 
     <emu-clause id="sec-intl.datetimeformat-intro">
-      <h1><span class="secnum">1.1.4</span> Intl.DateTimeFormat (...)</h1>
+      <h1><span class="secnum">2.1.4</span>Intl.DateTimeFormat (...)</h1>
       <p>
-        See <emu-xref href="#datetimeformat-objects"><a href="https://tc39.es/ecma402/#datetimeformat-objects">13</a></emu-xref>.
+        See  <emu-xref href="#datetimeformat-objects"><a href="https://tc39.es/ecma402/#datetimeformat-objects">13</a></emu-xref>.
+      
       </p>
     </emu-clause>
 
     <emu-clause id="sec-intl.relativetimeformat-intro">
-      <h1><span class="secnum">1.1.5</span> Intl.RelativeTimeFormat (...)</h1>
+      <h1><span class="secnum">2.1.5</span>Intl.RelativeTimeFormat (...)</h1>
       <p>
-        See <emu-xref href="#relativetimeformat-objects"><a href="https://tc39.es/ecma402/#relativetimeformat-objects">14</a></emu-xref>.
+        See  <emu-xref href="#relativetimeformat-objects"><a href="https://tc39.es/ecma402/#relativetimeformat-objects">14</a></emu-xref>.
+      
       </p>
     </emu-clause>
 
     <emu-clause id="sec-intl.pluralrules-intro">
-      <h1><span class="secnum">1.1.6</span> Intl.PluralRules (...)</h1>
+      <h1><span class="secnum">2.1.6</span>Intl.PluralRules (...)</h1>
       <p>
-        See <emu-xref href="#pluralrules-objects"><a href="https://tc39.es/ecma402/#pluralrules-objects">15</a></emu-xref>.
+        See  <emu-xref href="#pluralrules-objects"><a href="https://tc39.es/ecma402/#pluralrules-objects">15</a></emu-xref>.
+      
       </p>
     </emu-clause>
 
     <emu-note id="legacy-constructor"><span class="note"><a href="#legacy-constructor">Note</a></span><div class="note-contents">
-      In ECMA 402 v1, Intl constructors supported a mode of operation where calling them with an existing object as a receiver would transform the receiver into the relevant Intl instance with all internal slots. In ECMA 402 v2, this capability was removed, to avoid adding internal slots on existing objects. In ECMA 402 v3, the capability was re-added as "normative optional" in a mode which chains the underlying Intl instance on any object, when the <emu-xref href="#constructor"><a href="https://tc39.es/ecma262/#constructor">constructor</a></emu-xref> is called. See <a href="https://github.com/tc39/ecma402/issues/57">Issue 57</a> for details.
+      In ECMA 402 v1, Intl constructors supported a mode of operation where calling them with an existing object as a receiver would transform the receiver into the relevant Intl instance with all internal slots. In ECMA 402 v2, this capability was removed, to avoid adding internal slots on existing objects. In ECMA 402 v3, the capability was re-added as "normative optional" in a mode which chains the underlying Intl instance on any object, when the constructor is called. See  <a href="https://github.com/tc39/ecma402/issues/57">Issue 57</a> for details.
+    
     </div></emu-note>
 
   </emu-clause>
 
   <emu-clause id="sec-function-properties-of-the-intl-object">
-    <h1><span class="secnum">1.2</span> Function Properties of the Intl Object</h1>
+    <h1><span class="secnum">2.2</span>Function Properties of the Intl Object</h1>
 
     <emu-clause id="sec-intl.getcanonicallocales">
-      <h1><span class="secnum">1.2.1</span> Intl.getCanonicalLocales ( <var>locales</var> )</h1>
+      <h1><span class="secnum">2.2.1</span>Intl.getCanonicalLocales ( <var>locales</var> )</h1>
 
       <p>
         When the <code>getCanonicalLocales</code> method is called with argument <var>locales</var>, the following steps are taken:
+      
       </p>
 
-      <emu-alg><ol><li>Let <var>ll</var> be ?&nbsp;CanonicalizeLocaleList(<var>locales</var>).</li><li>Return <emu-xref aoid="CreateArrayFromList" id="_ref_0"><a href="https://tc39.es/ecma262/#sec-createarrayfromlist">CreateArrayFromList</a></emu-xref>(<var>ll</var>).</li></ol></emu-alg>
+      <emu-alg><ol><li>Let <var>ll</var> be ?&nbsp;CanonicalizeLocaleList(<var>locales</var>).</li><li>Return <emu-xref aoid="CreateArrayFromList" id="_ref_18"><a href="https://tc39.github.io/ecma262/#sec-createarrayfromlist">CreateArrayFromList</a></emu-xref>(<var>ll</var>).
+      </li></ol></emu-alg>
     </emu-clause>
 
     <emu-clause id="sec-intl.getsupportedcalendars">
-      <h1><span class="secnum">1.2.2</span> <ins>Intl.getSupportedCalendars ( )</ins></h1>
+      <h1><span class="secnum">2.2.2</span><ins>Intl.getSupportedCalendars ( )</ins></h1>
 
       <p>
         <ins>
         When the <code>getSupportedCalendars</code> method is called, the following steps are taken:
+        
         </ins>
       </p>
 
-      <emu-alg><ol><li>To be written.</li></ol></emu-alg>
+      <emu-alg><ol><li>To be written.
+      </li></ol></emu-alg>
     </emu-clause>
 
     <emu-clause id="sec-intl.getsupportedcurrencies">
-      <h1><span class="secnum">1.2.3</span> <ins>Intl.getSupportedCurrencies ( )</ins></h1>
+      <h1><span class="secnum">2.2.3</span><ins>Intl.getSupportedCurrencies ( )</ins></h1>
 
       <p>
         <ins>
         When the <code>getSupportedCurrencies</code> method is called, the following steps are taken:
+        
         </ins>
       </p>
 
-      <emu-alg><ol><li>To be written.</li></ol></emu-alg>
+      <emu-alg><ol><li>To be written.
+      </li></ol></emu-alg>
     </emu-clause>
 
     <emu-clause id="sec-intl.getsupportednumberingsystems">
-      <h1><span class="secnum">1.2.4</span> <ins>Intl.getSupportedNumberingSystems ( )</ins></h1>
+      <h1><span class="secnum">2.2.4</span><ins>Intl.getSupportedNumberingSystems ( )</ins></h1>
 
       <p>
         <ins>
         When the <code>getSupportedNumberingSystems</code> method is called, the following steps are taken:
+        
         </ins>
       </p>
 
-      <emu-alg><ol><li><ins>Let <var>array</var> be !&nbsp;<emu-xref aoid="ArrayCreate" id="_ref_1"><a href="https://tc39.es/ecma262/#sec-arraycreate">ArrayCreate</a></emu-xref>(0).</ins></li><li><ins>Let <var>n</var> be 0.</ins></li><li><ins>For each row of <emu-xref href="#table-numbering-system-digits"><a href="https://tc39.es/ecma402/#table-numbering-system-digits">Table 4</a></emu-xref>, except the header row, do</ins><ol><li><ins>Let <var>e</var> be the Numbering System value of the current row.</ins></li><li><ins>Perform !&nbsp;<emu-xref aoid="CreateDataPropertyOrThrow" id="_ref_2"><a href="https://tc39.es/ecma262/#sec-createdatapropertyorthrow">CreateDataPropertyOrThrow</a></emu-xref>( <var>array</var>, !&nbsp;<emu-xref aoid="ToString" id="_ref_3"><a href="https://tc39.es/ecma262/#sec-tostring">ToString</a></emu-xref>( <var>n</var> ), <var>e</var>).</ins></li><li><ins>Set <var>n</var> to <var>n</var> + 1.</ins></li></ol></li><li><ins>Return <var>array</var>.</ins></li></ol></emu-alg>
+      <emu-alg><ol><li><ins>Let <var>array</var> be !&nbsp;<emu-xref aoid="ArrayCreate" id="_ref_19"><a href="https://tc39.github.io/ecma262/#sec-arraycreate">ArrayCreate</a></emu-xref>(0).</ins></li><li><ins>Let <var>n</var> be 0.</ins></li><li><ins>For each row of <emu-xref href="#table-numbering-system-digits"><a href="https://tc39.es/ecma402/#table-numbering-system-digits">Table 4</a></emu-xref>, except the header row, do</ins><ol><li><ins>Let <var>e</var> be the Numbering System value of the current row.</ins></li><li><ins>Perform !&nbsp;<emu-xref aoid="CreateDataPropertyOrThrow" id="_ref_20"><a href="https://tc39.github.io/ecma262/#sec-createdatapropertyorthrow">CreateDataPropertyOrThrow</a></emu-xref>( <var>array</var>, !&nbsp;<emu-xref aoid="ToString" id="_ref_21"><a href="https://tc39.github.io/ecma262/#sec-tostring">ToString</a></emu-xref>( <var>n</var> ), <var>e</var>).</ins></li><li><ins>Set <var>n</var> to <var>n</var> + 1.</ins></li></ol></li><li><ins>Return <var>array</var>.</ins>
+      </li></ol></emu-alg>
     </emu-clause>
 
     <emu-clause id="sec-intl.getsupportedtimezones">
-      <h1><span class="secnum">1.2.5</span> <ins>Intl.getSupportedTimeZones ( )</ins></h1>
+      <h1><span class="secnum">2.2.5</span><ins>Intl.getSupportedTimeZones ( )</ins></h1>
 
       <p>
         <ins>
         When the <code>getSupportedTimeZones</code> method is called, the following steps are taken:
+        
         </ins>
       </p>
 
-      <emu-alg><ol><li>To be written.</li></ol></emu-alg>
+      <emu-alg><ol><li>To be written.
+      </li></ol></emu-alg>
     </emu-clause>
 
     <emu-clause id="sec-intl.getsupportedunits">
-      <h1><span class="secnum">1.2.6</span> <ins>Intl.getSupportedUnits ( )</ins></h1>
+      <h1><span class="secnum">2.2.6</span><ins>Intl.getSupportedUnits ( )</ins></h1>
 
       <p>
         <ins>
         When the <code>getSupportedUnits</code> method is called, the following steps are taken:
+        
         </ins>
       </p>
 
-      <emu-alg><ol><li><ins>Let <var>array</var> be !&nbsp;<emu-xref aoid="ArrayCreate" id="_ref_4"><a href="https://tc39.es/ecma262/#sec-arraycreate">ArrayCreate</a></emu-xref>(0).</ins></li><li><ins>Let <var>n</var> be 0.</ins></li><li><ins>For each row of <emu-xref href="#table-sanctioned-simple-unit-identifiers"><a href="https://tc39.es/ecma402/#table-sanctioned-simple-unit-identifiers">Table 2</a></emu-xref>, except the header row, do</ins><ol><li><ins>Let <var>e</var> be the Simple Unit value of the current row.</ins></li><li><ins>Perform !&nbsp;<emu-xref aoid="CreateDataPropertyOrThrow" id="_ref_5"><a href="https://tc39.es/ecma262/#sec-createdatapropertyorthrow">CreateDataPropertyOrThrow</a></emu-xref>( <var>array</var>, !&nbsp;<emu-xref aoid="ToString" id="_ref_6"><a href="https://tc39.es/ecma262/#sec-tostring">ToString</a></emu-xref>( <var>n</var> ), <var>e</var>).</ins></li><li><ins>Set <var>n</var> to <var>n</var> + 1.</ins></li></ol></li><li><ins>Return <var>array</var>.</ins></li></ol></emu-alg>
+      <emu-alg><ol><li><ins>Let <var>array</var> be !&nbsp;<emu-xref aoid="ArrayCreate" id="_ref_22"><a href="https://tc39.github.io/ecma262/#sec-arraycreate">ArrayCreate</a></emu-xref>(0).</ins></li><li><ins>Let <var>n</var> be 0.</ins></li><li><ins>For each row of <emu-xref href="#table-sanctioned-simple-unit-identifiers" id="_ref_10"><a href="#table-sanctioned-simple-unit-identifiers">Table 1</a></emu-xref>, except the header row, do</ins><ol><li><ins>Let <var>e</var> be the Simple Unit value of the current row.</ins></li><li><ins>Perform !&nbsp;<emu-xref aoid="CreateDataPropertyOrThrow" id="_ref_23"><a href="https://tc39.github.io/ecma262/#sec-createdatapropertyorthrow">CreateDataPropertyOrThrow</a></emu-xref>( <var>array</var>, !&nbsp;<emu-xref aoid="ToString" id="_ref_24"><a href="https://tc39.github.io/ecma262/#sec-tostring">ToString</a></emu-xref>( <var>n</var> ), <var>e</var>).</ins></li><li><ins>Set <var>n</var> to <var>n</var> + 1.</ins></li></ol></li><li><ins>Return <var>array</var>.</ins>
+      </li></ol></emu-alg>
     </emu-clause>
 
   </emu-clause>
 
 </emu-clause><emu-annex id="sec-copyright-and-software-license">
-      <h1><span class="secnum">A</span> Copyright &amp; Software License</h1>
+      <h1><span class="secnum">A</span>Copyright &amp; Software License</h1>
       
       <h2>Copyright Notice</h2>
       <p>© 2020 Google, Ecma International</p>

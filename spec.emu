@@ -18,4 +18,5 @@ contributors: Google, Ecma International
 
   <p>This proposal adds several function properties to the `Intl Object` to list supported values of options. See <a href="https://github.com/tc39/proposal-intl-enumeration/blob/master/README.md">the README</a> for more context.</p>
 </emu-intro>
+<emu-import href="./locales-currencies-tz.html"></emu-import>
 <emu-import href="./intl.html"></emu-import>

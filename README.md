@@ -3,7 +3,7 @@ List supported values of options in pre-existing ECMA 402 API.
 
 ## Stage 1 
 * [Moved to Stage 1 after reaching consensus in TC39 June 2020 meeting](https://docs.google.com/presentation/d/17bkiVWuYxhMc24If72d6oENK3G6G-irO2EB4EEQCgxU/edit#slide=id.g881894be7c_0_156). 
-* Plan to propose to Stage 2 in TC39 Sept 2020 meeting.
+* Plan to propose to [advanced to Stage 2 in TC39 September 2020](https://docs.google.com/presentation/d/1IWOHZVkXL_qbjz4T76bXmtLh7VOrWkT-HJIH2ZwY6NU/edit#slide=id.g96c285a300_1_0) meeting.
 
 ### Entrance Criteria for Stage 1
 * Identified “champion” who will advance the addition: **Frank Yung-Fong Tang**

@@ -5,7 +5,7 @@ List supported values of options in pre-existing ECMA 402 API.
 * [Advanced to Stage 1 in TC39 June 2020 meeting](https://docs.google.com/presentation/d/17bkiVWuYxhMc24If72d6oENK3G6G-irO2EB4EEQCgxU/edit#slide=id.g881894be7c_0_156). 
 * [Advanced to Stage 2 in TC39 September 2020](https://docs.google.com/presentation/d/1IWOHZVkXL_qbjz4T76bXmtLh7VOrWkT-HJIH2ZwY6NU/edit#slide=id.g96c285a300_1_0) meeting.
 
-### Entrance Criteria for Stage 1
+### Entrance Criteria for Stage 1 (Proposal)
 * Identified “champion” who will advance the addition: **Frank Yung-Fong Tang**
 * Prose outlining the problem or need and the general shape of a solution: **See this document**
 * Illustrative examples of usage: **See this document**
@@ -13,9 +13,17 @@ List supported values of options in pre-existing ECMA 402 API.
 * Discussion of key algorithms, abstractions and semantics
 * Identification of potential “cross-cutting” concerns and implementation challenges/complexity
 * A publicly available repository for the proposal that captures the above requirements: [**https://github.com/tc39/proposal-intl-enumeration**](https://github.com/tc39/proposal-intl-enumeration)
-### Entrance Criteria for Stage 2
+### Entrance Criteria for Stage 2 (Draft)
 * Above
 * Initial spec text: [**https://tc39.es/proposal-intl-enumeration**](https://tc39.es/proposal-intl-enumeration)
+* **Acceptance Signifies**: The committee expects the feature to be developed and eventually included in the standard
+
+### Entrance Criteria for Stage 3 (Candidate)
+* Above
+* Complete spec text
+* Designated reviewers have signed off on the current spec text
+* All ECMAScript editors have signed off on the current spec text
+* **Acceptance Signifies**: The solution is complete and no further work is possible without implementation experience, significant usage and external feedback.
 
 ## Motivation
 

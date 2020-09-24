@@ -132,26 +132,6 @@ Intl.getSupportedUnits()
 
 This repo is setup by following instruction on [TC39 template-for-proposals](https://github.com/tc39/template-for-proposals)
 
-  1.  Avoid merge conflicts with build process output files by running:
-      ```sh
-      git config --local --add merge.output.driver true
-      git config --local --add merge.output.driver true
-      ```
-
-1.  Add a post-rewrite git hook to auto-rebuild the output on every commit:
-      ```sh
-      cp hooks/post-rewrite .git/hooks/post-rewrite
-      chmod +x .git/hooks/post-rewrite
-      ```
-  1.  ["How to write a good explainer"][explainer] explains how to make a good first impression.
-
-      > Each TC39 proposal should have a `README.md` file which explains the purpose
-      > of the proposal and its shape at a high level.
-      >
-      > ...
-      >
-      > The rest of this page can be used as a template ...
-
       Your explainer can point readers to the `index.html` generated from `spec.emu`
       via markdown like
 

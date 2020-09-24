@@ -30,6 +30,9 @@ List supported values of options in pre-existing ECMA 402 API.
 
 ## Overview
 
+### Option I
+Several methods of Intl, each return an array
+
 ```
 Intl.getSupportedCalendars()
 Intl.getSupportedCurrencies()
@@ -37,7 +40,12 @@ Intl.getSupportedNumberingSystems()
 Intl.getSupportedTimeZones([options])
 Intl.getSupportedUnits()
 ```
+### Option II
+One method of Intl, return iteratable based on options
+```
+Intl.supportedValuesOf(key, [options])
 
+```
 
 ## Background
 
@@ -50,6 +58,8 @@ For example, web developer may want to use Chinese calendar if avaiable, or ROC 
 
 
 ## Usage example
+
+### For Option I
 ```
 // Find out the supported calendars
 Intl.getSupportedCalendars()
@@ -99,6 +109,42 @@ Intl.getSupportedUnits()
 //  'terabit', 'terabyte', 'week', 'yard', 'year'];
 ```
 
+### For Option II
+```
+// Find out the supported calendars
+for (const calendar of Intl.supportedValuesOf("calendar")) {
+   // 'buddhist', 'chinese',  ... 'islamicc'
+}
+// Find out the supported currencies
+for (const currency of Intl.supportedValuesOf("currency")) {
+   // 'AED', 'AFN', 'ALL', ... 'ZWL'
+}
+// Find out the supported numbering systems
+for (const numberingSystem of Intl.supportedValuesOf("numberingSystem")) {
+  // 'adlm', 'ahom', 'arab', ...  'wara', 'wcho'
+}
+// Find out the supported time zones
+for (const timeZone of Intl.supportedValuesOf("timeZone")) {
+  // 'Africa/Abidjan', 'Africa/Accra', ... 'Pacific/Wallis'
+}
+// Find out the supported time zones of region "US"
+for (const timeZoneInUS of Intl.supportedValuesOf("timeZone", {region: "US")) {
+  // "America/Adak", "America/Anchorage", ... "America/Yakutat", "Pacific/Honolulu"
+}
+// Find out the supported units
+for (const unit of Intl.supportedValuesOf("unit") {
+  // 'acre', 'bit', 'byte', ... 'year'
+}
+// Find out the supported units of 'digital' kind
+for (const unit of Intl.supportedValuesOf("unit", {kind: "digital"}) {
+  // 'bit', 'byte', 'gigabit', ... 'terabit', 'terabyte'
+}
+
+// Find out the supported collation
+for (const collation of Intl.supportedValuesOf("collation", {region: "TW")}) {
+  // 'stroke', 'pinyin', ... 'zhuyin'
+}
+```
 
 
 ## Authors

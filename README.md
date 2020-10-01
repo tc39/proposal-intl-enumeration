@@ -33,7 +33,7 @@ List supported values of options in pre-existing ECMA 402 API.
 ### Option I
 Several methods of Intl, each return an array
 
-```
+```javascript
 Intl.getSupportedCalendars()
 Intl.getSupportedCurrencies()
 Intl.getSupportedNumberingSystems()
@@ -42,9 +42,9 @@ Intl.getSupportedUnits()
 ```
 ### Option II
 One method of Intl, return iteratable based on options
-```
-Intl.supportedValuesOf(key, [options])
 
+```javascript
+Intl.supportedValuesOf(key, [options])
 ```
 
 ## Background
@@ -60,7 +60,8 @@ For example, web developer may want to use Chinese calendar if avaiable, or ROC 
 ## Usage example
 
 ### For Option I
-```
+
+```javascript
 // Find out the supported calendars
 Intl.getSupportedCalendars()
 // ['buddhist', 'chinese', 'coptic', 'dangi', 'ethioaa', 'ethiopic', 
@@ -110,7 +111,8 @@ Intl.getSupportedUnits()
 ```
 
 ### For Option II
-```
+
+```javascript
 // Find out the supported calendars
 for (const calendar of Intl.supportedValuesOf("calendar")) {
    // 'buddhist', 'chinese',  ... 'islamicc'

@@ -30,17 +30,6 @@ List supported values of options in pre-existing ECMA 402 API.
 
 ## Overview
 
-### Option I
-Several methods of Intl, each return an array
-
-```javascript
-Intl.getSupportedCalendars()
-Intl.getSupportedCurrencies()
-Intl.getSupportedNumberingSystems()
-Intl.getSupportedTimeZones([options])
-Intl.getSupportedUnits()
-```
-### Option II
 One method of Intl, return iteratable based on options
 
 ```javascript
@@ -76,58 +65,6 @@ For example, web developer may want to use Chinese calendar if avaiable, or ROC 
 
 ## Usage example
 
-### For Option I
-
-```javascript
-// Find out the supported calendars
-Intl.getSupportedCalendars()
-// ['buddhist', 'chinese', 'coptic', 'dangi', 'ethioaa', 'ethiopic', 
-//  'gregory', 'hebrew', 'indian', 'islamic', 'islamic-umalqura',
-//  'islamic-tbla', 'islamic-civil', 'islamic-rgsa', 'japanese', 
-//  'persian', 'roc', 'islamicc'];
-
-// Find out the supported currencies
-Intl.getSupportedCurrencies()
-// ['AED', 'AFN', 'ALL', 'AMD', 'ANG', 'AOA', 'ARS', 'AUD', 'AWG', 
-//  'AZN', 'BAM', 'BBD', 'BDT', 'BGN', 'BHD', 'BIF', 'BMD', 'BND',
-//  ...
-//  'YER', 'ZAR', 'ZMW', 'SVC', 'XDR', 'XSU', 'ZWL'];
-
-// Find out the supported numbering systems
-Intl.getSupportedNumberingSystems()
-// ['adlm', 'ahom', 'arab', 'arabext', 'bali', 'beng', 'bhks', 
-//  'brah', 'cakm', 'cham', 'deva', 'fullwide', 'gong', 'gonm',
-//  ...
-// 'thai', 'tibt', 'tirh', 'vaii', 'wara', 'wcho'];
-
-// Find out the supported time zones
-Intl.getSupportedTimeZones()
-// ['Africa/Abidjan', 'Africa/Accra', 'Africa/Addis_Ababa', 'Africa/Algiers',
-//  'Africa/Asmera', 'Africa/Bamako', 'Africa/Bangui', 'Africa/Banjul',
-//  ...
-//   'Pacific/Truk', 'Pacific/Wake', 'Pacific/Wallis'];
-
-// Find out the supported time zones of region "US"
-Intl.getSupportedTimeZones({region: "US"})
-// ["America/Adak", "America/Anchorage", "America/Boise", "America/Chicago", 
-// "America/Denver", "America/Detroit", "America/Indiana/Knox", "America/Indiana/Marengo", 
-// "America/Indiana/Petersburg", "America/Indiana/Tell_City", "America/Indiana/Vevay", 
-// "America/Indiana/Vincennes", "America/Indiana/Winamac", "America/Indianapolis",
-// "America/Juneau", "America/Kentucky/Monticello", "America/Los_Angeles", "America/Louisville",
-// "America/Menominee", "America/Metlakatla", "America/New_York", "America/Nome",
-// "America/North_Dakota/Beulah", "America/North_Dakota/Center", 
-// "America/North_Dakota/New_Salem", "America/Phoenix", "America/Sitka", 
-// "America/Yakutat", "Pacific/Honolulu"]
-
-// Find out the supported units
-Intl.getSupportedUnits()
-// ['acre', 'bit', 'byte', 'celsius', 'centimeter', 'day',
-//  'degree', 'fahrenheit', 'fluid-ounce', 'foot', 'gallon',
-//  ...
-//  'terabit', 'terabyte', 'week', 'yard', 'year'];
-```
-
-### For Option II
 
 ```javascript
 // Find out the supported calendars

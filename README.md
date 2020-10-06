@@ -55,6 +55,23 @@ https://github.com/tc39/ecma402/issues/435
 Feature Tests for newly added values in options supported in Intl API.
 For example, web developer may want to use Chinese calendar if avaiable, or ROC calendar as a fallback if avaiable, otherwise Gregorian calendar as final resort. This API allow the code to check which calendar are avaiable and therefor to decide the fallback logic.
 
+## Prior Arts
+### Get the List of TimeZone
+
+* Use Cases:
+  * [How to get list of all timezones in javascript on Stack Overflow](https://stackoverflow.com/questions/38399465/how-to-get-list-of-all-timezones-in-javascript)
+* Prior Arts:
+  * [momentjs moment.tz.names](https://momentjs.com/timezone/docs/#/data-loading/getting-zone-names/)
+  * [tzdb](https://github.com/vvo/tzdb/)
+  * [countries-and-timezones](https://www.npmjs.com/package/countries-and-timezones)
+  * [country-timezone](https://www.npmjs.com/package/country-timezone)
+
+### Get the List of Currency Codes
+
+* Use Cases:
+  * 
+* Prior Arts:
+  * [currency-codes](https://www.npmjs.com/package/currency-codes)
 
 
 ## Usage example

@@ -118,7 +118,6 @@ for (const collation of Intl.supportedValuesOf("collation", {region: "TW")}) {
 *
 
 ## Implementation Status
-* [v8 prototype patch](https://chromium-review.googlesource.com/c/v8/v8/+/2301115)
 * [v8 tracking bug](https://bugs.chromium.org/p/v8/issues/detail?id=10743)
 * Mozilla
 * JSC

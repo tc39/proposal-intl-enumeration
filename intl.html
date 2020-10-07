@@ -93,7 +93,7 @@
       <emu-alg>
         1. <ins>Let _key_ be ? ToString(_key_).</ins>
         1. <ins>If _options_ is *undefined*, then</ins>
-          1. <ins>Let _options_ be ! ObjectCreate(*null*).</ins>
+          1. <ins>Let _options_ be ! OrdinaryObjectCreate(*null*).</ins>
         1. <ins>Else</ins>
           1. <ins>Let _options_ be ? ToObject(_options_).</ins>
         1. <ins>If _key_ is *"calendar"*, then</ins>
@@ -132,7 +132,7 @@
 
       <emu-alg>
         1. <ins>Let _internalSlotsList_ be &laquo; [[List]] &raquo;.</ins>
-        1. <ins>Let _values_ be ! ObjectCreate(%SupportedValues.prototype%, _internalSlotsList_).</ins>
+        1. <ins>Let _values_ be ! OrdinaryObjectCreate(%SupportedValues.prototype%, _internalSlotsList_).</ins>
         1. <ins>Set _values_.[[List]] to _list_.</ins>
         1. <ins>Return _values_.</ins>
       </emu-alg>

@@ -1,4 +1,21 @@
 {
+  "https://tc39.es/ecma262/": [
+    {
+      "type": "op",
+      "aoid": "CreateListIteratorRecord",
+      "id": "sec-createlistiteratorRecord"
+    },
+    {
+      "type": "op",
+      "aoid": "OrdinaryObjectCreate",
+      "id": "sec-ordinaryobjectcreate"
+    },
+    {
+      "type": "op",
+      "aoid": "RequireInternalSlot",
+      "id": "sec-requireinternalslot"
+    }
+  ],
   "https://tc39.es/ecma402/": [
     {
       "type": "clause",

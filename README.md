@@ -107,7 +107,7 @@ for (const collation of Intl.supportedValuesOf("collation", {region: "TW")}) {
 * Frank Tang (@FrankYFTang)
 
 ## Designated reviewers
-* TBD
+* Shane Carr @sffc
 ## ECMAScript editors
 * 
 

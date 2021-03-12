@@ -106,8 +106,10 @@ for (const collation of Intl.supportedValuesOf("collation", {region: "TW")}) {
 ## Authors
 * Frank Tang (@FrankYFTang)
 
-## Reviewers
-*
+## Designated reviewers
+* TBD
+## ECMAScript editors
+* 
 
 ## Proposal
 

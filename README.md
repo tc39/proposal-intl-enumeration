@@ -42,7 +42,7 @@ https://github.com/tc39/ecma402/issues/435
 
 ## Use case
 Feature Tests for newly added values in options supported in Intl API.
-For example, web developer may want to use Chinese calendar if avaiable, or ROC calendar as a fallback if avaiable, otherwise Gregorian calendar as final resort. This API allow the code to check which calendar are avaiable and therefor to decide the fallback logic.
+For example, web developer may want to use Chinese calendar if avaiable, or ROC calendar as a fallback if avaiable, otherwise Gregorian calendar as final resort. This API allow the code to check which calendar are avaiable and therefor to decide the fallback logic such as importing polyfill from the server.
 
 ## Prior Arts
 ### Get the List of TimeZone

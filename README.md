@@ -2,8 +2,11 @@
 List supported values of options in pre-existing ECMA 402 API.
 
 ## Stage 2
-* [Advanced to Stage 1 in TC39 June 2020 meeting](https://docs.google.com/presentation/d/17bkiVWuYxhMc24If72d6oENK3G6G-irO2EB4EEQCgxU/edit#slide=id.g881894be7c_0_156). 
-* [Advanced to Stage 2 in TC39 September 2020](https://docs.google.com/presentation/d/1IWOHZVkXL_qbjz4T76bXmtLh7VOrWkT-HJIH2ZwY6NU/edit#slide=id.g96c285a300_1_0) meeting.
+* [Advanced to Stage 1 in TC39 June 2020 meeting](https://docs.google.com/presentation/d/17bkiVWuYxhMc24If72d6oENK3G6G-irO2EB4EEQCgxU). 
+* [Advanced to Stage 2 in TC39 September 2020](https://docs.google.com/presentation/d/1IWOHZVkXL_qbjz4T76bXmtLh7VOrWkT-HJIH2ZwY6NU) meeting.
+* [Update in TC39 Nov 2020](https://docs.google.com/presentation/d/1t0P8SKpcU9K_h-jYQ6ix5-02_mF1sAKt6v9AzipX3pw) meeting.
+* [Update in TC39 Apr 2021](https://docs.google.com/presentation/d/1LLuJJvGsppQfFf0eCBBcplub_E7NY4EdbSVeE2duyoA) meeting.
+* Plan to propose for Stage 3 advancement in TC39 May 2021 meeting
 
 ### Entrance Criteria for Stage 1 (Proposal)
 * Identified “champion” who will advance the addition: **Frank Yung-Fong Tang**
@@ -118,7 +121,10 @@ for (const collation of Intl.supportedValuesOf("collation", {region: "TW")}) {
 * https://tc39.es/proposal-intl-enumeration/
 
 ## References
-*
+### Analysis of Privacy / Fingerprinting Concerns
+* [“Intl.Enumeration Privacy Implications Mozilla’s Recommendation”.](https://docs.google.com/document/d/1Zw6cYNJpL69HtQfA4-S7bKlCPywhhmoF6Mja-qy-JpU), Tom Ritter, Anne van Kesteren, Steven Englehardt, Zibi Braniecki, Mozilla, Feb 4, 2021.
+* [Discussion during 2021-03 ECMA402 Meeting](https://github.com/tc39/ecma402/blob/master/meetings/notes-2021-03-11.md#privacy-evaluation-of-the-api-3)
+* Duscussion during 2021-04 ECMA402 Meeting (link to be added soon)
 
 ## Implementation Status
 * [v8 tracking bug](https://bugs.chromium.org/p/v8/issues/detail?id=10743)

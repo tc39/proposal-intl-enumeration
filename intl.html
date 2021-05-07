@@ -70,6 +70,18 @@
   <emu-clause id="sec-function-properties-of-the-intl-object">
     <h1>Function Properties of the Intl Object</h1>
 
+    <emu-clause id="sec-createsupportedvaluesiterator" aoid="CreateSupportedValuesIterator">
+      <h1><ins>CreateSupportedValuesIterator ( _list_ )</ins></h1>
+      <p><ins>The abstract operation CreateSupportedValuesIterator takes argument _list_ . It performs the following steps when called:</ins></p>
+      <emu-alg>
+        1. <ins>Let _closure_ be a new Abstract Closure with no parameters that captures _list_ and performs the following steps when called:</ins>
+        1. <ins>For each element _E_ of _list_, do</ins>
+          1. <ins>Perform ? Yield(_E_).</ins>
+            1. <ins>Return *undefined*.</ins>
+        1. <ins>Return ! CreateIteratorFromClosure(_closure_, *"%SupportedValuesIterator%"*, %IteratorPrototype%).</ins>
+      </emu-alg>
+    </emu-clause>
+
     <emu-clause id="sec-intl.getcanonicallocales">
       <h1>Intl.getCanonicalLocales ( _locales_ )</h1>
 
@@ -108,65 +120,10 @@
           1. <ins>Let _list_ be ! AvailableUnits( ).</ins>
         1. <ins>Else,</ins>
           1. <ins>Throw a *RangeError* exception.</ins>
-        1. <ins>Return ! CreateSupportedValuesObject( _list_ )</ins>
+        1. <ins>Return ! CreateSupportedValuesIterator( _list_ )</ins>
       </emu-alg>
     </emu-clause>
 
   </emu-clause>
-
-  <emu-clause id="sec-supportedvalues-objects">
-    <h1><ins>Supported Values Objects</h1>
-      <p>
-        <ins>A Supported Values instance is an object that represents the results of the supported values of a given key.</ins>
-      </p>
-
-    <emu-clause id="sec-createsupportedvaluesobject" aoid="CreateSupportedValuesObject">
-      <h1><ins>CreateSupportedValuesObject ( _list_ )</ins></h1>
-
-      <p>
-        <ins>The CreateSupportedValuesObject abstract operation is called with argument List instance _list_ to create a Supported Values instance. The following steps are taken:</ins>
-      </p>
-
-      <emu-alg>
-        1. <ins>Let _internalSlotsList_ be &laquo; [[List]] &raquo;.</ins>
-        1. <ins>Let _values_ be ! OrdinaryObjectCreate(%SupportedValues.prototype%, _internalSlotsList_).</ins>
-        1. <ins>Set _values_.[[List]] to _list_.</ins>
-        1. <ins>Return _values_.</ins>
-      </emu-alg>
-    </emu-clause>
-
-    <emu-clause id="sec-%supportedvaluesprototype%-object">
-      <h1><ins>The %SupportedValues.prototype% Object</ins></h1>
-      <p><ins>The <dfn>%SupportedValues.prototype%</dfn> object:</ins></p>
-      <ul>
-        <li><ins>is the prototype of all Supported Values objects.</ins></li>
-        <li><ins>is an ordinary object.</ins></li>
-        <li><ins>has the following properties:</ins></li>
-      </ul>
-
-      <emu-clause id="sec-%supportedvaluesprototype%-@@iterator">
-        <h1><ins>%SupportedValues.prototype% [ @@iterator ] ()</ins></h1>
-        <p><ins>The `@@iterator` method is called on a Supported Values instance to create a Iterator over its values. The following steps are taken:</ins></p>
-        <emu-alg>
-          1. <ins>Let _values_ be the *this* value.</ins>
-          1. <ins>Perform ? RequireInternalSlot(_values_, [[List]]).</ins>
-          1. <ins>Let _list_ be _values_.[[List]].</ins>
-          1. <ins>Return ! CreateListIteratorRecord(_list_).</ins>
-        </emu-alg>
-      </emu-clause>
-
-    <emu-clause id="sec-properties-of-supportedvalues-instances">
-      <h1><ins>Properties of Supported Values Instances</ins></h1>
-
-      <p>
-      <ins>Supported Values instances are ordinary objects that inherit properties from %SupportedValues.prototype%.</ins>
-      </p>
-
-      <p>
-      <ins>Supported Values instances have a [[List]] internal slot that references a list of Strings.</ins>
-      </p>
-    </emu-clause>
-  </emu-clause>
-
 
 </emu-clause>

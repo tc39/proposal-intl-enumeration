@@ -18,6 +18,16 @@
   ],
   "https://tc39.es/ecma402/": [
     {
+      "type": "op",
+      "aoid": "CanonicalizeLocaleList",
+      "id": "sec-canonicalizelocalelist"
+    },
+    {
+      "type": "op",
+      "aoid": "UnicodeExtensionComponents",
+      "id": "sec-unicode-extension-components"
+    },
+    {
       "type": "clause",
       "number": "10",
       "id": "locale-objects"

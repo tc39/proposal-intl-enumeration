@@ -92,10 +92,7 @@
 
       <emu-alg>
         1. <ins>Let _key_ be ? ToString(_key_).</ins>
-        1. <ins>If _options_ is *undefined*, then</ins>
-          1. <ins>Let _options_ be ! OrdinaryObjectCreate(*null*).</ins>
-        1. <ins>Else</ins>
-          1. <ins>Let _options_ be ? ToObject(_options_).</ins>
+        1. <ins>Let _options_ be ? GetOptionsObject( _options_ ).</ins>
         1. <ins>If _key_ is *"calendar"*, then</ins>
           1. <ins>Let _list_ be ! AvailableCalendars( ).</ins>
         1. <ins>Else if _key_ is *"collation"*, then</ins>
@@ -166,7 +163,7 @@
       </p>
 
       <p>
-      <ins>Supported Values instances have a [[List]] internal slot that references a list of String.</ins>
+      <ins>Supported Values instances have a [[List]] internal slot that references a list of Strings.</ins>
       </p>
     </emu-clause>
   </emu-clause>

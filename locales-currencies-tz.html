@@ -134,7 +134,7 @@
       <h1><ins>AvailableCurrencies ( )</ins></h1>
 
       <p>
-        <ins>The AvailableCurrencies abstract operation return a List that contains well-formed 3-letter ISO 4217 currency codes identifying the currency for which the implementation provides the functionality of the constructed objects.</ins>
+        <ins>The AvailableCurrencies abstract operation return a List, in simple lexicographic order, that contains unique well-formed 3-letter ISO 4217 currency codes identifying the currency for which the implementation provides the functionality of the constructed objects.</ins>
       </p>
     </emu-clause>
 
@@ -193,7 +193,7 @@
       <h1><ins>AvailableTimeZones ( _region_ )</ins></h1>
 
       <p>
-        <ins>The AvailableTimeZones abstract operation return a List that contains the canonical and case-regularized form of all registered Zone and Link names in the IANA Time Zone Database which are used in the _region_. If the _region_ is *undefined*, then it return all the names.</ins>
+        <ins>The AvailableTimeZones abstract operation return a List, in simple lexicographic order, that contains the unique, canonical and case-regularized form of all registered Zone and Link names in the IANA Time Zone Database which are used in the _region_. If the _region_ is *undefined*, then it return all the names.</ins>
       </p>
     </emu-clause>
 
@@ -303,7 +303,7 @@
       <h1><ins>AvailableUnits ( )</ins></h1>
 
       <p>
-        <ins>The AvailableUnits abstract operation return a List that contains the values of simple unit identifiers listed in every rows of <emu-xref href="#table-sanctioned-simple-unit-identifiers"></emu-xref>, except the header row.</ins>
+        <ins>The AvailableUnits abstract operation return a List, in simple lexicographic order, that contains the unique values of simple unit identifiers listed in every rows of <emu-xref href="#table-sanctioned-simple-unit-identifiers"></emu-xref>, except the header row.</ins>
       </p>
     </emu-clause>
 
@@ -320,7 +320,7 @@
       <h1><ins>AvailableNumberingSystems ( )</ins></h1>
 
       <p>
-        <ins>The AvailableNumberingSystems abstract operation return a List that contains numbering system identifiers identifying the numbering system for which the implementation provides the functionality of the constructed objects. The list must includes the Numbering System value of every rows of <emu-xref href="#table-numbering-system-digits"></emu-xref>, except the header row.</ins>
+        <ins>The AvailableNumberingSystems abstract operation return a List, in simple lexicographic order, that contains unique numbering system identifiers identifying the numbering system for which the implementation provides the functionality of the constructed objects. The list must include the Numbering System value of every rows of <emu-xref href="#table-numbering-system-digits"></emu-xref>, except the header row.</ins>
       </p>
     </emu-clause>
 
@@ -334,10 +334,10 @@
     </p>
 
     <emu-clause id="sec-availablecollations" aoid="AvailableCollations">
-      <h1><ins>AvailableCalendars ( )</ins></h1>
+      <h1><ins>AvailableCollations ( )</ins></h1>
 
       <p>
-        <ins>The AvailableCollations abstract operation return a List that contains collation types identifying the collation for which the implementation provides the functionality of the constructed objects.</ins>
+        <ins>The AvailableCollations abstract operation return a List, in simple lexicographic order, that contains unique collation types identifying the collation for which the implementation provides the functionality of the constructed objects.</ins>
       </p>
     </emu-clause>
 
@@ -354,7 +354,7 @@
       <h1><ins>AvailableCalendars ( )</ins></h1>
 
       <p>
-        <ins>The AvailableCalendars abstract operation return a List that contains calendar types identifying the calendar for which the implementation provides the functionality of the constructed objects. The list must includes *"gregory"*.</ins>
+        <ins>The AvailableCalendars abstract operation return a List, in simple lexicographic order, that contains unique calendar types identifying the calendar for which the implementation provides the functionality of the constructed objects. The list must include *"gregory"*.</ins>
       </p>
     </emu-clause>
 

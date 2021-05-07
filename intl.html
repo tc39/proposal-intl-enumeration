@@ -75,8 +75,8 @@
       <p><ins>The abstract operation CreateSupportedValuesIterator takes argument _list_ . It performs the following steps when called:</ins></p>
       <emu-alg>
         1. <ins>Let _closure_ be a new Abstract Closure with no parameters that captures _list_ and performs the following steps when called:</ins>
-        1. <ins>For each element _E_ of _list_, do</ins>
-          1. <ins>Perform ? Yield(_E_).</ins>
+          1. <ins>For each element _E_ of _list_, do</ins>
+            1. <ins>Perform ? Yield(_E_).</ins>
           1. <ins>Return *undefined*.</ins>
         1. <ins>Return ! CreateIteratorFromClosure(_closure_, *"%SupportedValuesIterator%"*, %IteratorPrototype%).</ins>
       </emu-alg>

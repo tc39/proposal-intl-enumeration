@@ -19,6 +19,16 @@
   "https://tc39.es/ecma402/": [
     {
       "type": "op",
+      "aoid": "GetOptionsObject",
+      "id": "sec-getoptionsobject"
+    },
+    {
+      "type": "op",
+      "aoid": "GetOption",
+      "id": "sec-getoption"
+    },
+    {
+      "type": "op",
       "aoid": "CanonicalizeLocaleList",
       "id": "sec-canonicalizelocalelist"
     },

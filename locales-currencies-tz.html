@@ -2,7 +2,7 @@
   <h1>Identification of Locales, Currencies, Time Zones, <del>and</del> Measurement Units<ins>, Numbering Systems, Collations, and Calendars</ins></h1>
 
   <p>
-    This clause describes the String values used in the ECMAScript 2021 Internationalization API Specification to identify locales, currencies, time zones, <del>and</del> measurement units<ins>, numbering systems, collations and calendars </ins>.
+    This clause describes the String values used in the ECMAScript 2022 Internationalization API Specification to identify locales, currencies, time zones, <del>and</del> measurement units<ins>, numbering systems, collations, and calendars </ins>.
   </p>
 
   <emu-clause id="sec-case-sensitivity-and-case-mapping">
@@ -27,7 +27,7 @@
     <h1>Currency Codes</h1>
 
     <p>
-      The ECMAScript 2021 Internationalization API Specification identifies currencies using 3-letter currency codes as defined by ISO 4217. Their canonical form is upper case.
+      The ECMAScript 2022 Internationalization API Specification identifies currencies using 3-letter currency codes as defined by ISO 4217. Their canonical form is upper case.
     </p>
 
     <p>
@@ -53,7 +53,7 @@
       <h1><ins>AvailableCurrencies ( )</ins></h1>
 
       <p>
-        <ins>The AvailableCurrencies abstract operation return a List, in simple lexicographic order, that contains unique well-formed 3-letter ISO 4217 currency codes identifying the currency for which the implementation provides the functionality of the constructed objects.</ins>
+        <ins>The AvailableCurrencies abstract operation returns a List, in simple lexicographic order, that contains unique well-formed 3-letter ISO 4217 currency codes identifying the currency for which the implementation provides the functionality of the Intl.DisplayNames and Intl.NumberFormat objects.</ins>
       </p>
     </emu-clause>
 
@@ -63,7 +63,7 @@
     <h1>Time Zone Names</h1>
 
     <p>
-      The ECMAScript 2021 Internationalization API Specification identifies time zones using the Zone and Link names of the IANA Time Zone Database. Their canonical form is the corresponding Zone name in the casing used in the IANA Time Zone Database.
+      The ECMAScript 2022 Internationalization API Specification identifies time zones using the Zone and Link names of the IANA Time Zone Database. Their canonical form is the corresponding Zone name in the casing used in the IANA Time Zone Database.
     </p>
 
     <p>
@@ -112,8 +112,9 @@
       <h1><ins>AvailableTimeZones ( _region_ )</ins></h1>
 
       <p>
-        <ins>The AvailableTimeZones abstract operation returns a List, in simple lexicographic order, that contains the unique, canonical and case-regularized form of all registered Zone and Link names in the IANA Time Zone Database which are used in the _region_. If the _region_ is *undefined*, it returns all the names.</ins>
+        <ins>The AvailableTimeZones abstract operation returns a List, in simple lexicographic order, that contains the unique, canonical, and case-regularized form of all registered Zone and Link names in the IANA Time Zone Database which are used in the _region_. If the _region_ is *undefined*, it returns all the names.</ins>
       </p>
+
     </emu-clause>
 
   </emu-clause>
@@ -122,7 +123,7 @@
     <h1>Measurement Unit Identifiers</h1>
 
     <p>
-      The ECMAScript 2021 Internationalization API Specification identifies measurement units using a <em>core unit identifier</em> as defined by Unicode Technical Standard #35, Part 2, Section 6. Their canonical form is a string containing all lowercase letters with zero or more hyphens.
+      The ECMAScript 2022 Internationalization API Specification identifies measurement units using a <em>core unit identifier</em> as defined by <a href="https://unicode.org/reports/tr35/tr35-general.html#Unit_Elements">Unicode Technical Standard #35, Part 2, Section 6</a>. Their canonical form is a string containing all lowercase letters with zero or more hyphens.
     </p>
 
     <p>
@@ -133,7 +134,7 @@
       <h1>IsWellFormedUnitIdentifier ( _unitIdentifier_ )</h1>
 
       <p>
-        The IsWellFormedUnitIdentifier abstract operation verifies that the _unitIdentifier_ argument (which must be a String value) represents a well-formed core unit identifier as defined in UTS #35, Part 2, Section 6. In addition to obeying the UTS #35 core unit identifier syntax, _unitIdentifier_ must be one of the identifiers sanctioned by UTS #35 or be a compound unit composed of two sanctioned simple units. The following steps are taken:
+        The IsWellFormedUnitIdentifier abstract operation verifies that the _unitIdentifier_ argument (which must be a String value) represents a well-formed core unit identifier as defined in <a href="https://unicode.org/reports/tr35/tr35-general.html#Unit_Elements">UTS #35, Part 2, Section 6</a>. In addition to obeying the UTS #35 core unit identifier syntax, _unitIdentifier_ must be one of the identifiers sanctioned by UTS #35 or be a compound unit composed of two sanctioned simple units. The following steps are taken:
       </p>
 
       <emu-alg>
@@ -155,7 +156,7 @@
       <h1>IsSanctionedSimpleUnitIdentifier ( _unitIdentifier_ )</h1>
 
       <p>
-        The IsSanctionedSimpleUnitIdentifier abstract operation verifies that the given core unit identifier is among the simple units sanctioned in the current version of the ECMAScript Internationalization API Specification, a subset of the Validity Data as described in UTS #35, Part 1, Section 3.11; the list may grow over time. As discussed in UTS #35, a simple unit is one that does not have a numerator and denominator. The following steps are taken:
+        The IsSanctionedSimpleUnitIdentifier abstract operation verifies that the given core unit identifier is among the simple units sanctioned in the current version of the ECMAScript Internationalization API Specification, a subset of the Validity Data as described in <a href="https://unicode.org/reports/tr35/tr35.html#Validity_Data">UTS #35, Part 1, Section 3.11</a>; the list may grow over time. As discussed in UTS #35, a simple unit is one that does not have a numerator and denominator. The following steps are taken:
       </p>
 
       <emu-alg>
@@ -222,7 +223,7 @@
       <h1><ins>AvailableUnits ( )</ins></h1>
 
       <p>
-        <ins>The AvailableUnits abstract operation return a List, in simple lexicographic order, that contains the unique values of simple unit identifiers listed in every rows of <emu-xref href="#table-sanctioned-simple-unit-identifiers"></emu-xref>, except the header row.</ins>
+        <ins>The AvailableUnits abstract operation returns a List, in simple lexicographic order, that contains the unique values of simple unit identifiers listed in every rows of <emu-xref href="#table-sanctioned-simple-unit-identifiers"></emu-xref>, except the header row.</ins>
       </p>
     </emu-clause>
 
@@ -232,14 +233,14 @@
     <h1><ins>Numbering System Identifiers</ins></h1>
 
     <p>
-      <ins>The ECMAScript 2021 Internationalization API Specification identifies numbering system using a <em>numbering system identifier</em> as defined by Unicode Technical Standard #35, Part 3, Section 1. Their canonical form is a string containing all lowercase letters.</ins>
+      <ins>The ECMAScript 2022 Internationalization API Specification identifies numbering system using a <em>numbering system identifier</em> as defined by <a href="https://unicode.org/reports/tr35/tr35-numbers.html#Numbering_Systems">Unicode Technical Standard #35, Part 3, Section 1</a>. Their canonical form is a string containing all lowercase letters.</ins>
     </p>
 
     <emu-clause id="sec-availablenumberingsystems" aoid="AvailableNumberingSystems">
       <h1><ins>AvailableNumberingSystems ( )</ins></h1>
 
       <p>
-        <ins>The AvailableNumberingSystems abstract operation return a List, in simple lexicographic order, that contains unique numbering system identifiers identifying the numbering system for which the implementation provides the functionality of the constructed objects. The list must include the Numbering System value of every rows of <emu-xref href="#table-numbering-system-digits"></emu-xref>, except the header row.</ins>
+        <ins>The AvailableNumberingSystems abstract operation returns a List, in simple lexicographic order, that contains unique numbering system identifiers identifying the numbering system for which the implementation provides the functionality of the Intl.DateTimeFormat, Intl.NumberFormat, and Intl.RelativeTimeFormat objects. The list must include the Numbering System value of every rows of <emu-xref href="#table-numbering-system-digits"></emu-xref>, except the header row.</ins>
       </p>
     </emu-clause>
 
@@ -249,14 +250,14 @@
     <h1><ins>Collation Types</ins></h1>
 
     <p>
-      <ins>The ECMAScript 2021 Internationalization API Specification identifies collation using a <em>collation type</em> as defined by Unicode Technical Standard #35, Part 5, Section 3.1. Their canonical form is a string containing all lowercase letters with zero or more hyphens.</ins>
+      <ins>The ECMAScript 2022 Internationalization API Specification identifies collation using a <em>collation type</em> as defined by <a href="https://unicode.org/reports/tr35/tr35-collation.html#Collation_Types">Unicode Technical Standard #35, Part 5, Section 3.1</a>. Their canonical form is a string containing all lowercase letters with zero or more hyphens.</ins>
     </p>
 
     <emu-clause id="sec-availablecollations" aoid="AvailableCollations">
       <h1><ins>AvailableCollations ( )</ins></h1>
 
       <p>
-        <ins>The AvailableCollations abstract operation return a List, in simple lexicographic order, that contains unique collation types identifying the collation for which the implementation provides the functionality of the constructed objects.</ins>
+        <ins>The AvailableCollations abstract operation returns a List, in simple lexicographic order, that contains unique collation types identifying the collation for which the implementation provides the functionality of the Intl.Collator objects.</ins>
       </p>
     </emu-clause>
 
@@ -266,14 +267,14 @@
     <h1><ins>Calendar Types</ins></h1>
 
     <p>
-      <ins>The ECMAScript 2021 Internationalization API Specification identifies calendar using a <em>calendar type</em> as defined by Unicode Technical Standard #35, Part 4, Section 2. Their canonical form is a string containing all lowercase letters with zero or more hyphens.</ins>
+      <ins>The ECMAScript 2022 Internationalization API Specification identifies calendar using a <em>calendar type</em> as defined by <a href="https://unicode.org/reports/tr35/tr35-dates.html#Calendar_Elements">Unicode Technical Standard #35, Part 4, Section 2</a>, . Their canonical form is a string containing all lowercase letters with zero or more hyphens.</ins>
     </p>
 
     <emu-clause id="sec-availablecalendars" aoid="AvailableCalendars">
       <h1><ins>AvailableCalendars ( )</ins></h1>
 
       <p>
-        <ins>The AvailableCalendars abstract operation return a List, in simple lexicographic order, that contains unique calendar types identifying the calendar for which the implementation provides the functionality of the constructed objects. The list must include *"gregory"*.</ins>
+        <ins>The AvailableCalendars abstract operation returns a List, in simple lexicographic order, that contains unique calendar types identifying the calendar for which the implementation provides the functionality of the Intl.DateTimeFormat objects. The list must include *"gregory"*.</ins>
       </p>
     </emu-clause>
 

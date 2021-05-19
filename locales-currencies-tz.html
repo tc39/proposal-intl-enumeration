@@ -53,7 +53,7 @@
       <h1><ins>AvailableCurrencies ( )</ins></h1>
 
       <p>
-        <ins>The AvailableCurrencies abstract operation returns a List, in simple lexicographic order, that contains unique well-formed upper case canonicalized 3-letter ISO 4217 currency codes, identifying the currencies for which the implementation provides the functionality of the Intl.DisplayNames and Intl.NumberFormat objects.</ins>
+        <ins>The AvailableCurrencies abstract operation returns a List, in simple lexicographic order, that contains unique, well-formed, and upper case canonicalized 3-letter ISO 4217 currency codes, identifying the currencies for which the implementation provides the functionality of Intl.DisplayNames and Intl.NumberFormat objects.</ins>
       </p>
     </emu-clause>
 
@@ -240,7 +240,7 @@
       <h1><ins>AvailableNumberingSystems ( )</ins></h1>
 
       <p>
-        <ins>The AvailableNumberingSystems abstract operation returns a List, in simple lexicographic order, that contains unique numbering system identifiers identifying the numbering systems for which the implementation provides the functionality of the Intl.DateTimeFormat, Intl.NumberFormat, and Intl.RelativeTimeFormat objects. The list must include the Numbering System value of every row of <emu-xref href="#table-numbering-system-digits"></emu-xref>, except the header row.</ins>
+        <ins>The AvailableNumberingSystems abstract operation returns a List, in simple lexicographic order, that contains unique numbering systems identifiers identifying the numbering systems for which the implementation provides the functionality of Intl.DateTimeFormat, Intl.NumberFormat, and Intl.RelativeTimeFormat objects. The list must include the Numbering System value of every row of <emu-xref href="#table-numbering-system-digits"></emu-xref>, except the header row.</ins>
       </p>
     </emu-clause>
 
@@ -257,7 +257,7 @@
       <h1><ins>AvailableCollations ( )</ins></h1>
 
       <p>
-        <ins>The AvailableCollations abstract operation returns a List, in simple lexicographic order, that contains unique collation types identifying the collations for which the implementation provides the functionality of the Intl.Collator objects.</ins>
+        <ins>The AvailableCollations abstract operation returns a List, in simple lexicographic order, that contains unique collation types identifying the collations for which the implementation provides the functionality of Intl.Collator objects.</ins>
       </p>
     </emu-clause>
 
@@ -267,14 +267,14 @@
     <h1><ins>Calendar Types</ins></h1>
 
     <p>
-      <ins>The ECMAScript 2022 Internationalization API Specification identifies calendars using a <em>calendar type</em> as defined by <a href="https://unicode.org/reports/tr35/tr35-dates.html#Calendar_Elements">Unicode Technical Standard #35, Part 4, Section 2</a>, . Their canonical form is a string containing all lowercase letters with zero or more hyphens.</ins>
+      <ins>The ECMAScript 2022 Internationalization API Specification identifies calendars using a <em>calendar type</em> as defined by <a href="https://unicode.org/reports/tr35/tr35-dates.html#Calendar_Elements">Unicode Technical Standard #35, Part 4, Section 2</a>. Their canonical form is a string containing all lower case letters with zero or more hyphens.</ins>
     </p>
 
     <emu-clause id="sec-availablecalendars" aoid="AvailableCalendars">
       <h1><ins>AvailableCalendars ( )</ins></h1>
 
       <p>
-        <ins>The AvailableCalendars abstract operation returns a List, in simple lexicographic order, that contains unique calendar types identifying the calendars for which the implementation provides the functionality of the Intl.DateTimeFormat objects. The list must include *"gregory"*.</ins>
+        <ins>The AvailableCalendars abstract operation returns a List, in simple lexicographic order, that contains unique calendar types identifying the calendars for which the implementation provides the functionality of Intl.DateTimeFormat objects. The list must include *"gregory"*.</ins>
       </p>
     </emu-clause>
 

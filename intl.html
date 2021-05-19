@@ -67,8 +67,8 @@
 
   </emu-clause>
 
-  <emu-clause id="sec-function-properties-of-the-intl-object">
-    <h1>Function Properties of the Intl Object</h1>
+  <emu-clause id="sec-intl-object-abstracts">
+    <h1><ins>Abstract Operations of the Intl Object</ins></h1>
 
     <emu-clause id="sec-createsupportedvaluesiterator" aoid="CreateSupportedValuesIterator">
       <h1><ins>CreateSupportedValuesIterator ( _list_ )</ins></h1>
@@ -81,6 +81,10 @@
         1. <ins>Return ! CreateIteratorFromClosure(_closure_, *"%SupportedValuesIterator%"*, %IteratorPrototype%).</ins>
       </emu-alg>
     </emu-clause>
+  </emu-clause>
+
+  <emu-clause id="sec-function-properties-of-the-intl-object">
+    <h1>Function Properties of the Intl Object</h1>
 
     <emu-clause id="sec-intl.getcanonicallocales">
       <h1>Intl.getCanonicalLocales ( _locales_ )</h1>
@@ -120,7 +124,7 @@
           1. <ins>Let _list_ be ! AvailableUnits( ).</ins>
         1. <ins>Else,</ins>
           1. <ins>Throw a *RangeError* exception.</ins>
-        1. <ins>Return ! CreateSupportedValuesIterator( _list_ )</ins>
+        1. <ins>Return ! CreateSupportedValuesIterator( _list_ ).</ins>
       </emu-alg>
     </emu-clause>
 

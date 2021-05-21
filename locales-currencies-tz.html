@@ -49,13 +49,15 @@
       </emu-alg>
     </emu-clause>
 
+    <ins class="block">
     <emu-clause id="sec-availablecurrencies" aoid="AvailableCurrencies">
-      <h1><ins>AvailableCurrencies ( )</ins></h1>
+      <h1>AvailableCurrencies ( )</h1>
 
       <p>
-        <ins>The AvailableCurrencies abstract operation returns a List, in simple lexicographic order, that contains unique, well-formed, and upper case canonicalized 3-letter ISO 4217 currency codes, identifying the currencies for which the implementation provides the functionality of Intl.DisplayNames and Intl.NumberFormat objects.</ins>
+        The AvailableCurrencies abstract operation returns a List, ordered as if an Array of the same values had been sorted using %Array.prototype.sort% using *undefined* as _comparefn_, that contains unique, well-formed, and upper case canonicalized 3-letter ISO 4217 currency codes, identifying the currencies for which the implementation provides the functionality of Intl.DisplayNames and Intl.NumberFormat objects.
       </p>
     </emu-clause>
+    </ins>
 
   </emu-clause>
 
@@ -108,14 +110,16 @@
       </p>
     </emu-clause>
 
+    <ins class="block">
     <emu-clause id="sec-availabletimezones" aoid="AvailableTimeZones">
-      <h1><ins>AvailableTimeZones ( _region_ )</ins></h1>
+      <h1>AvailableTimeZones ( _region_ )</h1>
 
       <p>
-        <ins>The AvailableTimeZones abstract operation returns a List, in simple lexicographic order, that contains the unique, canonical, and case-regularized form of all registered Zone and Link names in the IANA Time Zone Database which are used in the _region_. If the _region_ is *undefined*, it returns all the names.</ins>
+        The AvailableTimeZones abstract operation returns a List, ordered as if an Array of the same values had been sorted using %Array.prototype.sort% using *undefined* as _comparefn_, that contains the unique, canonical, and case-regularized form of all registered Zone and Link names in the IANA Time Zone Database which are used in the _region_. If the _region_ is *undefined*, it returns all the names.
       </p>
 
     </emu-clause>
+    </ins>
 
   </emu-clause>
 
@@ -219,65 +223,69 @@
       </emu-table>
     </emu-clause>
 
+    <ins class="block">
     <emu-clause id="sec-availableunits" aoid="AvailableUnits">
-      <h1><ins>AvailableUnits ( )</ins></h1>
+      <h1>AvailableUnits ( )</h1>
 
       <p>
-        <ins>The AvailableUnits abstract operation returns a List, in simple lexicographic order, that contains the unique values of simple unit identifiers listed in every row of <emu-xref href="#table-sanctioned-simple-unit-identifiers"></emu-xref>, except the header row.</ins>
+        The AvailableUnits abstract operation returns a List, ordered as if an Array of the same values had been sorted using %Array.prototype.sort% using *undefined* as _comparefn_, that contains the unique values of simple unit identifiers listed in every row of <emu-xref href="#table-sanctioned-simple-unit-identifiers"></emu-xref>, except the header row.
       </p>
     </emu-clause>
+    </ins>
 
   </emu-clause>
 
+  <ins class="block">
   <emu-clause id="sec-numberingsystem-identifiers">
-    <h1><ins>Numbering System Identifiers</ins></h1>
+    <h1>Numbering System Identifiers</h1>
 
     <p>
-      <ins>The ECMAScript 2022 Internationalization API Specification identifies numbering systems using a <em>numbering system identifier</em> as defined by <a href="https://unicode.org/reports/tr35/tr35-numbers.html#Numbering_Systems">Unicode Technical Standard #35, Part 3, Section 1</a>. Their canonical form is a string containing all lowercase letters.</ins>
+      The ECMAScript 2022 Internationalization API Specification identifies numbering systems using a <em>numbering system identifier</em> as defined by <a href="https://unicode.org/reports/tr35/tr35-numbers.html#Numbering_Systems">Unicode Technical Standard #35, Part 3, Section 1</a>. Their canonical form is a string containing all lowercase letters.
     </p>
 
     <emu-clause id="sec-availablenumberingsystems" aoid="AvailableNumberingSystems">
-      <h1><ins>AvailableNumberingSystems ( )</ins></h1>
+      <h1>AvailableNumberingSystems ( )</h1>
 
       <p>
-        <ins>The AvailableNumberingSystems abstract operation returns a List, in simple lexicographic order, that contains unique numbering systems identifiers identifying the numbering systems for which the implementation provides the functionality of Intl.DateTimeFormat, Intl.NumberFormat, and Intl.RelativeTimeFormat objects. The list must include the Numbering System value of every row of <emu-xref href="#table-numbering-system-digits"></emu-xref>, except the header row.</ins>
+        The AvailableNumberingSystems abstract operation returns a List, ordered as if an Array of the same values had been sorted using %Array.prototype.sort% using *undefined* as _comparefn_, that contains unique numbering systems identifiers identifying the numbering systems for which the implementation provides the functionality of Intl.DateTimeFormat, Intl.NumberFormat, and Intl.RelativeTimeFormat objects. The list must include the Numbering System value of every row of <emu-xref href="#table-numbering-system-digits"></emu-xref>, except the header row.
       </p>
     </emu-clause>
 
   </emu-clause>
 
   <emu-clause id="sec-collation-types">
-    <h1><ins>Collation Types</ins></h1>
+    <h1>Collation Types</h1>
 
     <p>
-      <ins>The ECMAScript 2022 Internationalization API Specification identifies collations using a <em>collation type</em> as defined by <a href="https://unicode.org/reports/tr35/tr35-collation.html#Collation_Types">Unicode Technical Standard #35, Part 5, Section 3.1</a>. Their canonical form is a string containing all lowercase letters with zero or more hyphens.</ins>
+      The ECMAScript 2022 Internationalization API Specification identifies collations using a <em>collation type</em> as defined by <a href="https://unicode.org/reports/tr35/tr35-collation.html#Collation_Types">Unicode Technical Standard #35, Part 5, Section 3.1</a>. Their canonical form is a string containing all lowercase letters with zero or more hyphens.
     </p>
 
     <emu-clause id="sec-availablecollations" aoid="AvailableCollations">
-      <h1><ins>AvailableCollations ( )</ins></h1>
+      <h1>AvailableCollations ( )</h1>
 
       <p>
-        <ins>The AvailableCollations abstract operation returns a List, in simple lexicographic order, that contains unique collation types identifying the collations for which the implementation provides the functionality of Intl.Collator objects.</ins>
+        The AvailableCollations abstract operation returns a List, ordered as if an Array of the same values had been sorted using %Array.prototype.sort% using *undefined* as _comparefn_, that contains unique collation types identifying the collations for which the implementation provides the functionality of Intl.Collator objects.
       </p>
     </emu-clause>
 
   </emu-clause>
 
   <emu-clause id="sec-calendar-types">
-    <h1><ins>Calendar Types</ins></h1>
+    <h1>Calendar Types</h1>
 
     <p>
-      <ins>The ECMAScript 2022 Internationalization API Specification identifies calendars using a <em>calendar type</em> as defined by <a href="https://unicode.org/reports/tr35/tr35-dates.html#Calendar_Elements">Unicode Technical Standard #35, Part 4, Section 2</a>. Their canonical form is a string containing all lower case letters with zero or more hyphens.</ins>
+      The ECMAScript 2022 Internationalization API Specification identifies calendars using a <em>calendar type</em> as defined by <a href="https://unicode.org/reports/tr35/tr35-dates.html#Calendar_Elements">Unicode Technical Standard #35, Part 4, Section 2</a>. Their canonical form is a string containing all lower case letters with zero or more hyphens.
     </p>
 
     <emu-clause id="sec-availablecalendars" aoid="AvailableCalendars">
-      <h1><ins>AvailableCalendars ( )</ins></h1>
+      <h1>AvailableCalendars ( )</h1>
 
       <p>
-        <ins>The AvailableCalendars abstract operation returns a List, in simple lexicographic order, that contains unique calendar types identifying the calendars for which the implementation provides the functionality of Intl.DateTimeFormat objects. The list must include *"gregory"*.</ins>
+        The AvailableCalendars abstract operation returns a List, ordered as if an Array of the same values had been sorted using %Array.prototype.sort% using *undefined* as _comparefn_, that contains unique calendar types identifying the calendars for which the implementation provides the functionality of Intl.DateTimeFormat objects. The list must include *"gregory"*.
       </p>
     </emu-clause>
 
   </emu-clause>
+  </ins>
 
 </emu-clause>

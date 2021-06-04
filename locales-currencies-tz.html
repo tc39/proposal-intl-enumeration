@@ -112,12 +112,23 @@
 
     <ins class="block">
     <emu-clause id="sec-availabletimezones" aoid="AvailableTimeZones">
-      <h1>AvailableTimeZones ( _region_ )</h1>
+      <h1>AvailableTimeZones ()</h1>
 
       <p>
-        The AvailableTimeZones abstract operation returns a List, ordered as if an Array of the same values had been sorted using %Array.prototype.sort% using *undefined* as _comparefn_, that contains the unique, canonical, and case-regularized form of all registered Zone and Link names in the IANA Time Zone Database which are used in the _region_. If the _region_ is *undefined*, it returns all the names.
+        The AvailableTimeZones abstract operation returns a sorted List of supported Zone and Link names in the IANA Time Zone Database. The following steps are taken:
       </p>
 
+      <emu-alg>
+        1. Let _names_ be a List of all supported Zone and Link names in the IANA Time Zone Database.
+        1. Let _result_ be a new empty List.
+        1. For each element _name_ of _names_, do
+          1. Assert: ! IsValidTimeZoneName( _name_ ) is *true*.
+          1. Let _canonical_ be ! CanonicalizeTimeZoneName( _name_ ).
+          1. If _result_ does not contain an element equal to _canonical_, then
+            1. Append _canonical_ to the end of _result_.
+        1. Sort _result_ in order as if an Array of the same values had been sorted using %Array.prototype.sort% using *undefined* as _comparefn_.
+        1. Return _result_.
+      </emu-alg>
     </emu-clause>
     </ins>
 

@@ -121,8 +121,7 @@
         1. Else if _key_ is *"numberingSystem"*, then
           1. Let _list_ be ! AvailableNumberingSystems( ).
         1. Else if _key_ is *"timeZone"*, then
-          1. Let _region_ be ? GetOption(_options_, *"region"*, *"string"*, *undefined*, *undefined*).
-          1. Let _list_ be ! AvailableTimeZones( _region_ ).
+          1. Let _list_ be ! AvailableTimeZones( ).
         1. Else if _key_ is *"unit"*, then
           1. Let _list_ be ! AvailableUnits( ).
         1. Else,

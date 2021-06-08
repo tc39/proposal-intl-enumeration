@@ -103,15 +103,14 @@
 
     <ins class="block">
     <emu-clause id="sec-intl.supportedvaluesof">
-      <h1>Intl.supportedValuesOf ( _key_ [ , _options_ ])</h1>
+      <h1>Intl.supportedValuesOf ( _key_ )</h1>
 
       <p>
-      When the `supportedValuesOf` method is called with argument _key_ and optional argument _options_ , the following steps are taken:
+      When the `supportedValuesOf` method is called with argument _key_ , the following steps are taken:
       </p>
 
       <emu-alg>
         1. Let _key_ be ? ToString(_key_).
-        1. Let _options_ be ? GetOptionsObject( _options_ ).
         1. If _key_ is *"calendar"*, then
           1. Let _list_ be ! AvailableCalendars( ).
         1. Else if _key_ is *"collation"*, then

@@ -41,10 +41,10 @@ In summary, the proposed API is an important facility to allow web developers to
 
 ## Overview
 
-One method of Intl, return iteratable based on options
+One method of Intl, return an array.
 
 ```javascript
-Intl.supportedValuesOf(key, [options])
+Intl.supportedValuesOf(key)
 ```
 
 ## Background

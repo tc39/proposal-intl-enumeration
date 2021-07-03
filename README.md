@@ -6,7 +6,9 @@ List supported values of options in pre-existing ECMA 402 API.
 * [Advanced to Stage 2 in TC39 September 2020](https://docs.google.com/presentation/d/1IWOHZVkXL_qbjz4T76bXmtLh7VOrWkT-HJIH2ZwY6NU) meeting.
 * [Update in TC39 Nov 2020](https://docs.google.com/presentation/d/1t0P8SKpcU9K_h-jYQ6ix5-02_mF1sAKt6v9AzipX3pw) meeting.
 * [Update in TC39 Apr 2021](https://docs.google.com/presentation/d/1LLuJJvGsppQfFf0eCBBcplub_E7NY4EdbSVeE2duyoA) meeting.
-* Plan to propose for Stage 3 advancement in TC39 May 2021 meeting
+* [Update in TC39 May 2021](https://docs.google.com/presentation/d/1rg5FMmU0vpi--KoxoIZPpNEWxhX-MfBUeoA0y_o94FQ/edit) meeting.
+* Plan to [propose for Stage 3 advancement in TC39 July 2021](https://docs.google.com/presentation/d/1zL3lb4stb4wrfDlOeMsmW5NqjX_TxTWL5pMjTa1qHVw/edit)  meeting
+
 
 ### Entrance Criteria for Stage 1 (Proposal)
 * Identified “champion” who will advance the addition: **Frank Yung-Fong Tang**

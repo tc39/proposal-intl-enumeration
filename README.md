@@ -69,6 +69,9 @@ The user stores their application user preference in the server side to express 
 ### Use Case 2 - Server Side Programming
 The web programmer is programming javascript running on top of Node.js by using ECMA402 code. The application (server side javascript running on top of Node.js) call this API to find out all the support set of calendar, collation, currency, numbering system, and time zone, and unit, and use that to generate UI selector in html and send to the client  to let the user to select in their application preference. After the user submits their choice, the server side application stores the user’s application preference into server side storage. The application code (server side javascript running on Node.js) later uses these preference values to output the html to the client. 
 
+### Use Case 3 - Building Time Zone picker inside WebGL
+Developer is working on a video game by using JavaScript to program WebGL and therefore all what users see on the screen is not HTML rendering and everything is 3D in WebGL. The programmer is writing the code to let the character the player control go enter a virtual store and select the currency they like to use to trade the virtual goodie, the programmer therefore need to build a 3D GUI in WebGL which list all the currency Intl.NumberFormat can support to format. A non-existing HTML solution won’t help them even if all the user agents support such a feature in HTML one day.
+
 
 ## Prior Arts
 ### Get the List of TimeZone

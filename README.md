@@ -36,7 +36,9 @@ The proposed API empower the caller to feature detect the support in the impleme
 
 Web applications can also combine the use of the proposed API with Intl.DisplayNames and Intl.NumberFormat to build a powerful UI without downloading a lot of data. For example, web applications can use the proposed API to get the list of supported currency, then use Intl.DisplayNames to get back the display name of the currency to build a menu for user to select the calendar, and format the currency amount by using Intl.NumberFormat API. The return value could also support the code to decide which set of the currency conversion information should be downloaded from the server and only download the set of currency the implementation knows how to format correctly, or download all the currency tables and then import polifil to support the one which is not supported. Without the proposed API the web application may either download an extra currency exchange table for currency which won’t be formatted correctly by Intl.NumberFormat and neither be able to efficiently determine which set of currency format data need to be imported with the polyfill. The proposed API empowers the web developer to design an efficient system to import minimum information from the server to implement such a fallback mechanism. 
 
-In summary, the proposed API is an important facility to allow web developers to detect missing support and import fallback polyfills efficiently with a minimum amount of data in the application initialization time. It also allows web application, in conjunction with using other ECMA402 API to program powerful internationalization UI with very minimum information from server side. 
+ECMA 402 is also used on the server side. A server side application code running on top of Node.js, which is built based on v8 and can access ECMA402 code can call the proposed API to generate a list of time zone names known by the server into html and return to the client in a calendar application. 
+
+In summary, the proposed API is an important facility to allow web developers to detect missing support and import fallback polyfills efficiently with a minimum amount of data in the application initialization time. It also allows web application, in conjunction with using other ECMA402 API to program powerful internationalization UI with very minimum information from server side. It is also a vital facility for server side usage of ECMA402.
 
 
 ## Overview
@@ -46,14 +48,26 @@ One method of Intl, return an array.
 ```javascript
 Intl.supportedValuesOf(key)
 ```
+### Supported Keys
+* calendar
+* collation
+* currency
+* numberingSystem
+* timeZone
+* unit
+
 
 ## Background
 
 https://github.com/tc39/ecma402/issues/435
 
 ## Use case
-Feature Tests for newly added values in options supported in Intl API.
-For example, web developer may want to use Chinese calendar if avaiable, or ROC calendar as a fallback if avaiable, otherwise Gregorian calendar as final resort. This API allow the code to check which calendar are avaiable and therefor to decide the fallback logic such as importing polyfill from the server.
+
+### Use Case 1 - Trigger Client Side Polifill
+The user stores their application user preference in the server side to express they want to use the ROC calendar. While the user logs into the application from his new mobile phone, the application code calls this API and found the "roc" calendar is not in the support set, the application imports polyfill from the server side which implements the ROC calendar and uses the polyfill. The user then logs into the application from his desktop, and the application calls this API and found the “roc” calendar is supported, the application therefore just calls the Intl.DateTimeFormat directly.
+
+### Use Case 2 - Server Side Programming
+The web programmer is programming javascript running on top of Node.js by using ECMA402 code. The application (server side javascript running on top of Node.js) call this API to find out all the support set of calendar, collation, currency, numbering system, and time zone, and unit  to let the user to select in their preference and then store the user’s application preference into server side storage. The application code (server side javascript running on Node.js) later uses these preference values to output the html to the client. 
 
 ## Prior Arts
 ### Get the List of TimeZone

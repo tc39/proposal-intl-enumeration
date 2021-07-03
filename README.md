@@ -15,6 +15,16 @@ List supported values of options in pre-existing ECMA 402 API.
 * Plan to [propose for Stage 3 advancement in TC39 July 2021](https://docs.google.com/presentation/d/1zL3lb4stb4wrfDlOeMsmW5NqjX_TxTWL5pMjTa1qHVw/edit)  meeting
   * 2021-07-xx Meeting Notes - TBL
 
+### TG2 (ECMA402) Working Meeting Notes:
+* [2020-05-20 TG2 Meeting Notes](https://github.com/tc39/ecma402/blob/master/meetings/notes-2020-05-21.md#enumeration-of-timezones-435)
+* [2020-08-13 TG2 Meeting Notes](https://github.com/tc39/ecma402/blob/master/meetings/notes-2020-08-13.md#intl-enumeration-api)
+* [2020-11-05 TG2 Meeting Notes](https://github.com/tc39/ecma402/blob/master/meetings/notes-2020-11-05.md#intl-enumeration-api-specification)
+* [2021-03-11 TG2 Meeting Notes](https://github.com/tc39/ecma402/blob/master/meetings/notes-2021-03-11.md#privacy-evaluation-of-the-api-3)
+* [2021-04-08 TG2 Meeting Notes](https://github.com/tc39/ecma402/blob/master/meetings/notes-2021-04-08.md#intl-enumeration-api-privacy-evaluation)
+* [2021-05-06 TG2 Meeting Notes](https://github.com/tc39/ecma402/blob/master/meetings/notes-2021-05-06.md#intl-enumeration-api-for-stage-3)
+* [2021-06-03 TG2 Meeting Notes](https://github.com/tc39/ecma402/blob/master/meetings/notes-2021-06-03.md#remove-region-option-for-timezone)
+* [2021-07-01 TG2 Meeting Notes](https://github.com/tc39/ecma402/blob/master/meetings/notes-2021-07-01.md#intl-enumeration-api-for-stage-3)
+
 
 ### Entrance Criteria for Stage 1 (Proposal)
 * Identified “champion” who will advance the addition: **Frank Yung-Fong Tang**

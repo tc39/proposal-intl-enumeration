@@ -67,7 +67,8 @@ https://github.com/tc39/ecma402/issues/435
 The user stores their application user preference in the server side to express they want to use the ROC calendar. While the user logs into the application from his new mobile phone, the application code calls this API and found the "roc" calendar is not in the support set, the application imports polyfill from the server side which implements the ROC calendar and uses the polyfill. The user then logs into the application from his desktop, and the application calls this API and found the “roc” calendar is supported, the application therefore just calls the Intl.DateTimeFormat directly.
 
 ### Use Case 2 - Server Side Programming
-The web programmer is programming javascript running on top of Node.js by using ECMA402 code. The application (server side javascript running on top of Node.js) call this API to find out all the support set of calendar, collation, currency, numbering system, and time zone, and unit  to let the user to select in their preference and then store the user’s application preference into server side storage. The application code (server side javascript running on Node.js) later uses these preference values to output the html to the client. 
+The web programmer is programming javascript running on top of Node.js by using ECMA402 code. The application (server side javascript running on top of Node.js) call this API to find out all the support set of calendar, collation, currency, numbering system, and time zone, and unit, and use that to generate UI selector in html and send to the client  to let the user to select in their application preference. After the user submits their choice, the server side application stores the user’s application preference into server side storage. The application code (server side javascript running on Node.js) later uses these preference values to output the html to the client. 
+
 
 ## Prior Arts
 ### Get the List of TimeZone

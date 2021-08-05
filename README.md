@@ -1,7 +1,7 @@
 # Intl Enumeration API Specification
 List supported values of options in pre-existing ECMA 402 API.
 
-## Stage 2
+## Stage 3
 * [Advanced to Stage 1 in TC39 June 2020 meeting](https://docs.google.com/presentation/d/17bkiVWuYxhMc24If72d6oENK3G6G-irO2EB4EEQCgxU). 
   * [2020-06-03 Meeting Notes](https://github.com/tc39/notes/blob/master/meetings/2020-06/june-3.md#intl-enumeration-api-for-stage-1)
 * [Advanced to Stage 2 in TC39 September 2020](https://docs.google.com/presentation/d/1IWOHZVkXL_qbjz4T76bXmtLh7VOrWkT-HJIH2ZwY6NU) meeting.
@@ -12,8 +12,8 @@ List supported values of options in pre-existing ECMA 402 API.
   * [2021-04-21 Meeting Notes](https://github.com/tc39/notes/blob/master/meetings/2021-04/apr-21.md#intl-enumeration-api-update)
 * [Update in TC39 May 2021](https://docs.google.com/presentation/d/1rg5FMmU0vpi--KoxoIZPpNEWxhX-MfBUeoA0y_o94FQ/edit) meeting.
   * [2021-05-25 Meeting Notes](https://github.com/tc39/notes/blob/master/meetings/2021-05/may-25.md#intl-enumeration-api-stage-2-update)
-* Plan to [propose for Stage 3 advancement in TC39 July 2021](https://docs.google.com/presentation/d/1zL3lb4stb4wrfDlOeMsmW5NqjX_TxTWL5pMjTa1qHVw/edit)  meeting
-  * 2021-07-xx Meeting Notes - TBL
+* [Advanced Stage 3 advancement in TC39 July 2021](https://docs.google.com/presentation/d/1zL3lb4stb4wrfDlOeMsmW5NqjX_TxTWL5pMjTa1qHVw/edit)  meeting
+  * [2021-07-13 Meeting Notes](https://github.com/tc39/notes/blob/master/meetings/2021-07/july-13.md#intl-enumeration-api-for-stage-3)
 
 ### TG2 (ECMA402) Working Meeting Notes:
 * [2020-05-20 TG2 Meeting Notes](https://github.com/tc39/ecma402/blob/master/meetings/notes-2020-05-21.md#enumeration-of-timezones-435)

@@ -25,27 +25,8 @@ List supported values of options in pre-existing ECMA 402 API.
 * [2021-06-03 TG2 Meeting Notes](https://github.com/tc39/ecma402/blob/master/meetings/notes-2021-06-03.md#remove-region-option-for-timezone)
 * [2021-07-01 TG2 Meeting Notes](https://github.com/tc39/ecma402/blob/master/meetings/notes-2021-07-01.md#intl-enumeration-api-for-stage-3)
 
-
-### Entrance Criteria for Stage 1 (Proposal)
-* Identified “champion” who will advance the addition: **Frank Yung-Fong Tang**
-* Prose outlining the problem or need and the general shape of a solution: **See this document**
-* Illustrative examples of usage: **See this document**
-* High-level API: **See this document**
-* Discussion of key algorithms, abstractions and semantics
-* Identification of potential “cross-cutting” concerns and implementation challenges/complexity
-* A publicly available repository for the proposal that captures the above requirements: [**https://github.com/tc39/proposal-intl-enumeration**](https://github.com/tc39/proposal-intl-enumeration)
-### Entrance Criteria for Stage 2 (Draft)
-* Above
-* Initial spec text: [**https://tc39.es/proposal-intl-enumeration**](https://tc39.es/proposal-intl-enumeration)
-* **Acceptance Signifies**: The committee expects the feature to be developed and eventually included in the standard
-
-### Entrance Criteria for Stage 3 (Candidate)
-* Above
-* Complete spec text
-* Designated reviewers have signed off on the current spec text
-* All ECMAScript editors have signed off on the current spec text
-* **Acceptance Signifies**: The solution is complete and no further work is possible without implementation experience, significant usage and external feedback.
-
+## Need Help!
+This proposal is now reaching stage 3, we need help to add tests into [Test262](https://github.com/tc39/test262) now. See [Issue 3131 in test262 for details](https://github.com/tc39/test262/issues/3131). We would also love to see polyfill available to web developers.
 ## Motivation
 
 ECMA402 allows the set of supported local time zones, collations, calendars, numbering systems and  currency as implementation dependents. This proposal provides an API to identify the supported values of these options in the implementation. 

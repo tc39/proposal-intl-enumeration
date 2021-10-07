@@ -86,9 +86,10 @@ Developer is working on a video game by using JavaScript to program WebGL and th
 ### Get the List of Currency Codes
 
 * Use Cases:
-  * 
+  * [User request on Stack Overflow](https://stackoverflow.com/questions/58029344/get-list-of-supported-currencies)
 * Prior Arts:
   * [currency-codes](https://www.npmjs.com/package/currency-codes)
+  * 
 
 
 ## Usage example

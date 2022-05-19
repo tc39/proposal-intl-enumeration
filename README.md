@@ -14,6 +14,7 @@ List supported values of options in pre-existing ECMA 402 API.
   * [2021-05-25 Meeting Notes](https://github.com/tc39/notes/blob/master/meetings/2021-05/may-25.md#intl-enumeration-api-stage-2-update)
 * [Advanced Stage 3 advancement in TC39 July 2021](https://docs.google.com/presentation/d/1zL3lb4stb4wrfDlOeMsmW5NqjX_TxTWL5pMjTa1qHVw/edit)  meeting
   * [2021-07-13 Meeting Notes](https://github.com/tc39/notes/blob/master/meetings/2021-07/july-13.md#intl-enumeration-api-for-stage-3)
+* [Update in TC39 Dec 2021](https://docs.google.com/presentation/d/1wR8Yg3JVwa1RAPgQGqUPsRtP0EeMXy_Q8zqgRIKRiQI) meeting.
 
 ### TG2 (ECMA402) Working Meeting Notes:
 * [2020-05-20 TG2 Meeting Notes](https://github.com/tc39/ecma402/blob/master/meetings/notes-2020-05-21.md#enumeration-of-timezones-435)

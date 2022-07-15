@@ -1,91 +1,67 @@
-{
-  "https://tc39.es/ecma262/": [
-    {
-      "type": "op",
-      "aoid": "CreateListIteratorRecord",
-      "id": "sec-createlistiteratorRecord"
-    },
-    {
-      "type": "op",
-      "aoid": "OrdinaryObjectCreate",
-      "id": "sec-ordinaryobjectcreate"
-    },
-    {
-      "type": "op",
-      "aoid": "CreateIteratorFromClosure",
-      "id": "sec-createiteratorfromclosure"
-    },
-    {
-      "type": "op",
-      "aoid": "Yield",
-      "id": "sec-yield"
-    },
-    {
-      "type": "op",
-      "aoid": "RequireInternalSlot",
-      "id": "sec-requireinternalslot"
-    }
-  ],
-  "https://tc39.es/ecma402/": [
-    {
-      "type": "op",
-      "aoid": "GetOptionsObject",
-      "id": "sec-getoptionsobject"
-    },
-    {
-      "type": "op",
-      "aoid": "GetOption",
-      "id": "sec-getoption"
-    },
-    {
-      "type": "op",
-      "aoid": "CanonicalizeLocaleList",
-      "id": "sec-canonicalizelocalelist"
-    },
-    {
-      "type": "op",
-      "aoid": "UnicodeExtensionComponents",
-      "id": "sec-unicode-extension-components"
-    },
-    {
-      "type": "clause",
-      "number": "10",
-      "id": "locale-objects"
-    },
-    {
-      "type": "clause",
-      "number": "11",
-      "id": "collator-objects"
-    },
-    {
-      "type": "clause",
-      "number": "12",
-      "id": "numberformat-objects"
-    },
-    {
-      "type": "clause",
-      "number": "13",
-      "id": "datetimeformat-objects"
-    },
-    {
-      "type": "clause",
-      "number": "14",
-      "id": "relativetimeformat-objects"
-    },
-    {
-      "type": "clause",
-      "number": "15",
-      "id": "pluralrules-objects"
-    },
-    {
-      "type": "table",
-      "number": "2",
-      "id": "table-sanctioned-simple-unit-identifiers"
-    },
-    {
-      "type": "table",
-      "number": "4",
-      "id": "table-numbering-system-digits"
-    }
-  ]
-}
+[
+  {
+    "location": "https://tc39.es/ecma402/",
+    "entries": [
+      {
+        "type": "op",
+        "aoid": "GetOptionsObject",
+        "id": "sec-getoptionsobject"
+      },
+      {
+        "type": "op",
+        "aoid": "GetOption",
+        "id": "sec-getoption"
+      },
+      {
+        "type": "op",
+        "aoid": "CanonicalizeLocaleList",
+        "id": "sec-canonicalizelocalelist"
+      },
+      {
+        "type": "op",
+        "aoid": "UnicodeExtensionComponents",
+        "id": "sec-unicode-extension-components"
+      },
+      {
+        "type": "clause",
+        "number": "10",
+        "id": "locale-objects"
+      },
+      {
+        "type": "clause",
+        "number": "11",
+        "id": "collator-objects"
+      },
+      {
+        "type": "clause",
+        "number": "12",
+        "id": "numberformat-objects"
+      },
+      {
+        "type": "clause",
+        "number": "13",
+        "id": "datetimeformat-objects"
+      },
+      {
+        "type": "clause",
+        "number": "14",
+        "id": "relativetimeformat-objects"
+      },
+      {
+        "type": "clause",
+        "number": "15",
+        "id": "pluralrules-objects"
+      },
+      {
+        "type": "table",
+        "number": "2",
+        "id": "table-sanctioned-simple-unit-identifiers"
+      },
+      {
+        "type": "table",
+        "number": "4",
+        "id": "table-numbering-system-digits"
+      }
+    ]
+  }
+]

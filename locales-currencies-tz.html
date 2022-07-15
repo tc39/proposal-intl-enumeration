@@ -57,12 +57,13 @@
     </emu-clause>
 
     <ins class="block">
-    <emu-clause id="sec-availablecurrencies" aoid="AvailableCurrencies">
-      <h1>AvailableCurrencies ( )</h1>
-
-      <p>
-        The AvailableCurrencies abstract operation returns a List, ordered as if an Array of the same values had been sorted using %Array.prototype.sort% using *undefined* as _comparefn_, that contains unique, well-formed, and upper case canonicalized 3-letter ISO 4217 currency codes, identifying the currencies for which the implementation provides the functionality of Intl.DisplayNames and Intl.NumberFormat objects.
-      </p>
+    <emu-clause id="sec-availablecurrencies" type="implementation-defined abstract operation">
+      <h1>AvailableCurrencies (
+      ): a List of Strings</h1>
+      <dl class="header">
+        <dt>description</dt>
+        <dd>The returned List is ordered as if an Array of the same values had been sorted using %Array.prototype.sort% using *undefined* as _comparefn_, and contains unique, well-formed, and upper case canonicalized 3-letter ISO 4217 currency codes, identifying the currencies for which the implementation provides the functionality of Intl.DisplayNames and Intl.NumberFormat objects.</dd>
+      </dl>
     </emu-clause>
     </ins>
   </emu-clause>
@@ -123,12 +124,15 @@
     </emu-clause>
 
     <ins class="block">
-    <emu-clause id="sec-availabletimezones" aoid="AvailableTimeZones">
-      <h1>AvailableTimeZones ( )</h1>
-
-      <p>
-        The AvailableTimeZones abstract operation returns a sorted List of supported Zone and Link names in the IANA Time Zone Database. The following steps are taken:
-      </p>
+    <emu-clause id="sec-availabletimezones" type="implementation-defined abstract operation">
+      <h1>
+        AvailableTimeZones (
+        ): a List of Strings
+      </h1>
+      <dl class="header">
+        <dt>description</dt>
+        <dd>The returned List is a sorted List of supported Zone and Link names in the IANA Time Zone Database.</dd>
+      </dl>
 
       <emu-alg>
         1. Let _names_ be a List of all supported Zone and Link names in the IANA Time Zone Database.
@@ -247,12 +251,13 @@
     </emu-clause>
 
     <ins class="block">
-    <emu-clause id="sec-availableunits" aoid="AvailableUnits">
-      <h1>AvailableUnits ( )</h1>
-
-      <p>
-        The AvailableUnits abstract operation returns a List, ordered as if an Array of the same values had been sorted using %Array.prototype.sort% using *undefined* as _comparefn_, that consists of the unique values of simple unit identifiers listed in every row of <emu-xref href="#table-sanctioned-simple-unit-identifiers"></emu-xref>, except the header row.
-      </p>
+    <emu-clause id="sec-availableunits" type="abstract operation">
+      <h1>AvailableUnits (
+      ): a List of Strings</h1>
+      <dl class="header">
+        <dt>description</dt>
+        <dd>The returned List is ordered as if an Array of the same values had been sorted using %Array.prototype.sort% using *undefined* as _comparefn_, and consists of the unique values of simple unit identifiers listed in every row of <emu-xref href="#table-sanctioned-simple-unit-identifiers"></emu-xref>, except the header row.</dd>
+      </dl>
     </emu-clause>
     </ins>
   </emu-clause>
@@ -265,12 +270,13 @@
       The ECMAScript 2023 Internationalization API Specification identifies numbering systems using a <em>numbering system identifier</em> as defined by <a href="https://unicode.org/reports/tr35/tr35-numbers.html#Numbering_Systems">Unicode Technical Standard #35, Part 3, Section 1</a>. Their canonical form is a string containing all lowercase letters.
     </p>
 
-    <emu-clause id="sec-availablenumberingsystems" aoid="AvailableNumberingSystems">
-      <h1>AvailableNumberingSystems ( )</h1>
-
-      <p>
-        The AvailableNumberingSystems abstract operation returns a List, ordered as if an Array of the same values had been sorted using %Array.prototype.sort% using *undefined* as _comparefn_, that contains unique numbering systems identifiers identifying the numbering systems for which the implementation provides the functionality of Intl.DateTimeFormat, Intl.NumberFormat, and Intl.RelativeTimeFormat objects. The list must include the Numbering System value of every row of <emu-xref href="#table-numbering-system-digits"></emu-xref>, except the header row.
-      </p>
+    <emu-clause id="sec-availablenumberingsystems" type="implementation-defined abstract operation">
+      <h1>AvailableNumberingSystems (
+      ): a List of Strings</h1>
+      <dl class="header">
+        <dt>description</dt>
+        <dd>The returned List is ordered as if an Array of the same values had been sorted using %Array.prototype.sort% using *undefined* as _comparefn_, and contains unique numbering systems identifiers identifying the numbering systems for which the implementation provides the functionality of Intl.DateTimeFormat, Intl.NumberFormat, and Intl.RelativeTimeFormat objects. The list must include the Numbering System value of every row of <emu-xref href="#table-numbering-system-digits"></emu-xref>, except the header row.</dd>
+      </dl>
     </emu-clause>
   </emu-clause>
 
@@ -281,12 +287,13 @@
       The ECMAScript 2023 Internationalization API Specification identifies collations using a <em>collation type</em> as defined by <a href="https://unicode.org/reports/tr35/tr35-collation.html#Collation_Types">Unicode Technical Standard #35, Part 5, Section 3.1</a>. Their canonical form is a string containing all lowercase letters with zero or more hyphens.
     </p>
 
-    <emu-clause id="sec-availablecollations" aoid="AvailableCollations">
-      <h1>AvailableCollations ( )</h1>
-
-      <p>
-        The AvailableCollations abstract operation returns a List, ordered as if an Array of the same values had been sorted using %Array.prototype.sort% using *undefined* as _comparefn_, that contains unique collation types identifying the collations for which the implementation provides the functionality of Intl.Collator objects.
-      </p>
+    <emu-clause id="sec-availablecollations" type="implementation-defined abstract operation">
+      <h1>AvailableCollations (
+      ): a List of Strings</h1>
+      <dl class="header">
+        <dt>description</dt>
+        <dd>The returned List is ordered as if an Array of the same values had been sorted using %Array.prototype.sort% using *undefined* as _comparefn_, and contains unique collation types identifying the collations for which the implementation provides the functionality of Intl.Collator objects.</dd>
+      </dl>
     </emu-clause>
   </emu-clause>
 
@@ -297,12 +304,13 @@
       The ECMAScript 2023 Internationalization API Specification identifies calendars using a <em>calendar type</em> as defined by <a href="https://unicode.org/reports/tr35/tr35-dates.html#Calendar_Elements">Unicode Technical Standard #35, Part 4, Section 2</a>. Their canonical form is a string containing all lower case letters with zero or more hyphens.
     </p>
 
-    <emu-clause id="sec-availablecalendars" aoid="AvailableCalendars">
-      <h1>AvailableCalendars ( )</h1>
-
-      <p>
-        The AvailableCalendars abstract operation returns a List, ordered as if an Array of the same values had been sorted using %Array.prototype.sort% using *undefined* as _comparefn_, that contains unique calendar types identifying the calendars for which the implementation provides the functionality of Intl.DateTimeFormat objects. The list must include *"iso8601"*.
-      </p>
+    <emu-clause id="sec-availablecalendars" type="implementation-defined abstract operation">
+      <h1>AvailableCalendars (
+      ): a List of Strings</h1>
+      <dl class="header">
+        <dt>description</dt>
+        <dd>The returned List is ordered as if an Array of the same values had been sorted using %Array.prototype.sort% using *undefined* as _comparefn_, and contains unique calendar types identifying the calendars for which the implementation provides the functionality of Intl.DateTimeFormat objects. The list must include *"iso8601"*.</dd>
+      </dl>
     </emu-clause>
   </emu-clause>
   </ins>

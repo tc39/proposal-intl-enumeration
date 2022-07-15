@@ -25,32 +25,47 @@
       {
         "type": "clause",
         "number": "10",
-        "id": "locale-objects"
-      },
-      {
-        "type": "clause",
-        "number": "11",
         "id": "collator-objects"
       },
       {
         "type": "clause",
-        "number": "12",
-        "id": "numberformat-objects"
-      },
-      {
-        "type": "clause",
-        "number": "13",
+        "number": "11",
         "id": "datetimeformat-objects"
       },
       {
         "type": "clause",
+        "number": "12",
+        "id": "intl-displaynames-objects"
+      },
+      {
+        "type": "clause",
+        "number": "13",
+        "id": "listformat-objects"
+      },
+      {
+        "type": "clause",
         "number": "14",
-        "id": "relativetimeformat-objects"
+        "id": "locale-objects"
       },
       {
         "type": "clause",
         "number": "15",
+        "id": "numberformat-objects"
+      },
+      {
+        "type": "clause",
+        "number": "16",
         "id": "pluralrules-objects"
+      },
+      {
+        "type": "clause",
+        "number": "17",
+        "id": "relativetimeformat-objects"
+      },
+      {
+        "type": "clause",
+        "number": "18",
+        "id": "segmenter-objects"
       },
       {
         "type": "table",

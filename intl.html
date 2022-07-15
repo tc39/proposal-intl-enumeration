@@ -19,24 +19,14 @@
   <emu-clause id="sec-constructor-properties-of-the-intl-object">
     <h1>Constructor Properties of the Intl Object</h1>
 
-    <emu-clause id="sec-intl.locale-intro">
-      <h1>Intl.Locale ( . . . )</h1>
-      <p>
-        See <emu-xref href="#locale-objects"></emu-xref>.
-      </p>
-    </emu-clause>
+    <p>
+      With the exception of Intl.Locale, each of the following constructors is a <dfn id="service-constructor">service constructor</dfn> that creates objects providing locale-sensitive services.
+    </p>
 
     <emu-clause id="sec-intl.collator-intro">
       <h1>Intl.Collator ( . . . )</h1>
       <p>
         See <emu-xref href="#collator-objects"></emu-xref>.
-      </p>
-    </emu-clause>
-
-    <emu-clause id="sec-intl.numberformat-intro">
-      <h1>Intl.NumberFormat ( . . . )</h1>
-      <p>
-        See <emu-xref href="#numberformat-objects"></emu-xref>.
       </p>
     </emu-clause>
 
@@ -47,10 +37,31 @@
       </p>
     </emu-clause>
 
-    <emu-clause id="sec-intl.relativetimeformat-intro">
-      <h1>Intl.RelativeTimeFormat ( . . . )</h1>
+    <emu-clause id="sec-intl.displaynames-intro">
+      <h1>Intl.DisplayNames ( . . . )</h1>
       <p>
-        See <emu-xref href="#relativetimeformat-objects"></emu-xref>.
+        See <emu-xref href="#intl-displaynames-objects"></emu-xref>.
+      </p>
+    </emu-clause>
+
+    <emu-clause id="sec-intl.listformat-intro">
+      <h1>Intl.ListFormat ( . . . )</h1>
+      <p>
+        See <emu-xref href="#listformat-objects"></emu-xref>.
+      </p>
+    </emu-clause>
+
+    <emu-clause id="sec-intl.locale-intro">
+      <h1>Intl.Locale ( . . . )</h1>
+      <p>
+        See <emu-xref href="#locale-objects"></emu-xref>.
+      </p>
+    </emu-clause>
+
+    <emu-clause id="sec-intl.numberformat-intro">
+      <h1>Intl.NumberFormat ( . . . )</h1>
+      <p>
+        See <emu-xref href="#numberformat-objects"></emu-xref>.
       </p>
     </emu-clause>
 
@@ -61,9 +72,19 @@
       </p>
     </emu-clause>
 
-    <emu-note id="legacy-constructor">
-      In ECMA 402 v1, Intl constructors supported a mode of operation where calling them with an existing object as a receiver would transform the receiver into the relevant Intl instance with all internal slots. In ECMA 402 v2, this capability was removed, to avoid adding internal slots on existing objects. In ECMA 402 v3, the capability was re-added as "normative optional" in a mode which chains the underlying Intl instance on any object, when the constructor is called. See <a href="https://github.com/tc39/ecma402/issues/57">Issue 57</a> for details.
-    </emu-note>
+    <emu-clause id="sec-intl.relativetimeformat-intro">
+      <h1>Intl.RelativeTimeFormat ( . . . )</h1>
+      <p>
+        See <emu-xref href="#relativetimeformat-objects"></emu-xref>.
+      </p>
+    </emu-clause>
+
+    <emu-clause id="sec-intl.segmenter-intro">
+      <h1>Intl.Segmenter ( . . . )</h1>
+      <p>
+        See <emu-xref href="#segmenter-objects"></emu-xref>.
+      </p>
+    </emu-clause>
   </emu-clause>
 
   <emu-clause id="sec-function-properties-of-the-intl-object">

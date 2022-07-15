@@ -20,7 +20,6 @@
   <emu-clause id="sec-language-tags">
     <h1>Language Tags</h1>
     <p>...</p>
-
   </emu-clause>
 
   <emu-clause id="sec-currency-codes">
@@ -58,7 +57,6 @@
       </p>
     </emu-clause>
     </ins>
-
   </emu-clause>
 
   <emu-clause id="sec-time-zone-names">
@@ -91,7 +89,7 @@
       </p>
 
       <emu-alg>
-        1. Let _ianaTimeZone_ be the Zone or Link name of the IANA Time Zone Database such that _timeZone_, converted to  upper case as described in <emu-xref href="#sec-case-sensitivity-and-case-mapping"></emu-xref>, is equal to _ianaTimeZone_, converted to upper case as described in <emu-xref href="#sec-case-sensitivity-and-case-mapping"></emu-xref>.
+        1. Let _ianaTimeZone_ be the Zone or Link name of the IANA Time Zone Database such that _timeZone_, converted to upper case as described in <emu-xref href="#sec-case-sensitivity-and-case-mapping"></emu-xref>, is equal to _ianaTimeZone_, converted to upper case as described in <emu-xref href="#sec-case-sensitivity-and-case-mapping"></emu-xref>.
         1. If _ianaTimeZone_ is a Link name, let _ianaTimeZone_ be the corresponding Zone name as specified in the *"backward"* file of the IANA Time Zone Database.
         1. If _ianaTimeZone_ is *"Etc/UTC"* or *"Etc/GMT"*, return *"UTC"*.
         1. Return _ianaTimeZone_.
@@ -103,7 +101,7 @@
     </emu-clause>
 
     <emu-clause id="sec-defaulttimezone" aoid="DefaultTimeZone">
-      <h1>DefaultTimeZone ()</h1>
+      <h1>DefaultTimeZone ( )</h1>
 
       <p>
         The DefaultTimeZone abstract operation returns a String value representing the valid (<emu-xref href="#sec-isvalidtimezonename"></emu-xref>) and canonicalized (<emu-xref href="#sec-canonicalizetimezonename"></emu-xref>) time zone name for the host environment's current time zone.
@@ -112,7 +110,7 @@
 
     <ins class="block">
     <emu-clause id="sec-availabletimezones" aoid="AvailableTimeZones">
-      <h1>AvailableTimeZones ()</h1>
+      <h1>AvailableTimeZones ( )</h1>
 
       <p>
         The AvailableTimeZones abstract operation returns a sorted List of supported Zone and Link names in the IANA Time Zone Database. The following steps are taken:
@@ -131,7 +129,6 @@
       </emu-alg>
     </emu-clause>
     </ins>
-
   </emu-clause>
 
   <emu-clause id="sec-measurement-unit-identifiers">
@@ -142,7 +139,7 @@
     </p>
 
     <p>
-      Only a limited set of core unit identifiers are allowed.  An illegal core unit identifier results in a RangeError.
+      Only a limited set of core unit identifiers are allowed. An illegal core unit identifier results in a RangeError.
     </p>
 
     <emu-clause id="sec-iswellformedunitidentifier" aoid="IsWellFormedUnitIdentifier">
@@ -243,7 +240,6 @@
       </p>
     </emu-clause>
     </ins>
-
   </emu-clause>
 
   <ins class="block">
@@ -261,7 +257,6 @@
         The AvailableNumberingSystems abstract operation returns a List, ordered as if an Array of the same values had been sorted using %Array.prototype.sort% using *undefined* as _comparefn_, that contains unique numbering systems identifiers identifying the numbering systems for which the implementation provides the functionality of Intl.DateTimeFormat, Intl.NumberFormat, and Intl.RelativeTimeFormat objects. The list must include the Numbering System value of every row of <emu-xref href="#table-numbering-system-digits"></emu-xref>, except the header row.
       </p>
     </emu-clause>
-
   </emu-clause>
 
   <emu-clause id="sec-collation-types">
@@ -278,7 +273,6 @@
         The AvailableCollations abstract operation returns a List, ordered as if an Array of the same values had been sorted using %Array.prototype.sort% using *undefined* as _comparefn_, that contains unique collation types identifying the collations for which the implementation provides the functionality of Intl.Collator objects.
       </p>
     </emu-clause>
-
   </emu-clause>
 
   <emu-clause id="sec-calendar-types">
@@ -295,8 +289,6 @@
         The AvailableCalendars abstract operation returns a List, ordered as if an Array of the same values had been sorted using %Array.prototype.sort% using *undefined* as _comparefn_, that contains unique calendar types identifying the calendars for which the implementation provides the functionality of Intl.DateTimeFormat objects. The list must include *"iso8601"*.
       </p>
     </emu-clause>
-
   </emu-clause>
   </ins>
-
 </emu-clause>

@@ -1,0 +1,44 @@
+<emu-clause id="numberformat-objects">
+  <h1>NumberFormat Objects</h1>
+
+  <emu-clause id="sec-intl-numberformat-constructor">
+    <h1>The Intl.NumberFormat Constructor</h1>
+
+    <p>...</p>
+
+    <emu-clause id="sec-setnumberformatunitoptions" aoid="SetNumberFormatUnitOptions">
+      <h1>SetNumberFormatUnitOptions ( _intlObj_, _options_ )</h1>
+      <p>
+        The abstract operation SetNumberFormatUnitOptions resolves the user-specified options relating to units onto the intl object.
+      </p>
+      <emu-alg>
+        1. Assert: Type(_intlObj_) is Object.
+        1. Assert: Type(_options_) is Object.
+        1. Let _style_ be ? GetOption(_options_, *"style"*, *"string"*, &laquo; *"decimal"*, *"percent"*, *"currency"*, *"unit"* &raquo;, *"decimal"*).
+        1. Set _intlObj_.[[Style]] to _style_.
+        1. Let _currency_ be ? GetOption(_options_, *"currency"*, *"string"*, *undefined*, *undefined*).
+        1. If _currency_ is *undefined*, then
+          1. If _style_ is *"currency"*, throw a *TypeError* exception.
+        1. Else,
+          1. If ! IsWellFormedCurrencyCode(_currency_) is *false*, throw a *RangeError* exception.
+        1. Let _currencyDisplay_ be ? GetOption(_options_, *"currencyDisplay"*, *"string"*, &laquo; *"code"*, *"symbol"*, *"narrowSymbol"*, *"name"* &raquo;, *"symbol"*).
+        1. Let _currencySign_ be ? GetOption(_options_, *"currencySign"*, *"string"*, &laquo; *"standard"*, *"accounting"* &raquo;, *"standard"*).
+        1. Let _unit_ be ? GetOption(_options_, *"unit"*, *"string"*, *undefined*, *undefined*).
+        1. If _unit_ is *undefined*, then
+          1. If _style_ is *"unit"*, throw a *TypeError* exception.
+        1. Else,
+          1. If ! IsWellFormedUnitIdentifier(_unit_) is *false*, throw a *RangeError* exception.
+        1. Let _unitDisplay_ be ? GetOption(_options_, *"unitDisplay"*, *"string"*, &laquo; *"short"*, *"narrow"*, *"long"* &raquo;, *"short"*).
+        1. If _style_ is *"currency"*, then
+          1. Set _intlObj_.[[Currency]] to <del>the ASCII-uppercase of _currency_</del><ins>CanonicalizeCurrency(_currency_)</ins>.
+          1. Set _intlObj_.[[CurrencyDisplay]] to _currencyDisplay_.
+          1. Set _intlObj_.[[CurrencySign]] to _currencySign_.
+        1. If _style_ is *"unit"*, then
+          1. Set _intlObj_.[[Unit]] to _unit_.
+          1. Set _intlObj_.[[UnitDisplay]] to _unitDisplay_.
+      </emu-alg>
+    </emu-clause>
+  </emu-clause>
+
+  <p>...</p>
+</emu-clause>

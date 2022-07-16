@@ -4,6 +4,16 @@
     "entries": [
       {
         "type": "op",
+        "aoid": "CanonicalizeLocaleList",
+        "id": "sec-canonicalizelocalelist"
+      },
+      {
+        "type": "op",
+        "aoid": "CanonicalizeUnicodeLocaleId",
+        "id": "sec-canonicalizeunicodelocaleid"
+      },
+      {
+        "type": "op",
         "aoid": "GetOptionsObject",
         "id": "sec-getoptionsobject"
       },
@@ -14,8 +24,13 @@
       },
       {
         "type": "op",
-        "aoid": "CanonicalizeLocaleList",
-        "id": "sec-canonicalizelocalelist"
+        "aoid": "IsStructurallyValidLanguageTag",
+        "id": "sec-isstructurallyvalidlanguagetag"
+      },
+      {
+        "type": "op",
+        "aoid": "IsValidDateTimeFieldCode",
+        "id": "sec-isvaliddatetimefieldcode"
       },
       {
         "type": "op",

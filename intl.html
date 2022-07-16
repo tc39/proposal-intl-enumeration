@@ -127,7 +127,26 @@
           1. Let _list_ be AvailableUnits( ).
         1. Else,
           1. Throw a *RangeError* exception.
-        1. Return CreateArrayFromList( _list_ ).
+        1. Let _result_ be a new empty List.
+        1. For each element _value_ of _list_, do
+          1. If _key_ is *"calendar"*, then
+            1. Let _canonical_ be CanonicalizeCalendar(_value_).
+          1. Else if _key_ is *"collation"*, then
+            1. Let _canonical_ be CanonicalizeCollation(_value_).
+          1. Else if _key_ is *"currency"*, then
+            1. Let _canonical_ be CanonicalizeCurrency(_value_).
+            1. <mark>NOTE: If CanonicalizeCurrency only does a case-transformation, then the above line is a no-op and can be removed.</mark>
+          1. Else if _key_ is *"numberingSystem"*, then
+            1. Let _canonical_ be CanonicalizeNumberingSystem(_value_).
+          1. Else if _key_ is *"timeZone"*, then
+            1. Assert: IsValidTimeZoneName(_value_) is *true*.
+            1. Let _canonical_ be CanonicalizeTimeZoneName(_value_).
+          1. Else,
+            1. Assert: _key_ is *"unit"*.
+            1. Let _canonical_ be _value_.
+          1. If _result_ does not contain an element equal to _canonical_, then
+            1. Append _canonical_ to the end of _result_.
+        1. Return CreateArrayFromList( _result_ ).
       </emu-alg>
     </emu-clause>
     </ins>

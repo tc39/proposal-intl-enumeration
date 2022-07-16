@@ -57,12 +57,29 @@
     </emu-clause>
 
     <ins class="block">
+    <emu-clause id="sec-canonicalizecurrency" type="abstract operation">
+      <h1>
+        CanonicalizeCurrency (
+          _currency_: a String that is a well-formed currency code as verified by IsWellFormedCurrencyCode,
+        ): a String
+      </h1>
+      <dl class="header">
+        <dt>description</dt>
+        <dd>The returned String is the well-formed and upper case canonicalized 3-letter ISO 4217 currency code corresponding to _currency_.</dd>
+      </dl>
+      <emu-alg>
+        1. Let _normalized_ be the ASCII-uppercase of _currency_.
+        1. <mark>NOTE: Apply any other aliasing transformations here; I'm not sure if ISO 4217 defines any because I don't have a copy of it. If not, then this abstract operation can be removed.</mark>
+        1. Return _normalized_.
+      </emu-alg>
+    </emu-clause>
+
     <emu-clause id="sec-availablecurrencies" type="implementation-defined abstract operation">
       <h1>AvailableCurrencies (
       ): a List of Strings</h1>
       <dl class="header">
         <dt>description</dt>
-        <dd>The returned List is ordered as if an Array of the same values had been sorted using %Array.prototype.sort% using *undefined* as _comparefn_, and contains unique, well-formed, and upper case canonicalized 3-letter ISO 4217 currency codes, identifying the currencies for which the implementation provides the functionality of Intl.DisplayNames and Intl.NumberFormat objects.</dd>
+        <dd>The returned List is ordered as if an Array of the same values had been sorted using %Array.prototype.sort% using *undefined* as _comparefn_, and contains unique, well-formed, and upper case 3-letter ISO 4217 currency codes, identifying the currencies for which the implementation provides the functionality of Intl.DisplayNames and Intl.NumberFormat objects.</dd>
       </dl>
     </emu-clause>
     </ins>
@@ -135,15 +152,11 @@
       </dl>
 
       <emu-alg>
-        1. Let _names_ be a List of all supported Zone and Link names in the IANA Time Zone Database.
-        1. Let _result_ be a new empty List.
-        1. For each element _name_ of _names_, do
-          1. Assert: ! IsValidTimeZoneName( _name_ ) is *true*.
-          1. Let _canonical_ be ! CanonicalizeTimeZoneName( _name_ ).
-          1. If _result_ does not contain an element equal to _canonical_, then
-            1. Append _canonical_ to the end of _result_.
-        1. Sort _result_ in order as if an Array of the same values had been sorted using %Array.prototype.sort% using *undefined* as _comparefn_.
-        1. Return _result_.
+        1. Let _timeZones_ be a List containing the String value of each Zone or Link name in the IANA Time Zone Database that is supported by the implementation.
+        1. Assert: _timeZones_ contains *"UTC"*.
+        1. Assert: _timeZones_ does not contain any element that does not identify a Zone or Link name in the IANA Time Zone Database.
+        1. Sort _timeZones_ in order as if an Array of the same values had been sorted using %Array.prototype.sort% with *undefined* as _comparefn_.
+        1. Return _timeZones_.
       </emu-alg>
     </emu-clause>
     </ins>
@@ -278,6 +291,24 @@
         <dd>The returned List is ordered as if an Array of the same values had been sorted using %Array.prototype.sort% using *undefined* as _comparefn_, and contains unique numbering systems identifiers identifying the numbering systems for which the implementation provides the functionality of Intl.DateTimeFormat, Intl.NumberFormat, and Intl.RelativeTimeFormat objects. The list must include the Numbering System value of every row of <emu-xref href="#table-numbering-system-digits"></emu-xref>, except the header row.</dd>
       </dl>
     </emu-clause>
+
+    <emu-clause id="sec-canonicalizenumberingsystem" type="abstract operation">
+      <h1>
+        CanonicalizeNumberingSystem (
+          _id_: a String that is a numbering system identifier,
+        ): a String that is a numbering system identifier
+      </h1>
+      <dl class="header">
+        <dt>description</dt>
+        <dd>
+          The returned String is the canonical and case-regularized form of _id_.
+        </dd>
+      </dl>
+      <emu-alg>
+        1. Return the string _id_ after performing the algorithm steps to replace Unicode extension values with their canonical form per <a href="https://unicode.org/reports/tr35/#Canonical_Unicode_Locale_Identifiers">Unicode Technical Standard #35 LDML § 3.2.1 Canonical Unicode Locale Identifiers</a>, treating _id_ as an `uvalue` production.
+        1. NOTE: At the time of writing, there are no known aliased numbering systems.
+      </emu-alg>
+    </emu-clause>
   </emu-clause>
 
   <emu-clause id="sec-collation-types">
@@ -295,6 +326,23 @@
         <dd>The returned List is ordered as if an Array of the same values had been sorted using %Array.prototype.sort% using *undefined* as _comparefn_, and contains unique collation types identifying the collations for which the implementation provides the functionality of Intl.Collator objects.</dd>
       </dl>
     </emu-clause>
+
+    <emu-clause id="sec-canonicalizecollation" type="abstract operation">
+      <h1>
+        CanonicalizeCollation (
+          _id_: a String that is a collation type,
+        ): a String that is a collation type
+      </h1>
+      <dl class="header">
+        <dt>description</dt>
+        <dd>
+          The returned String is the canonical and case-regularized form of _id_.
+        </dd>
+      </dl>
+      <emu-alg>
+        1. Return the string _id_ after performing the algorithm steps to replace Unicode extension values with their canonical form per <a href="https://unicode.org/reports/tr35/#Canonical_Unicode_Locale_Identifiers">Unicode Technical Standard #35 LDML § 3.2.1 Canonical Unicode Locale Identifiers</a>, treating _id_ as an `uvalue` production.
+      </emu-alg>
+    </emu-clause>
   </emu-clause>
 
   <emu-clause id="sec-calendar-types">
@@ -303,6 +351,24 @@
     <p>
       The ECMAScript 2023 Internationalization API Specification identifies calendars using a <em>calendar type</em> as defined by <a href="https://unicode.org/reports/tr35/tr35-dates.html#Calendar_Elements">Unicode Technical Standard #35, Part 4, Section 2</a>. Their canonical form is a string containing all lower case letters with zero or more hyphens.
     </p>
+
+    <emu-clause id="sec-canonicalizecalendar" type="abstract operation">
+      <h1>
+        CanonicalizeCalendar (
+          _id_: a String that is a calendar type,
+        ): a String that is a calendar type
+      </h1>
+      <dl class="header">
+        <dt>description</dt>
+        <dd>
+          The returned String is the canonical and case-regularized form of _id_.
+        </dd>
+      </dl>
+      <emu-alg>
+        1. Return the string _id_ after performing the algorithm steps to replace Unicode extension values with their canonical form per <a href="https://unicode.org/reports/tr35/#Canonical_Unicode_Locale_Identifiers">Unicode Technical Standard #35 LDML § 3.2.1 Canonical Unicode Locale Identifiers</a>, treating _id_ as an `uvalue` production.
+        1. NOTE: For example, if _id_ is *"ISLAMICC"*, return *"islamic-civil"*.
+      </emu-alg>
+    </emu-clause>
 
     <emu-clause id="sec-availablecalendars" type="implementation-defined abstract operation">
       <h1>AvailableCalendars (

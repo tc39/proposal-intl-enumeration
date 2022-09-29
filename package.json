@@ -5,7 +5,8 @@
   "scripts": {
     "start": "npm run build-loose -- --watch",
     "build": "npm run build-loose",
-    "build-loose": "ecmarkup --verbose spec.emu index.html"
+    "build-loose": "ecmarkup --verbose --load-biblio @tc39/ecma262-biblio spec.emu index.html",
+    "build-strict": "npm run build-loose -- --lint-spec --strict"
   },
   "homepage": "https://github.com/tc39/template-for-proposals#readme",
   "repository": {
@@ -14,6 +15,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "ecmarkup": "^7.0.3"
+    "@tc39/ecma262-biblio": "^2.1.2338",
+    "ecmarkup": "^14.0.1"
   }
 }
